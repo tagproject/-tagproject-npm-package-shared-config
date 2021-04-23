@@ -1,0 +1,11 @@
+# folders
+.config
+node_modules/
+
+# configs
+.github
+.vscode
+.env
+.sharedconfig.yml
+
+
