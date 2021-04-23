@@ -1,0 +1,27 @@
+{
+  "name": "@tagproject/ts-package-shared-config",
+  "version": "1.0.0",
+  "description": "NPM package with standard shared config for tagproject packages with TS",
+  "homepage": "https://github.com/keindev/standard-shared-config#readme",
+  "license": "MIT",
+  "author": {
+    "name": "Daniil Ryazanov",
+    "email": "kein@tagproject.ru"
+  },
+  "keywords": [
+    "standard",
+    "shared",
+    "config",
+    "ts"
+  ],
+  "main": "index.js",
+  "bin": {
+    "ts-package-shared-config": "bin/ts-package-shared-config"
+  },
+  "scripts": {
+    "build": "shared-config build"
+  },
+  "dependencies": {
+    "standard-shared-config": "^0.10.0"
+  }
+}
