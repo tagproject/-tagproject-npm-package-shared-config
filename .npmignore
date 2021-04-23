@@ -5,6 +5,7 @@ node_modules/
 # configs
 .github
 .vscode
+.husky
 .env
 .sharedconfig.yml
 
