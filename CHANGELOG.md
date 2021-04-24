@@ -3,20 +3,19 @@
 ## Dependencies
 
 <details>
-<summary>Dev Dependencies</summary>
+<summary>Dependencies</summary>
 
-- Bumped **[changelog-guru](https://www.npmjs.com/package/changelog-guru/v/2.0.16)** from `2.0.14` to `2.0.16`
+- Bumped **[standard-shared-config](https://www.npmjs.com/package/standard-shared-config/v/0.12.0)** from `0.10.0` to `0.12.0`
 
 </details>
 
 # :bug: Bug Fixes
 
-- Add husky `commit-msg` to merge rule, fix scripts [`2d00de6`](https://github.com/tagproject/ts-package-shared-config/commit/2d00de651cd73ca9a0d70b9a9c1d3595f14d957f)
+- Rebuild package [`8b74d98`](https://github.com/tagproject/ts-package-shared-config/commit/8b74d98380db179a48e913e22bc44231d0f499c7)
 
 # :memo: Internal changes
 
-- Add logo and badges [`b37877c`](https://github.com/tagproject/ts-package-shared-config/commit/b37877cba4cfdfd3620622c18712b8dcb12cec6e)
-- Fix logo size [`ca5e644`](https://github.com/tagproject/ts-package-shared-config/commit/ca5e6443d8500b9ac71ac18c0154273b8125c51a)
+- Fix install section in README [`3578969`](https://github.com/tagproject/ts-package-shared-config/commit/3578969a8f9f04d828df9ec15e27b54d037fa12f)
 
 ---
 
