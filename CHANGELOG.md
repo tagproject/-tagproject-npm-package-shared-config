@@ -1,3 +1,14 @@
+# Important Changes
+
+## Dependencies
+
+<details>
+<summary>Dev Dependencies</summary>
+
+- Bumped **[changelog-guru](https://www.npmjs.com/package/changelog-guru/v/2.0.16)** from `2.0.14` to `2.0.16`
+
+</details>
+
 # :bug: Bug Fixes
 
 - Add husky `commit-msg` to merge rule, fix scripts [`2d00de6`](https://github.com/tagproject/ts-package-shared-config/commit/2d00de651cd73ca9a0d70b9a9c1d3595f14d957f)

@@ -35,7 +35,7 @@
     "standard-shared-config": "^0.10.0"
   },
   "devDependencies": {
-    "changelog-guru": "^2.0.14",
+    "changelog-guru": "^2.0.16",
     "husky": "^6.0.0"
   }
 }
