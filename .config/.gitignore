@@ -1,31 +1,27 @@
-# Dist folders
-lib
-
-# Logs & Reports
-logs
-coverage
 *.log
+*.pid
+*.pid.lock
+*.seed
+*.tgz
+.editorconfig
+.env
+.eslintcache
+.eslintignore
+.eslintrc
+.husky/
+.prettierignore
+.prettierrc
+.vscode/
+.yarn-integrity
+babel.config.js
+coverage
+jest.config.js
+jest.modules.json
+lib
+logs
+node_modules/
+pids
+tsconfig.tsbuildinfo
+typedoc.json
 yarn-debug.log*
 yarn-error.log*
-
-# Runtime data
-pids
-*.pid
-*.seed
-*.pid.lock
-tsconfig.tsbuildinfo
-
-# Dependency directories
-node_modules/
-
-# Optional eslint cache
-.eslintcache
-
-# Output of 'npm pack'
-*.tgz
-
-# Yarn Integrity file
-.yarn-integrity
-
-# dotenv environment variables file
-.env
