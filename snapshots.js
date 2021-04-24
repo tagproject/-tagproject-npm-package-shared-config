@@ -60,7 +60,7 @@ module.exports = [
   {
     "path": ".husky/commit-msg",
     "hash": "89bf22012c9e1649731a8e578b92678a771f144f6368b205797d3097c4491870",
-    "merge": false,
+    "merge": true,
     "type": "text",
     "content": "#!/bin/sh\n. \"$(dirname \"$0\")/_/husky.sh\"\n\nnpx --no-install changelog lint --message $1\n"
   },
