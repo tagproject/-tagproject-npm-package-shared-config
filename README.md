@@ -12,7 +12,7 @@
 ## Install
 
 ```console
-npm install @tagproject/ts-package-shared-config
+npm install @tagproject/ts-package-shared-config --save-dev
 ```
 
 ## Usage
