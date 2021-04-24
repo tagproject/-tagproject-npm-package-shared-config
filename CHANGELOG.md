@@ -1,6 +1,7 @@
-# :bug: Bug Fixes
+# :memo: Internal changes
 
-- Change description [`cf4e763`](https://github.com/tagproject/ts-package-shared-config/commit/cf4e763013faf0b0a221b7342e57efdd53af566f)
+- Add logo and badges [`b37877c`](https://github.com/tagproject/ts-package-shared-config/commit/b37877cba4cfdfd3620622c18712b8dcb12cec6e)
+- Fix logo size [`ca5e644`](https://github.com/tagproject/ts-package-shared-config/commit/ca5e6443d8500b9ac71ac18c0154273b8125c51a)
 
 ---
 
