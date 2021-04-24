@@ -5,6 +5,18 @@ on:
       - master
 
 jobs:
+  sync:
+    name: Sync labels
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Sync project labels
+      uses: micnncim/action-label-syncer@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
   publish:
     name: Publish
     runs-on: ubuntu-latest
