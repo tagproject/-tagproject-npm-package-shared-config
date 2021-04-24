@@ -5,9 +5,10 @@ rules:
   ".husky/commit-msg": true
   ".vscode/cspell.json": [ "words" ]
   ".vscode/launch.json": [ "configurations" ]
-  "typedoc.json": [ "entryPoints" ]
   ".gitignore": true
   ".npmignore": true
+  "jest.modules.json": [ "es6" ]
+  "typedoc.json": [ "entryPoints" ]
 
 scripts:
   "prepare:config": "ts-package-shared-config"
