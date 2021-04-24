@@ -2,12 +2,12 @@
 /* prettier-ignore */
 module.exports = [
   [
-    "prepare:husky",
-    "husky install"
-  ],
-  [
     "prepare:config",
     "ts-package-shared-config"
+  ],
+  [
+    "prepare:husky",
+    "husky install"
   ],
   [
     "prepare",
@@ -26,16 +26,20 @@ module.exports = [
     "npm-run-all check:*"
   ],
   [
-    "test",
+    "test:jest",
     "jest"
   ],
   [
-    "generate:docs",
-    "rimraf docs/api && typedoc"
+    "test",
+    "npm-run-all test:*"
   ],
   [
     "generate:changelog",
     "changelog generate --bump"
+  ],
+  [
+    "generate:docs",
+    "rimraf docs/api && typedoc"
   ],
   [
     "generate:ghinfo",
@@ -43,11 +47,15 @@ module.exports = [
   ],
   [
     "generate",
-    "npm-run-all generate:changelog generate:docs generate:ghinfo"
+    "npm-run-all generate:*"
+  ],
+  [
+    "build:ts",
+    "rimraf lib && tsc --extendedDiagnostics"
   ],
   [
     "build",
-    "rimraf lib && tsc --extendedDiagnostics"
+    "npm-run-all build:*"
   ],
   [
     "release",
