@@ -2,16 +2,28 @@
 /* prettier-ignore */
 module.exports = [
   [
-    "@types/jest"
+    "@babel/preset-env",
+    "7.x"
   ],
   [
-    "@types/node"
+    "@types/jest",
+    "26.x"
   ],
   [
-    "@typescript-eslint/eslint-plugin"
+    "@types/node",
+    "14.x"
   ],
   [
-    "@typescript-eslint/parser"
+    "@typescript-eslint/eslint-plugin",
+    "4.x"
+  ],
+  [
+    "@typescript-eslint/parser",
+    "4.x"
+  ],
+  [
+    "babel-jest",
+    "26.x"
   ],
   [
     "changelog-guru"
@@ -20,25 +32,32 @@ module.exports = [
     "cspell"
   ],
   [
-    "eslint"
+    "eslint",
+    "7.x"
   ],
   [
-    "eslint-config-prettier"
+    "eslint-config-prettier",
+    "8.x"
   ],
   [
-    "eslint-plugin-import"
+    "eslint-plugin-import",
+    "2.x"
   ],
   [
-    "eslint-plugin-jest"
+    "eslint-plugin-jest",
+    "24.x\""
   ],
   [
-    "eslint-plugin-node"
+    "eslint-plugin-node",
+    "11.x"
   ],
   [
-    "eslint-plugin-optimize-regex"
+    "eslint-plugin-optimize-regex",
+    "1.x"
   ],
   [
-    "eslint-plugin-promise"
+    "eslint-plugin-promise",
+    "5.x"
   ],
   [
     "ghinfo"
@@ -48,7 +67,8 @@ module.exports = [
     "6.x"
   ],
   [
-    "jest"
+    "jest",
+    "26.x"
   ],
   [
     "npm-run-all"
@@ -60,7 +80,8 @@ module.exports = [
     "rimraf"
   ],
   [
-    "ts-jest"
+    "ts-jest",
+    "26.x"
   ],
   [
     "typedoc",

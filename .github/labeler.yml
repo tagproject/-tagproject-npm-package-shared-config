@@ -4,44 +4,44 @@ workflow:
   - ./.npmignore
 
 config:
-  - ./.sharedconfig.yml
-  - ./.husky/**/*
+  - .sharedconfig.yml
+  - .husky/**/*
 
 project:
-  - ./package-lock.json
-  - ./package.json
-  - ./LICENSE
+  - package-lock.json
+  - package.json
+  - LICENSE
 
 docs:
   - docs/**/*
-  - ./*.md
-  - ./.ghinfo
+  - '*.md'
+  - .ghinfo
 
 shared-config:workflow: 
-  - ./.config/.github/**/*
-  - ./.config/.gitignore
-  - ./.config/.npmignore
+  - .config/.github/**/*
+  - .config/.gitignore
+  - .config/.npmignore
 
 shared-config:code-style:
-  - ./.config/.editorconfig
-  - ./.config/.eslintignore
-  - ./.config/.eslintrc
-  - ./.config/.prettierignore
-  - ./.config/.prettierrc
+  - .config/.editorconfig
+  - .config/.eslintignore
+  - .config/.eslintrc
+  - .config/.prettierignore
+  - .config/.prettierrc
 
 shared-config:test:
-  - ./.config/babel.config.js
-  - ./.config/jest.config.js
-  - ./.config/jest.modules.json
+  - .config/babel.config.js
+  - .config/jest.config.js
+  - .config/jest.modules.json
 
 shared-config:docs:
-  - ./.config/typedoc.json
+  - .config/typedoc.json
 
 shared-config:ts:
-  - ./.config/tsconfig.json
+  - .config/tsconfig.json
 
 shared-config:scripts:
-  - ./scripts.js
+  - scripts.js
 
 shared-config:dependencies:
-  - ./dependencies.js
+  - dependencies.js

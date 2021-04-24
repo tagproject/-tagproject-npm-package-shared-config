@@ -4,13 +4,13 @@ test:
 
 workflow:
   - .github/**/*
-  - ./.gitignore
-  - ./.npmignore
+  - .gitignore
+  - .npmignore
 
 project:
-  - ./package-lock.json
-  - ./package.json
-  - ./LICENSE
+  - package-lock.json
+  - package.json
+  - LICENSE
 
 source:
   - any: ['src/**/*', '!src/cli/*', '!src/__mocks__/*', '!src/__tests__/*']
@@ -20,9 +20,7 @@ api:
   - src/cli/**/*
 
 docs:
-  - docs/**/*
-  - ./*.md
-  - ./.ghinfo
+  any: ['docs/**/*', '*.md', '.ghinfo']
 
 example:
   - example/**/*
