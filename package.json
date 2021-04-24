@@ -1,6 +1,9 @@
 {
   "name": "@tagproject/ts-package-shared-config",
   "version": "1.1.0",
+  "publishConfig": {
+    "access": "public"
+  },
   "description": "NPM package with standard shared config for tagproject packages with TS",
   "homepage": "https://github.com/tagproject/ts-package-shared-config#readme",
   "license": "MIT",
