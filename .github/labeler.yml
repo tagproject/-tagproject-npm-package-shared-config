@@ -17,31 +17,31 @@ docs:
   - ./*.md
   - ./.ghinfo
 
-'shared-config:workflow': 
+'shared-config-workflow': 
   - ./.config/.github/**/*
   - ./.config/.gitignore
   - ./.config/.npmignore
 
-'shared-config:code-style':
+'shared-config-code-style':
   - ./.config/.editorconfig
   - ./.config/.eslintignore
   - ./.config/.eslintrc
   - ./.config/.prettierignore
   - ./.config/.prettierrc
 
-'shared-config:test':
+'shared-config-test':
   - ./.config/babel.config.js
   - ./.config/jest.config.js
   - ./.config/jest.modules.json
 
-'shared-config:docs':
+'shared-config-docs':
   - ./.config/typedoc.json
 
-'shared-config:ts':
+'shared-config-ts':
   - ./.config/tsconfig.json
 
-'shared-config:scripts':
+'shared-config-scripts':
   - ./scripts.js
 
-'shared-config:dependencies':
+'shared-config-dependencies':
   - ./dependencies.js
