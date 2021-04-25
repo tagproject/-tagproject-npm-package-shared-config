@@ -14,6 +14,7 @@
 .vscode
 CODE_OF_CONDUCT.md
 babel.config.js
+codecov.yml
 codegen.yml
 coverage/
 docs/
