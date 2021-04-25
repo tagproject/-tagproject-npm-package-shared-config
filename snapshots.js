@@ -161,12 +161,12 @@ module.exports = [
   },
   {
     "path": "jest.modules.json",
-    "hash": "965282241f3ef1b9a71fc3fe79dd393b66eae453f7a915d8fff609ba85bd2361",
+    "hash": "7adf025d5e27fe58cdea26ab4cd190c62eddf5815dad195d22d2c6d3a26a8198",
     "merge": [
       "es6"
     ],
     "type": "json",
-    "content": "{ \"es6\": [\"strip-ansi\", \"ansi-regex\"] }\n"
+    "content": "{ \"es6\": [] }\n"
   },
   {
     "path": "tsconfig.json",
