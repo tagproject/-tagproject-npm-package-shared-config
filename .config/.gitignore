@@ -14,7 +14,7 @@
 .vscode/
 .yarn-integrity
 babel.config.js
-
+codecov.yml
 coverage
 jest.config.js
 jest.modules.json
