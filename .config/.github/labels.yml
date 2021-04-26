@@ -37,3 +37,7 @@
 - name: security
   description: Pull requests that address a security vulnerability
   color: E20338
+- name: bug
+  description: Bug reporting
+  color: E20338
+
