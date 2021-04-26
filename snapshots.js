@@ -51,11 +51,11 @@ module.exports = [
   },
   {
     "path": ".github/labels.yml",
-    "hash": "2fdfad31f0d2a6b8b854fbcf39151b9e63dfb8b971f2223acd5e64b29776e663",
+    "hash": "815a73e6a4c3410443f6f560e285faa1e20de000a7b9fca65e90c28eabe99a14",
     "merge": false,
     "executable": false,
     "type": "yaml",
-    "content": "# Gray\n- name: docs\n  description: Pull requests that change documentation\n  color: BCBEC0\n- name: media\n  description: Pull requests that change media files\n  color: BCBEC0\n- name: example\n  description: Pull requests that change examples\n  color: BCBEC0\n# Violet\n- name: source\n  description: Pull requests that change sources\n  color: 4400B2\n- name: project\n  description: Pull requests that change main project files\n  color: 4400B2\n# Blue\n- name: release\n  description: Release candidate\n  color: 0260E8\n- name: test\n  description: Pull requests that change tests\n  color: 0260E8\n# Mint\n- name: dependencies\n  description: Pull requests that change a dependency file\n  color: 00DFC8\n- name: workflow\n  description: Pull requests that change workflow files\n  color: 00DFC8\n# Orange\n- name: api\n  description: Pull requests that change bin, cli commands or API\n  color: FE634E\n# Red\n- name: security\n  description: Pull requests that address a security vulnerability\n  color: E20338\n"
+    "content": "# Gray\n- name: docs\n  description: Pull requests that change documentation\n  color: BCBEC0\n- name: media\n  description: Pull requests that change media files\n  color: BCBEC0\n- name: example\n  description: Pull requests that change examples\n  color: BCBEC0\n# Violet\n- name: source\n  description: Pull requests that change sources\n  color: 4400B2\n- name: project\n  description: Pull requests that change main project files\n  color: 4400B2\n# Blue\n- name: release\n  description: Release candidate\n  color: 0260E8\n- name: test\n  description: Pull requests that change tests\n  color: 0260E8\n- name: feature\n  description: Feature request\n  color: E20338\n# Mint\n- name: dependencies\n  description: Pull requests that change a dependency file\n  color: 00DFC8\n- name: workflow\n  description: Pull requests that change workflow files\n  color: 00DFC8\n# Orange\n- name: api\n  description: Pull requests that change bin, cli commands or API\n  color: FE634E\n# Red\n- name: security\n  description: Pull requests that address a security vulnerability\n  color: E20338\n- name: bug\n  description: Bug reporting\n  color: E20338\n\n"
   },
   {
     "path": ".husky/commit-msg",

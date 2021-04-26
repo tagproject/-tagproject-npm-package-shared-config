@@ -5,14 +5,13 @@
 <details>
 <summary>Dependencies</summary>
 
-- Bumped **[standard-shared-config](https://www.npmjs.com/package/standard-shared-config/v/2.0.0)** from `1.0.2` to `2.0.0`
+- Bumped **[standard-shared-config](https://www.npmjs.com/package/standard-shared-config/v/2.0.1)** from `2.0.0` to `2.0.1`
 
 </details>
 
 # :fire: Improvements
 
-- Remove ignore patterns [`64f05e1`](https://github.com/tagproject/ts-package-shared-config/commit/64f05e183b6478d9fcbf417d5b9cc61610bca0a2)
-- Add `ignorePatterns`, mark husky hooks as executable files [`27256a3`](https://github.com/tagproject/ts-package-shared-config/commit/27256a3833c05b548b10e910dbe8c6ec9ba9aa06)
+- Add Feature label [`5a222b7`](https://github.com/tagproject/ts-package-shared-config/commit/5a222b779770df6645eb5aafe4b58f571ec535b5)
 
 ---
 
