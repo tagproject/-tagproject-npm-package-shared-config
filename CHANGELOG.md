@@ -5,14 +5,14 @@
 <details>
 <summary>Dependencies</summary>
 
-- Bumped **[standard-shared-config](https://www.npmjs.com/package/standard-shared-config/v/1.0.2)** from `1.0.1` to `1.0.2`
+- Bumped **[standard-shared-config](https://www.npmjs.com/package/standard-shared-config/v/2.0.0)** from `1.0.2` to `2.0.0`
 
 </details>
 
-# :bug: Bug Fixes
+# :fire: Improvements
 
-- Add `codecov.yml` config [`2213381`](https://github.com/tagproject/ts-package-shared-config/commit/22133811e14c253f82a18a4744529d06f29b343d)
-- Add `codecov.yml` to .gitignore [`fb40e23`](https://github.com/tagproject/ts-package-shared-config/commit/fb40e23d1ff48ed2a290188ce88df1b9c6d669d7)
+- Remove ignore patterns [`64f05e1`](https://github.com/tagproject/ts-package-shared-config/commit/64f05e183b6478d9fcbf417d5b9cc61610bca0a2)
+- Add `ignorePatterns`, mark husky hooks as executable files [`27256a3`](https://github.com/tagproject/ts-package-shared-config/commit/27256a3833c05b548b10e910dbe8c6ec9ba9aa06)
 
 ---
 
