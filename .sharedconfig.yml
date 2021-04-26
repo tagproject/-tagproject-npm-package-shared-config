@@ -1,7 +1,7 @@
 rootDir: ".config"
 outDir: "."
 
-rules:
+mergeRules:
   ".husky/commit-msg": true
   ".vscode/cspell.json": [ "words" ]
   ".vscode/launch.json": [ "configurations" ]
@@ -9,6 +9,83 @@ rules:
   ".npmignore": true
   "jest.modules.json": [ "es6" ]
   "typedoc.json": [ "entryPoints" ]
+
+ignorePatterns:
+  ".gitignore": [
+    "*.log",
+    "*.pid",
+    "*.pid.lock",
+    "*.seed",
+    "*.tgz",
+    ".editorconfig",
+    ".env",
+    ".eslintcache",
+    ".eslintignore",
+    ".eslintrc",
+    ".husky/",
+    ".prettierignore",
+    ".prettierrc",
+    ".vscode/",
+    ".yarn-integrity",
+    "babel.config.js",
+    "codecov.yml",
+    "coverage",
+    "jest.config.js",
+    "jest.modules.json",
+    "lib",
+    "logs",
+    "node_modules/",
+    "pids",
+    "tsconfig.json",
+    "tsconfig.tsbuildinfo",
+    "typedoc.json",
+    "yarn-debug.log*",
+    "yarn-error.log*"
+  ]
+  ".npmignore": [
+    "**/__mocks__/**",
+    "**/__tests__/**",
+    ".changelogrc.yml",
+    ".editorconfig",
+    ".env",
+    ".eslintignore",
+    ".eslintrc",
+    ".ghinfo",
+    ".gitattributes",
+    ".github",
+    ".husky",
+    ".prettierignore",
+    ".prettierrc",
+    ".vscode",
+    "CODE_OF_CONDUCT.md",
+    "babel.config.js",
+    "codecov.yml",
+    "codegen.yml",
+    "coverage/",
+    "docs/",
+    "example/",
+    "jest.config.js",
+    "jest.modules.json",
+    "media/",
+    "node_modules/",
+    "src/",
+    "tsconfig.json",
+    "typedoc.json"
+  ]
+  ".eslintignore": [
+    "*.gql",
+    "*.js",
+    "__generated__",
+    "lib"
+  ]
+  ".prettierignore": [
+    "lib/"
+  ]
+
+executableFiles: [
+  ".husky/commit-msg",
+  ".husky/pre-commit",
+]
 
 scripts:
   "prepare:config": "ts-package-shared-config"
