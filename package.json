@@ -32,7 +32,7 @@
     "release": "npm run build && changelog generate --bump"
   },
   "dependencies": {
-    "standard-shared-config": "^2.0.0"
+    "standard-shared-config": "^2.0.1"
   },
   "devDependencies": {
     "changelog-guru": "^2.0.16",
