@@ -22,6 +22,9 @@
 - name: test
   description: Pull requests that change tests
   color: 0260E8
+- name: feature
+  description: Feature request
+  color: E20338
 # Mint
 - name: dependencies
   description: Pull requests that change a dependency file
