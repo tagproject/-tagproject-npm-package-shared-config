@@ -1,17 +1,6 @@
-# Important Changes
+# :bug: Bug Fixes
 
-## Dependencies
-
-<details>
-<summary>Dependencies</summary>
-
-- Bumped **[standard-shared-config](https://www.npmjs.com/package/standard-shared-config/v/2.0.1)** from `2.0.0` to `2.0.1`
-
-</details>
-
-# :fire: Improvements
-
-- Add Feature label [`5a222b7`](https://github.com/tagproject/ts-package-shared-config/commit/5a222b779770df6645eb5aafe4b58f571ec535b5)
+- Add GITHUB_TOKEN to npm ci [`5c1bb00`](https://github.com/tagproject/ts-package-shared-config/commit/5c1bb0015a8a4f91bb71228fd561032a4203a12e)
 
 ---
 
