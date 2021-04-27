@@ -43,11 +43,11 @@ module.exports = [
   },
   {
     "path": ".github/labeler.yml",
-    "hash": "2c1263dd57733a792a18490b8739b42e3d599a270bf6adaa7da9f3b337299103",
+    "hash": "71b032ffc4344427996011d1d51ca3828261bb5a65ad49d095b592b207e0cb3e",
     "merge": false,
     "executable": false,
     "type": "yaml",
-    "content": "test:\n  - src/__mocks__/**/*.test.ts\n  - src/__tests__/**/*.test.ts\n\nworkflow:\n  - .github/**/*\n  - .gitignore\n  - .npmignore\n\nproject:\n  - package-lock.json\n  - package.json\n  - LICENSE\n\nsource:\n  - any: ['src/**/*', '!src/cli/*', '!src/__mocks__/*', '!src/__tests__/*']\n\napi:\n  - bin/**/*\n  - src/cli/**/*\n\ndocs:\n  any: ['docs/**/*', '*.md', '.ghinfo']\n\nexample:\n  - example/**/*\n\nmedia:\n  - media/**/*\n"
+    "content": "test:\n  - src/__mocks__/**/*.test.ts\n  - src/__tests__/**/*.test.ts\n\nworkflow:\n  - .github/**/*\n  - .gitignore\n  - .npmignore\n\nproject:\n  - package-lock.json\n  - package.json\n  - LICENSE\n\nsource:\n  - any: ['src/**/*', '!src/cli/*', '!src/__mocks__/*', '!src/__tests__/*']\n\napi:\n  - bin/**/*\n  - src/cli/**/*\n\ndocs:\n  - any: ['docs/**/*', '*.md', '.ghinfo']\n\nexample:\n  - example/**/*\n\nmedia:\n  - media/**/*\n"
   },
   {
     "path": ".github/labels.yml",
@@ -127,11 +127,11 @@ module.exports = [
   },
   {
     "path": "babel.config.js",
-    "hash": "8d50f5cf712fba849970a78efabf8d33b0aaad5847299771b206bcb6063586d0",
+    "hash": "6f04f141e34d7d5adb472a77ca6831887b5a0c019ae1a60d1f4f8a0213b42470",
     "merge": false,
     "executable": false,
     "type": "text",
-    "content": "module.exports = { presets: ['@babel/preset-env'] };\n"
+    "content": "module.exports = {\n  presets: ['@babel/preset-env'],\n  plugins: ['@babel/plugin-transform-runtime'],\n};\n"
   },
   {
     "path": "codecov.yml",
