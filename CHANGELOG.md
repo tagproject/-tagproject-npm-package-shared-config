@@ -1,6 +1,6 @@
 # :bug: Bug Fixes
 
-- Add GITHUB_TOKEN to npm ci [`5c1bb00`](https://github.com/tagproject/ts-package-shared-config/commit/5c1bb0015a8a4f91bb71228fd561032a4203a12e)
+- Update .gitignore & .npmignore [`2f8edfe`](https://github.com/tagproject/ts-package-shared-config/commit/2f8edfed8dba9e7d15f4ae3daeaf675e468753be)
 
 ---
 
