@@ -1,6 +1,6 @@
 # :bug: Bug Fixes
 
-- Update .gitignore & .npmignore [`2f8edfe`](https://github.com/tagproject/ts-package-shared-config/commit/2f8edfed8dba9e7d15f4ae3daeaf675e468753be)
+- Fix .husky dir glob pattern in .gitignore [`f5a4a6c`](https://github.com/tagproject/ts-package-shared-config/commit/f5a4a6c4101981d171a00c22520a8169781c90cf)
 
 ---
 

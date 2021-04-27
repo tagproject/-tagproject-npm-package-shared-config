@@ -179,11 +179,11 @@ module.exports = [
   },
   {
     "path": ".gitignore",
-    "hash": "ae9c6d74655259788087af2e0a49c1799104883977b9eb7b9f1d0068818a44ff",
+    "hash": "f396e2eea59a9e4f41cfc82609c1515246f9c84006b9da4dc4a53189005fb9d9",
     "merge": true,
     "executable": false,
     "type": "glob",
-    "content": "*.log\n*.pid\n*.pid.lock\n*.seed\n*.tgz\n.editorconfig\n.env\n.eslintcache\n.eslintignore\n.eslintrc\n.husky/\n.prettierignore\n.prettierrc\n.yarn-integrity\n/.vscode/\n/jest.modules.json\n/typedoc.json\nbabel.config.js\ncodecov.yml\ncoverage\njest.config.js\nlib\nlogs\nnode_modules/\npids\ntsconfig.json\ntsconfig.tsbuildinfo\nyarn-debug.log*\nyarn-error.log*"
+    "content": "*.log\n*.pid\n*.pid.lock\n*.seed\n*.tgz\n.editorconfig\n.env\n.eslintcache\n.eslintignore\n.eslintrc\n.prettierignore\n.prettierrc\n.yarn-integrity\n/.husky/\n/.vscode/\n/jest.modules.json\n/typedoc.json\nbabel.config.js\ncodecov.yml\ncoverage\njest.config.js\nlib\nlogs\nnode_modules/\npids\ntsconfig.json\ntsconfig.tsbuildinfo\nyarn-debug.log*\nyarn-error.log*"
   },
   {
     "path": ".npmignore",
