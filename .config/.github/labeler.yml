@@ -20,7 +20,7 @@ api:
   - src/cli/**/*
 
 docs:
-  any: ['docs/**/*', '*.md', '.ghinfo']
+  - any: ['docs/**/*', '*.md', '.ghinfo']
 
 example:
   - example/**/*

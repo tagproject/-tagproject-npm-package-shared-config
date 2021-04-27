@@ -13,9 +13,7 @@ project:
   - LICENSE
 
 docs:
-  - docs/**/*
-  - '*.md'
-  - .ghinfo
+  - any: ['docs/**/*', '*.md', '.ghinfo']
 
 shared-config:workflow: 
   - .config/.github/**/*
