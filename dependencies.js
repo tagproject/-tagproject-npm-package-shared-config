@@ -2,6 +2,10 @@
 /* prettier-ignore */
 module.exports = [
   [
+    "@babel/plugin-transform-runtime",
+    "7.x"
+  ],
+  [
     "@babel/preset-env",
     "7.x"
   ],

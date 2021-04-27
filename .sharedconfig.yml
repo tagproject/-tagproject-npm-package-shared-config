@@ -106,6 +106,7 @@ scripts:
   "release": "npm-run-all prepare check test build generate"
 
 dependencies:
+  - "@babel/plugin-transform-runtime": "7.x"
   - "@babel/preset-env": "7.x"
   - "@types/jest": "26.x"
   - "@types/node": "14.x"
