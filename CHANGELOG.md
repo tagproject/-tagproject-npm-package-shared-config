@@ -1,6 +1,6 @@
 # :bug: Bug Fixes
 
-- Add `@babel/plugin-transform-runtime` for jest tests babel conf [`afb23e0`](https://github.com/tagproject/ts-package-shared-config/commit/afb23e060aed3ed3da3322ba1bf40632485c4c0a)
+- Remove `codecov.yml` from .gitignore [`3dc7fd5`](https://github.com/tagproject/ts-package-shared-config/commit/3dc7fd56b15222ca29fa03330a0cd603d62434ee)
 
 ---
 
