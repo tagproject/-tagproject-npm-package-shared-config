@@ -1,6 +1,17 @@
+# Important Changes
+
+## Dependencies
+
+<details>
+<summary>Dev Dependencies</summary>
+
+- Bumped **[changelog-guru](https://www.npmjs.com/package/changelog-guru/v/2.3.0)** from `2.0.16` to `2.3.0`
+
+</details>
+
 # :bug: Bug Fixes
 
-- Remove `codecov.yml` from .gitignore [`3dc7fd5`](https://github.com/tagproject/ts-package-shared-config/commit/3dc7fd56b15222ca29fa03330a0cd603d62434ee)
+- Add GITHUB_TOKEN to Publish package job in release action [`50bca90`](https://github.com/tagproject/ts-package-shared-config/commit/50bca90e305cd2234b93b85db94a806f72654468)
 
 ---
 
