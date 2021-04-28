@@ -1,6 +1,6 @@
 {
   "name": "@tagproject/ts-package-shared-config",
-  "version": "1.5.6",
+  "version": "1.5.7",
   "description": "Standard shared config for tagproject packages with Node.js and TypeScript",
   "homepage": "https://github.com/tagproject/ts-package-shared-config#readme",
   "license": "MIT",
@@ -32,7 +32,7 @@
     "release": "npm run build && changelog generate --bump"
   },
   "dependencies": {
-    "standard-shared-config": "^2.0.1"
+    "standard-shared-config": "^2.2.0"
   },
   "devDependencies": {
     "changelog-guru": "^2.3.0",
