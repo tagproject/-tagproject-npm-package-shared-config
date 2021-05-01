@@ -36,6 +36,7 @@ ignorePatterns:
     "logs",
     "node_modules/",
     "pids",
+    "tsconfig.eslint.json",
     "tsconfig.json",
     "tsconfig.tsbuildinfo",
     "yarn-debug.log*",
@@ -69,12 +70,14 @@ ignorePatterns:
     "media/",
     "node_modules/",
     "src/",
+    "tsconfig.eslint.json",
     "tsconfig.json",
     "typedoc.json"
   ]
   ".eslintignore": [
     "*.gql",
     "*.js",
+    "/*.cjs",
     "__generated__",
     "lib"
   ]
