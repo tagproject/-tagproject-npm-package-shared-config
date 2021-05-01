@@ -1,24 +1,6 @@
-# Important Changes
+# :bug: Bug Fixes
 
-## Dependencies
-
-<details>
-<summary>Dependencies</summary>
-
-- Bumped **[standard-shared-config](https://www.npmjs.com/package/standard-shared-config/v/2.2.2)** from `2.2.1` to `2.2.2`
-
-</details>
-
-<details>
-<summary>Dev Dependencies</summary>
-
-- Bumped **[changelog-guru](https://www.npmjs.com/package/changelog-guru/v/2.3.1)** from `2.3.0` to `2.3.1`
-
-</details>
-
-# :fire: Improvements
-
-- Update configs for ES6 modules [`139c73b`](https://github.com/tagproject/ts-package-shared-config/commit/139c73b12bda6c914de887724ba86f238e7db93e)
+- Add babel & eslint cjs configs to gitignore [`9f16007`](https://github.com/tagproject/ts-package-shared-config/commit/9f160074a3e5d8f72afee3161b5f9602a1045792)
 
 ---
 
