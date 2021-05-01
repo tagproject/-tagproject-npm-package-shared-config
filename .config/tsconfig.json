@@ -1,10 +1,11 @@
 {
   "compilerOptions": {
-    "target": "ES2020",
-    "module": "CommonJS",
+    "target": "esnext",
+    "module": "esnext",
     "moduleResolution": "node",
     "outDir": "lib",
     "newLine": "lf",
+    "allowSyntheticDefaultImports": true,
     "allowUnreachableCode": false,
     "declaration": true,
     "esModuleInterop": true,
@@ -18,5 +19,7 @@
     "removeComments": true,
     "resolveJsonModule": true,
     "strict": true
-  }
+  },
+  "exclude": ["node_modules", "**/*.test.ts", "**/*.mock.ts"],
+  "include": ["src/**/*"]
 }

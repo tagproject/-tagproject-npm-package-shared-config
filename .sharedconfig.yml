@@ -36,6 +36,7 @@ ignorePatterns:
     "logs",
     "node_modules/",
     "pids",
+    "tsconfig.eslint.json",
     "tsconfig.json",
     "tsconfig.tsbuildinfo",
     "yarn-debug.log*",
@@ -69,12 +70,14 @@ ignorePatterns:
     "media/",
     "node_modules/",
     "src/",
+    "tsconfig.eslint.json",
     "tsconfig.json",
     "typedoc.json"
   ]
   ".eslintignore": [
     "*.gql",
     "*.js",
+    "/*.cjs",
     "__generated__",
     "lib"
   ]
@@ -94,7 +97,7 @@ scripts:
   "check:lint": "rimraf coverage && eslint \"src/**\" --ext .ts"
   "check:spell": "cspell -c .vscode/cspell.json --no-summary \"README.md\" \"src/**/*.ts\""
   "check": "npm-run-all check:*"
-  "test:jest": "jest"
+  "test:jest": "node --harmony node_modules/.bin/jest"
   "test": "npm-run-all test:*"
   "generate:changelog": "changelog generate --bump"
   "generate:docs": "rimraf docs/api && typedoc"
