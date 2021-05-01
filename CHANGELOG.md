@@ -1,6 +1,10 @@
 # :bug: Bug Fixes
 
-- Add babel & eslint cjs configs to gitignore [`9f16007`](https://github.com/tagproject/ts-package-shared-config/commit/9f160074a3e5d8f72afee3161b5f9602a1045792)
+- Fix PR labeler for forks [`29cabb5`](https://github.com/tagproject/ts-package-shared-config/commit/29cabb538c80873904805435b8dd76224035f90e)
+
+# :memo: Internal changes
+
+- Fix PR labeler for forks [`c4aab1b`](https://github.com/tagproject/ts-package-shared-config/commit/c4aab1b73248de23dfe25c0f8fd3a0a1664f81f7)
 
 ---
 
