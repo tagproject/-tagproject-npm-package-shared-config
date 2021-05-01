@@ -75,13 +75,13 @@ module.exports = [
   },
   {
     "path": ".vscode/cspell.json",
-    "hash": "6cf404c8e41806a937f4aea7ff3abeaebdc17bc109a25b24abfb6f606f6e2bb1",
+    "hash": "92f9b3d5eb95f912d954b0bdae7ecb18eb0e4fc686182ded5195b74820496671",
     "merge": [
       "words"
     ],
     "executable": false,
     "type": "json",
-    "content": "{\n  \"language\": \"en\",\n  \"words\": [\"dependabot\"]\n}\n"
+    "content": "{\n  \"language\": \"en\",\n  \"words\": [\n    \"codecov\",\n    \"dependabot\",\n    \"ghinfo\",\n    \"keindev\",\n    \"mediainfo\",\n    \"npmignore\",\n    \"opensource\",\n    \"tagproject\",\n    \"tasktree\"\n  ]\n}\n"
   },
   {
     "path": ".vscode/launch.json",
@@ -111,11 +111,11 @@ module.exports = [
   },
   {
     "path": ".eslintrc",
-    "hash": "9b580eb495dbf611d09e9a2a4e527fd116aa44729c9dc28088c90245bb05c7dd",
+    "hash": "abe871bfd4070432368b18e0b2bf09fe5433b577d07abe97a07366316e6ccb23",
     "merge": false,
     "executable": false,
     "type": "text",
-    "content": "{\n  \"root\": true,\n  \"env\": {\n    \"node\": true,\n    \"commonjs\": true\n  },\n  \"parser\": \"@typescript-eslint/parser\",\n  \"parserOptions\": {\n    \"project\": \"./tsconfig.json\",\n    \"tsconfigRootDir\": \".\"\n  },\n  \"extends\": [\n    \"eslint:recommended\",\n    \"plugin:node/recommended\",\n    \"plugin:@typescript-eslint/recommended\",\n    \"plugin:promise/recommended\",\n    \"plugin:jest/recommended\",\n    \"prettier\"\n  ],\n  \"plugins\": [\"@typescript-eslint\", \"optimize-regex\", \"jest\"],\n  \"rules\": {\n    \"@typescript-eslint/brace-style\": [\"error\", \"1tbs\"],\n    \"@typescript-eslint/explicit-function-return-type\": [\"error\", { \"allowExpressions\": true }],\n    \"@typescript-eslint/func-call-spacing\": [\"error\", \"never\"],\n    \"@typescript-eslint/indent\": [\"error\", 2, { \"SwitchCase\": 1 }],\n    \"@typescript-eslint/interface-name-prefix\": \"off\",\n    \"@typescript-eslint/member-delimiter-style\": [\"error\", { \"multiline\": { \"delimiter\": \"semi\" } }],\n    \"@typescript-eslint/member-ordering\": \"error\",\n    \"@typescript-eslint/naming-convention\": [\n      \"error\",\n      { \"selector\": \"interface\", \"format\": [\"PascalCase\"], \"custom\": { \"regex\": \"^I[A-Z]\", \"match\": true } }\n    ],\n    \"@typescript-eslint/no-magic-numbers\": [\n      \"error\",\n      {\n        \"ignoreNumericLiteralTypes\": true,\n        \"ignoreEnums\": true,\n        \"enforceConst\": true,\n        \"ignoreReadonlyClassProperties\": true,\n        \"ignoreArrayIndexes\": true,\n        \"ignoreDefaultValues\": true,\n        \"ignore\": [0, 1, 2, 8, 10, 16]\n      }\n    ],\n    \"@typescript-eslint/no-parameter-properties\": \"error\",\n    \"@typescript-eslint/no-shadow\": \"error\",\n    \"@typescript-eslint/no-unnecessary-type-arguments\": \"warn\",\n    \"@typescript-eslint/no-unused-vars\": [\"error\", { \"argsIgnorePattern\": \"^_\", \"varsIgnorePattern\": \"^_$\" }],\n    \"@typescript-eslint/no-useless-constructor\": \"error\",\n    \"@typescript-eslint/prefer-for-of\": \"warn\",\n    \"@typescript-eslint/prefer-function-type\": \"warn\",\n    \"@typescript-eslint/prefer-readonly\": \"warn\",\n    \"@typescript-eslint/semi\": [\"error\"],\n    \"@typescript-eslint/unbound-method\": \"off\",\n    \"array-bracket-newline\": [\"error\", { \"multiline\": true }],\n    \"arrow-body-style\": [\"error\", \"as-needed\"],\n    \"arrow-parens\": [\"error\", \"as-needed\"],\n    \"arrow-spacing\": \"error\",\n    \"block-scoped-var\": \"error\",\n    \"curly\": [\"error\", \"multi-line\"],\n    \"eol-last\": \"error\",\n    \"eqeqeq\": \"error\",\n    \"generator-star-spacing\": [\"error\", \"before\"],\n    \"import/extensions\": \"off\",\n    \"import/prefer-default-export\": \"off\",\n    \"indent\": \"off\",\n    \"key-spacing\": \"error\",\n    \"keyword-spacing\": \"error\",\n    \"lines-between-class-members\": \"off\",\n    \"max-classes-per-file\": [\"error\", 1],\n    \"max-len\": [\"error\", { \"code\": 120, \"ignoreComments\": true }],\n    \"max-lines-per-function\": [\"error\", { \"max\": 40 }],\n    \"new-parens\": \"error\",\n    \"no-alert\": \"warn\",\n    \"no-bitwise\": \"off\",\n    \"no-confusing-arrow\": [\"error\", { \"allowParens\": true }],\n    \"no-console\": \"warn\",\n    \"no-dupe-class-members\": \"off\",\n    \"no-else-return\": [\"error\", { \"allowElseIf\": false }],\n    \"no-labels\": \"error\",\n    \"no-lone-blocks\": \"error\",\n    \"no-magic-numbers\": \"off\",\n    \"no-multi-spaces\": \"error\",\n    \"no-multiple-empty-lines\": \"error\",\n    \"no-nested-ternary\": \"error\",\n    \"no-new\": \"error\",\n    \"no-new-func\": \"error\",\n    \"no-new-object\": \"error\",\n    \"no-new-wrappers\": \"error\",\n    \"no-plusplus\": \"off\",\n    \"no-return-await\": \"error\",\n    \"no-self-compare\": \"error\",\n    \"no-sequences\": \"error\",\n    \"no-shadow\": \"off\",\n    \"no-tabs\": \"error\",\n    \"no-template-curly-in-string\": \"error\",\n    \"no-throw-literal\": \"error\",\n    \"no-trailing-spaces\": \"error\",\n    \"no-underscore-dangle\": [\"error\", { \"allowAfterThis\": true }],\n    \"no-unneeded-ternary\": \"error\",\n    \"no-unused-expressions\": \"error\",\n    \"no-useless-call\": \"error\",\n    \"no-useless-computed-key\": \"error\",\n    \"no-useless-concat\": \"error\",\n    \"no-useless-rename\": \"error\",\n    \"no-useless-return\": \"error\",\n    \"no-var\": \"error\",\n    \"no-whitespace-before-property\": \"error\",\n    \"node/no-empty-function\": \"off\",\n    \"node/no-missing-import\": \"off\",\n    \"node/no-missing-require\": \"off\",\n    \"node/no-unsupported-features/es-syntax\": \"off\",\n    \"node/shebang\": \"off\",\n    \"object-curly-newline\": \"error\",\n    \"object-curly-spacing\": [\"error\", \"always\"],\n    \"object-shorthand\": [\"error\", \"always\"],\n    \"optimize-regex/optimize-regex\": \"warn\",\n    \"padding-line-between-statements\": [\n      \"error\",\n      { \"blankLine\": \"always\", \"prev\": \"*\", \"next\": \"return\" },\n      { \"blankLine\": \"always\", \"prev\": [\"const\", \"let\", \"var\"], \"next\": \"*\" },\n      { \"blankLine\": \"any\", \"prev\": [\"const\", \"let\", \"var\"], \"next\": [\"const\", \"let\", \"var\"] },\n      { \"blankLine\": \"always\", \"prev\": \"*\", \"next\": \"if\" },\n      { \"blankLine\": \"any\", \"prev\": \"if\", \"next\": \"if\" }\n    ],\n    \"prefer-arrow-callback\": \"error\",\n    \"prefer-const\": \"error\",\n    \"prefer-destructuring\": \"error\",\n    \"prefer-promise-reject-errors\": \"error\",\n    \"promise/prefer-await-to-then\": \"error\",\n    \"quotes\": [\"warn\", \"single\", { \"avoidEscape\": true }],\n    \"radix\": \"error\",\n    \"require-atomic-updates\": \"off\",\n    \"require-await\": \"error\",\n    \"rest-spread-spacing\": [\"error\", \"never\"],\n    \"semi\": \"off\",\n    \"semi-spacing\": \"error\",\n    \"space-before-blocks\": \"error\",\n    \"space-before-function-paren\": [\"error\", { \"anonymous\": \"always\", \"named\": \"never\", \"asyncArrow\": \"always\" }],\n    \"space-in-parens\": \"error\",\n    \"space-infix-ops\": \"error\",\n    \"space-unary-ops\": \"error\",\n    \"spaced-comment\": [\"error\", \"always\"],\n    \"switch-colon-spacing\": \"error\",\n    \"template-curly-spacing\": \"error\"\n  },\n  \"overrides\": [\n    {\n      \"files\": [\"*.test.ts\", \"*.mock.ts\"],\n      \"rules\": {\n        \"@typescript-eslint/no-explicit-any\": \"off\",\n        \"@typescript-eslint/no-magic-numbers\": \"off\",\n        \"max-lines-per-function\": [\"error\", { \"max\": 200 }],\n        \"no-underscore-dangle\": \"off\"\n      }\n    }\n  ],\n  \"settings\": {\n    \"import/resolver\": {\n      \"node\": {\n        \"paths\": [\"src\"],\n        \"extensions\": [\".ts\", \".d.ts\"]\n      }\n    }\n  }\n}\n"
+    "content": "{\n  \"root\": true,\n  \"env\": {\n    \"node\": true,\n    \"commonjs\": true\n  },\n  \"parser\": \"@typescript-eslint/parser\",\n  \"parserOptions\": {\n    \"project\": \"./tsconfig.eslint.json\",\n    \"tsconfigRootDir\": \".\"\n  },\n  \"extends\": [\n    \"eslint:recommended\",\n    \"plugin:node/recommended\",\n    \"plugin:@typescript-eslint/recommended\",\n    \"plugin:promise/recommended\",\n    \"plugin:jest/recommended\",\n    \"prettier\"\n  ],\n  \"plugins\": [\"@typescript-eslint\", \"optimize-regex\", \"jest\"],\n  \"rules\": {\n    \"@typescript-eslint/brace-style\": [\"error\", \"1tbs\"],\n    \"@typescript-eslint/explicit-function-return-type\": [\"error\", { \"allowExpressions\": true }],\n    \"@typescript-eslint/func-call-spacing\": [\"error\", \"never\"],\n    \"@typescript-eslint/indent\": [\"error\", 2, { \"SwitchCase\": 1 }],\n    \"@typescript-eslint/interface-name-prefix\": \"off\",\n    \"@typescript-eslint/member-delimiter-style\": [\"error\", { \"multiline\": { \"delimiter\": \"semi\" } }],\n    \"@typescript-eslint/member-ordering\": \"error\",\n    \"@typescript-eslint/naming-convention\": [\n      \"error\",\n      { \"selector\": \"interface\", \"format\": [\"PascalCase\"], \"custom\": { \"regex\": \"^I[A-Z]\", \"match\": true } }\n    ],\n    \"@typescript-eslint/no-magic-numbers\": [\n      \"error\",\n      {\n        \"ignoreNumericLiteralTypes\": true,\n        \"ignoreEnums\": true,\n        \"enforceConst\": true,\n        \"ignoreReadonlyClassProperties\": true,\n        \"ignoreArrayIndexes\": true,\n        \"ignoreDefaultValues\": true,\n        \"ignore\": [0, 1, 2, 8, 10, 16]\n      }\n    ],\n    \"@typescript-eslint/no-parameter-properties\": \"error\",\n    \"@typescript-eslint/no-shadow\": \"error\",\n    \"@typescript-eslint/no-unnecessary-type-arguments\": \"warn\",\n    \"@typescript-eslint/no-unused-vars\": [\"error\", { \"argsIgnorePattern\": \"^_\", \"varsIgnorePattern\": \"^_$\" }],\n    \"@typescript-eslint/no-useless-constructor\": \"error\",\n    \"@typescript-eslint/prefer-for-of\": \"warn\",\n    \"@typescript-eslint/prefer-function-type\": \"warn\",\n    \"@typescript-eslint/prefer-readonly\": \"warn\",\n    \"@typescript-eslint/semi\": [\"error\"],\n    \"@typescript-eslint/unbound-method\": \"off\",\n    \"array-bracket-newline\": [\"error\", { \"multiline\": true }],\n    \"arrow-body-style\": [\"error\", \"as-needed\"],\n    \"arrow-parens\": [\"error\", \"as-needed\"],\n    \"arrow-spacing\": \"error\",\n    \"block-scoped-var\": \"error\",\n    \"curly\": [\"error\", \"multi-line\"],\n    \"eol-last\": \"error\",\n    \"eqeqeq\": \"error\",\n    \"generator-star-spacing\": [\"error\", \"before\"],\n    \"import/extensions\": \"off\",\n    \"import/prefer-default-export\": \"off\",\n    \"indent\": \"off\",\n    \"key-spacing\": \"error\",\n    \"keyword-spacing\": \"error\",\n    \"lines-between-class-members\": \"off\",\n    \"max-classes-per-file\": [\"error\", 1],\n    \"max-len\": [\"error\", { \"code\": 120, \"ignoreComments\": true }],\n    \"max-lines-per-function\": [\"error\", { \"max\": 40 }],\n    \"new-parens\": \"error\",\n    \"no-alert\": \"warn\",\n    \"no-bitwise\": \"off\",\n    \"no-confusing-arrow\": [\"error\", { \"allowParens\": true }],\n    \"no-console\": \"warn\",\n    \"no-dupe-class-members\": \"off\",\n    \"no-else-return\": [\"error\", { \"allowElseIf\": false }],\n    \"no-labels\": \"error\",\n    \"no-lone-blocks\": \"error\",\n    \"no-magic-numbers\": \"off\",\n    \"no-multi-spaces\": \"error\",\n    \"no-multiple-empty-lines\": \"error\",\n    \"no-nested-ternary\": \"error\",\n    \"no-new\": \"error\",\n    \"no-new-func\": \"error\",\n    \"no-new-object\": \"error\",\n    \"no-new-wrappers\": \"error\",\n    \"no-plusplus\": \"off\",\n    \"no-return-await\": \"error\",\n    \"no-self-compare\": \"error\",\n    \"no-sequences\": \"error\",\n    \"no-shadow\": \"off\",\n    \"no-tabs\": \"error\",\n    \"no-template-curly-in-string\": \"error\",\n    \"no-throw-literal\": \"error\",\n    \"no-trailing-spaces\": \"error\",\n    \"no-underscore-dangle\": [\"error\", { \"allowAfterThis\": true }],\n    \"no-unneeded-ternary\": \"error\",\n    \"no-unused-expressions\": \"error\",\n    \"no-useless-call\": \"error\",\n    \"no-useless-computed-key\": \"error\",\n    \"no-useless-concat\": \"error\",\n    \"no-useless-rename\": \"error\",\n    \"no-useless-return\": \"error\",\n    \"no-var\": \"error\",\n    \"no-whitespace-before-property\": \"error\",\n    \"node/no-empty-function\": \"off\",\n    \"node/no-missing-import\": \"off\",\n    \"node/no-missing-require\": \"off\",\n    \"node/no-unsupported-features/es-syntax\": \"off\",\n    \"node/shebang\": \"off\",\n    \"object-curly-newline\": \"error\",\n    \"object-curly-spacing\": [\"error\", \"always\"],\n    \"object-shorthand\": [\"error\", \"always\"],\n    \"optimize-regex/optimize-regex\": \"warn\",\n    \"padding-line-between-statements\": [\n      \"error\",\n      { \"blankLine\": \"always\", \"prev\": \"*\", \"next\": \"return\" },\n      { \"blankLine\": \"always\", \"prev\": [\"const\", \"let\", \"var\"], \"next\": \"*\" },\n      { \"blankLine\": \"any\", \"prev\": [\"const\", \"let\", \"var\"], \"next\": [\"const\", \"let\", \"var\"] },\n      { \"blankLine\": \"always\", \"prev\": \"*\", \"next\": \"if\" },\n      { \"blankLine\": \"any\", \"prev\": \"if\", \"next\": \"if\" }\n    ],\n    \"prefer-arrow-callback\": \"error\",\n    \"prefer-const\": \"error\",\n    \"prefer-destructuring\": \"error\",\n    \"prefer-promise-reject-errors\": \"error\",\n    \"promise/prefer-await-to-then\": \"error\",\n    \"quotes\": [\"warn\", \"single\", { \"avoidEscape\": true }],\n    \"radix\": \"error\",\n    \"require-atomic-updates\": \"off\",\n    \"require-await\": \"error\",\n    \"rest-spread-spacing\": [\"error\", \"never\"],\n    \"semi\": \"off\",\n    \"semi-spacing\": \"error\",\n    \"space-before-blocks\": \"error\",\n    \"space-before-function-paren\": [\"error\", { \"anonymous\": \"always\", \"named\": \"never\", \"asyncArrow\": \"always\" }],\n    \"space-in-parens\": \"error\",\n    \"space-infix-ops\": \"error\",\n    \"space-unary-ops\": \"error\",\n    \"spaced-comment\": [\"error\", \"always\"],\n    \"switch-colon-spacing\": \"error\",\n    \"template-curly-spacing\": \"error\"\n  },\n  \"overrides\": [\n    {\n      \"files\": [\"*.test.ts\", \"*.mock.ts\"],\n      \"rules\": {\n        \"@typescript-eslint/no-explicit-any\": \"off\",\n        \"@typescript-eslint/no-magic-numbers\": \"off\",\n        \"max-lines-per-function\": [\"error\", { \"max\": 200 }],\n        \"no-underscore-dangle\": \"off\"\n      }\n    }\n  ],\n  \"settings\": {\n    \"import/resolver\": {\n      \"node\": {\n        \"paths\": [\"src\"],\n        \"extensions\": [\".ts\", \".d.ts\"]\n      }\n    }\n  }\n}\n"
   },
   {
     "path": ".prettierrc",
@@ -126,7 +126,7 @@ module.exports = [
     "content": "{\n  \"printWidth\": 120,\n  \"singleQuote\": true,\n  \"tabWidth\": 2,\n  \"endOfLine\": \"lf\",\n  \"trailingComma\": \"es5\",\n  \"arrowParens\": \"avoid\"\n}\n"
   },
   {
-    "path": "babel.config.js",
+    "path": "babel.config.cjs",
     "hash": "6f04f141e34d7d5adb472a77ca6831887b5a0c019ae1a60d1f4f8a0213b42470",
     "merge": false,
     "executable": false,
@@ -142,12 +142,12 @@ module.exports = [
     "content": "codecov:\n  max_report_age: off\ncoverage:\n  precision: 2\n  round: down\n  status:\n    project:\n      default:\n       enabled: no\n       threshold: 0.2\n       if_not_found: success\n    patch:\n      default:\n        enabled: no\n        if_not_found: success\n    changes:\n      default:\n        enabled: no\n        if_not_found: success\n"
   },
   {
-    "path": "jest.config.js",
-    "hash": "a9c1413be0e309f83b4cb0f94f5b5365071466a3a4f6beb3bf3b7c5726251420",
+    "path": "jest.config.cjs",
+    "hash": "ddb3ac1872d35d1bf7b06a32cee147d3bfc557233c4c12d510961d13694a3171",
     "merge": false,
     "executable": false,
     "type": "text",
-    "content": "const modules = require('./jest.modules');\n\nmodule.exports = {\n  preset: 'ts-jest',\n  testEnvironment: 'node',\n  collectCoverage: true,\n  coverageReporters: ['text-summary', 'lcov'],\n  testRegex: '(/__tests__/.*|(\\\\.|/)(test))\\\\.(tsx?)$',\n  moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json', 'node'],\n  testPathIgnorePatterns: ['/lib/', '/node_modules/'],\n  transform: {\n    '^.+\\\\.(ts|tsx)?$': 'ts-jest',\n    '^.+\\\\.(js|jsx)$': 'babel-jest',\n  },\n  transformIgnorePatterns: [`/node_modules/(?!${modules.es6.join('|')})`],\n};\n"
+    "content": "const modules = require('./jest.modules');\n\nmodule.exports = {\n  preset: 'ts-jest',\n  testEnvironment: 'node',\n  collectCoverage: true,\n  coverageReporters: ['text-summary', 'lcov'],\n  testRegex: '(/__tests__/.*|(\\\\.|/)(test))\\\\.(tsx?)$',\n  moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json'],\n  testPathIgnorePatterns: ['<rootDir>/lib/', '<rootDir>/node_modules/'],\n  transform: {\n    '^.+\\\\.(ts|tsx)?$': 'ts-jest',\n    '^.+\\\\.(js|jsx)$': 'babel-jest',\n  },\n  transformIgnorePatterns: [`/node_modules/(?!${modules.es6.join('|')})`],\n};\n"
   },
   {
     "path": "jest.modules.json",
@@ -160,12 +160,20 @@ module.exports = [
     "content": "{ \"es6\": [] }\n"
   },
   {
-    "path": "tsconfig.json",
-    "hash": "8722fcb6f0603751bf133d2dd5cc0699b856011509e8d32370a59455b5018dd8",
+    "path": "tsconfig.eslint.json",
+    "hash": "4eb098ac49a278db14cdaf2c506ea93e69355bb3e3c8f99c5026d827c4fbf9d0",
     "merge": false,
     "executable": false,
     "type": "json",
-    "content": "{\n  \"compilerOptions\": {\n    \"target\": \"ES2020\",\n    \"module\": \"CommonJS\",\n    \"moduleResolution\": \"node\",\n    \"outDir\": \"lib\",\n    \"newLine\": \"lf\",\n    \"allowUnreachableCode\": false,\n    \"declaration\": true,\n    \"esModuleInterop\": true,\n    \"incremental\": false,\n    \"noFallthroughCasesInSwitch\": true,\n    \"noImplicitReturns\": true,\n    \"noUncheckedIndexedAccess\": true,\n    \"noUnusedLocals\": true,\n    \"noUnusedParameters\": true,\n    \"preserveConstEnums\": true,\n    \"removeComments\": true,\n    \"resolveJsonModule\": true,\n    \"strict\": true\n  }\n}\n"
+    "content": "{\n  \"extends\": \"./tsconfig.json\",\n  \"exclude\": [\"node_modules\"],\n  \"include\": [\"src/**/*\"]\n}\n"
+  },
+  {
+    "path": "tsconfig.json",
+    "hash": "b2ce7d0bce9dc2ea8413fc9da0523408aafb8f3f7f0727f5735895668c271b4c",
+    "merge": false,
+    "executable": false,
+    "type": "json",
+    "content": "{\n  \"compilerOptions\": {\n    \"target\": \"esnext\",\n    \"module\": \"esnext\",\n    \"moduleResolution\": \"node\",\n    \"outDir\": \"lib\",\n    \"newLine\": \"lf\",\n    \"allowSyntheticDefaultImports\": true,\n    \"allowUnreachableCode\": false,\n    \"declaration\": true,\n    \"esModuleInterop\": true,\n    \"incremental\": false,\n    \"noFallthroughCasesInSwitch\": true,\n    \"noImplicitReturns\": true,\n    \"noUncheckedIndexedAccess\": true,\n    \"noUnusedLocals\": true,\n    \"noUnusedParameters\": true,\n    \"preserveConstEnums\": true,\n    \"removeComments\": true,\n    \"resolveJsonModule\": true,\n    \"strict\": true\n  },\n  \"exclude\": [\"node_modules\", \"**/*.test.ts\", \"**/*.mock.ts\"],\n  \"include\": [\"src/**/*\"]\n}\n"
   },
   {
     "path": "typedoc.json",
@@ -179,27 +187,27 @@ module.exports = [
   },
   {
     "path": ".gitignore",
-    "hash": "74e7713ca61a61080016745506874a304fa368a8f4e0fe5659d3e2be3bde23c9",
+    "hash": "408c5a7121ac0da729e52c09fddd39a9dadfdbfbe7cb5dba7e70db52d93f0e38",
     "merge": true,
     "executable": false,
     "type": "glob",
-    "content": "*.log\n*.pid\n*.pid.lock\n*.seed\n*.tgz\n.editorconfig\n.env\n.eslintcache\n.eslintignore\n.eslintrc\n.prettierignore\n.prettierrc\n.yarn-integrity\n/.husky/\n/.vscode/\n/jest.modules.json\n/typedoc.json\nbabel.config.js\ncoverage\njest.config.js\nlib\nlogs\nnode_modules/\npids\ntsconfig.json\ntsconfig.tsbuildinfo\nyarn-debug.log*\nyarn-error.log*"
+    "content": "*.log\n*.pid\n*.pid.lock\n*.seed\n*.tgz\n.editorconfig\n.env\n.eslintcache\n.eslintignore\n.eslintrc\n.prettierignore\n.prettierrc\n.yarn-integrity\n/.husky/\n/.vscode/\n/jest.modules.json\n/typedoc.json\nbabel.config.js\ncoverage\njest.config.js\nlib\nlogs\nnode_modules/\npids\ntsconfig.eslint.json\ntsconfig.json\ntsconfig.tsbuildinfo\nyarn-debug.log*\nyarn-error.log*"
   },
   {
     "path": ".npmignore",
-    "hash": "62d14a0324a14ad3ffe14938471665ee331f68d71894ec070314e6cb75d1029d",
+    "hash": "f17f00c6343285c0016a2a821cdea88f76a0a3873e373a7b2aff40f6f1b2cc1b",
     "merge": true,
     "executable": false,
     "type": "glob",
-    "content": "**/__mocks__/**\n**/__tests__/**\n.changelogrc.yml\n.config\n.editorconfig\n.env\n.eslintignore\n.eslintrc\n.ghinfo\n.gitattributes\n.github\n.husky\n.prettierignore\n.prettierrc\n.vscode\nCODE_OF_CONDUCT.md\nbabel.config.js\ncodecov.yml\ncodegen.yml\ncoverage/\ndocs/\nexample/\njest.config.js\njest.modules.json\nmedia/\nnode_modules/\nsrc/\ntsconfig.json\ntypedoc.json"
+    "content": "**/__mocks__/**\n**/__tests__/**\n.changelogrc.yml\n.config\n.editorconfig\n.env\n.eslintignore\n.eslintrc\n.ghinfo\n.gitattributes\n.github\n.husky\n.prettierignore\n.prettierrc\n.vscode\nCODE_OF_CONDUCT.md\nbabel.config.js\ncodecov.yml\ncodegen.yml\ncoverage/\ndocs/\nexample/\njest.config.js\njest.modules.json\nmedia/\nnode_modules/\nsrc/\ntsconfig.eslint.json\ntsconfig.json\ntypedoc.json"
   },
   {
     "path": ".eslintignore",
-    "hash": "27d71a23ff5de00bce5f77320d1f0e4dfc32a9d708dcc20ab80b0a592317262e",
+    "hash": "687bd74e57af0bef53ed592d29fdedc6db517619021562d3f41fc0a0a9c07995",
     "merge": false,
     "executable": false,
     "type": "glob",
-    "content": "*.gql\n*.js\n__generated__\nlib"
+    "content": "*.gql\n*.js\n/*.cjs\n__generated__\nlib"
   },
   {
     "path": ".prettierignore",
