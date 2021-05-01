@@ -27,7 +27,7 @@ module.exports = [
   ],
   [
     "test:jest",
-    "jest"
+    "node --harmony node_modules/.bin/jest"
   ],
   [
     "test",

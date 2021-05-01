@@ -97,7 +97,7 @@ scripts:
   "check:lint": "rimraf coverage && eslint \"src/**\" --ext .ts"
   "check:spell": "cspell -c .vscode/cspell.json --no-summary \"README.md\" \"src/**/*.ts\""
   "check": "npm-run-all check:*"
-  "test:jest": "jest"
+  "test:jest": "node --harmony node_modules/.bin/jest"
   "test": "npm-run-all test:*"
   "generate:changelog": "changelog generate --bump"
   "generate:docs": "rimraf docs/api && typedoc"
