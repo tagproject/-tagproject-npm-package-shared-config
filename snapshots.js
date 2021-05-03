@@ -177,11 +177,11 @@ module.exports = [
   },
   {
     "path": "tsconfig.json",
-    "hash": "b2ce7d0bce9dc2ea8413fc9da0523408aafb8f3f7f0727f5735895668c271b4c",
+    "hash": "5f78fab681fdc44bad926fba37c7d18f6f9249cc1029c9b2ed1ec7f568518657",
     "merge": false,
     "executable": false,
     "type": "json",
-    "content": "{\n  \"compilerOptions\": {\n    \"target\": \"esnext\",\n    \"module\": \"esnext\",\n    \"moduleResolution\": \"node\",\n    \"outDir\": \"lib\",\n    \"newLine\": \"lf\",\n    \"allowSyntheticDefaultImports\": true,\n    \"allowUnreachableCode\": false,\n    \"declaration\": true,\n    \"esModuleInterop\": true,\n    \"incremental\": false,\n    \"noFallthroughCasesInSwitch\": true,\n    \"noImplicitReturns\": true,\n    \"noUncheckedIndexedAccess\": true,\n    \"noUnusedLocals\": true,\n    \"noUnusedParameters\": true,\n    \"preserveConstEnums\": true,\n    \"removeComments\": true,\n    \"resolveJsonModule\": true,\n    \"strict\": true\n  },\n  \"exclude\": [\"node_modules\", \"**/*.test.ts\", \"**/*.mock.ts\"],\n  \"include\": [\"src/**/*\"]\n}\n"
+    "content": "{\n  \"compilerOptions\": {\n    \"target\": \"esnext\",\n    \"module\": \"esnext\",\n    \"moduleResolution\": \"node\",\n    \"outDir\": \"lib\",\n    \"newLine\": \"lf\",\n    \"allowSyntheticDefaultImports\": true,\n    \"allowUnreachableCode\": false,\n    \"declaration\": true,\n    \"esModuleInterop\": true,\n    \"incremental\": false,\n    \"noFallthroughCasesInSwitch\": true,\n    \"noImplicitReturns\": true,\n    \"noUncheckedIndexedAccess\": true,\n    \"noUnusedLocals\": true,\n    \"noUnusedParameters\": true,\n    \"preserveConstEnums\": true,\n    \"removeComments\": true,\n    \"resolveJsonModule\": true,\n    \"strict\": true\n  },\n  \"exclude\": [\"node_modules\", \"**/*.test.ts\", \"**/*.mock.ts\", \"bin\"],\n  \"include\": [\"src/**/*\"]\n}\n"
   },
   {
     "path": "typedoc.json",
