@@ -135,11 +135,11 @@ module.exports = [
   },
   {
     "path": "babel.config.cjs",
-    "hash": "6f04f141e34d7d5adb472a77ca6831887b5a0c019ae1a60d1f4f8a0213b42470",
+    "hash": "2e191152317f971af64682ef4b9f095fc817a108e38043955f15f10f96711155",
     "merge": false,
     "executable": false,
     "type": "text",
-    "content": "module.exports = {\n  presets: ['@babel/preset-env'],\n  plugins: ['@babel/plugin-transform-runtime'],\n};\n"
+    "content": "module.exports = {\n  presets: [\n    '@babel/preset-env',\n    {\n      targets: {\n        node: 'current',\n      },\n    },\n  ],\n  plugins: ['@babel/plugin-transform-runtime'],\n};\n"
   },
   {
     "path": "codecov.yml",
