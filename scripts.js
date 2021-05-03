@@ -3,7 +3,7 @@
 module.exports = [
   [
     "prepare:config",
-    "ts-package-shared-config"
+    "node --experimental-specifier-resolution=node node_modules/.bin/ts-package-shared-config"
   ],
   [
     "prepare:husky",
@@ -35,7 +35,7 @@ module.exports = [
   ],
   [
     "generate:changelog",
-    "changelog generate --bump"
+    "node --experimental-specifier-resolution=node node_modules/.bin/changelog generate --bump"
   ],
   [
     "generate:docs",
@@ -43,7 +43,7 @@ module.exports = [
   ],
   [
     "generate:ghinfo",
-    "ghinfo generate -d media -t utils"
+    "node --experimental-specifier-resolution=node node_modules/.bin/ghinfo generate -d media -t utils"
   ],
   [
     "generate",

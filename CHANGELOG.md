@@ -1,10 +1,6 @@
 # :bug: Bug Fixes
 
-- Fix PR labeler for forks [`29cabb5`](https://github.com/tagproject/ts-package-shared-config/commit/29cabb538c80873904805435b8dd76224035f90e)
-
-# :memo: Internal changes
-
-- Fix PR labeler for forks [`c4aab1b`](https://github.com/tagproject/ts-package-shared-config/commit/c4aab1b73248de23dfe25c0f8fd3a0a1664f81f7)
+- Add `--experimental-specifier-resolution` flag to scripts [`ecfad57`](https://github.com/tagproject/ts-package-shared-config/commit/ecfad57609ed9724d2dc389d4e7a218478021786)
 
 ---
 
