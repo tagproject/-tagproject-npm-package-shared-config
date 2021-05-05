@@ -1,6 +1,6 @@
-# :wrench: Code Refactoring
+# :bug: Bug Fixes
 
-- Rename check scripts to lint [`69a7c19`](https://github.com/tagproject/ts-package-shared-config/commit/69a7c19eddf3c0ff744ad017ea8ce4abd9909723)
+- Add `allowJs` option to tsconfig for cjs improts [`3ae1911`](https://github.com/tagproject/ts-package-shared-config/commit/3ae1911ce09f81bf1c4cc1ab44cfc87e74c83ef4)
 
 ---
 
