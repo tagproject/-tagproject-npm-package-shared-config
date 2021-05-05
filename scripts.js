@@ -14,16 +14,16 @@ module.exports = [
     "npm-run-all prepare:*"
   ],
   [
-    "check:lint",
+    "lint:eslint",
     "rimraf coverage && eslint \"src/**\" --ext .ts"
   ],
   [
-    "check:spell",
+    "lint:spell",
     "cspell -c .vscode/cspell.json --no-summary \"README.md\" \"src/**/*.ts\""
   ],
   [
-    "check",
-    "npm-run-all check:*"
+    "lint",
+    "npm-run-all lint:*"
   ],
   [
     "test:jest",
@@ -59,6 +59,6 @@ module.exports = [
   ],
   [
     "release",
-    "npm-run-all prepare check test build generate"
+    "npm-run-all prepare lint test build generate"
   ]
 ]
