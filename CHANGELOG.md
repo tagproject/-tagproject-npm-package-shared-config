@@ -1,6 +1,7 @@
 # :bug: Bug Fixes
 
-- Add `--experimental-specifier-resolution` flag to scripts [`ecfad57`](https://github.com/tagproject/ts-package-shared-config/commit/ecfad57609ed9724d2dc389d4e7a218478021786)
+- Add node current target in babel config [`851dce3`](https://github.com/tagproject/ts-package-shared-config/commit/851dce35a3071ae42d5f2598d4bfeebddd93de4d)
+- Fix jest & eslint configs for ESM modules [`c72c5e3`](https://github.com/tagproject/ts-package-shared-config/commit/c72c5e3db9d04d5c8ccfa4f4debfd1bcc6925a12)
 
 ---
 
