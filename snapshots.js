@@ -67,11 +67,11 @@ module.exports = [
   },
   {
     "path": ".husky/commit-msg",
-    "hash": "89bf22012c9e1649731a8e578b92678a771f144f6368b205797d3097c4491870",
+    "hash": "abb0e8d96a2dd825dcee9e8e83e38e2f3c894f37bb80dc3a3de12ef6e3e02d37",
     "merge": true,
     "executable": true,
     "type": "text",
-    "content": "#!/bin/sh\n. \"$(dirname \"$0\")/_/husky.sh\"\n\nnpx --no-install changelog lint --message $1\n"
+    "content": "#!/bin/sh\n. \"$(dirname \"$0\")/_/husky.sh\"\n\nnode --experimental-specifier-resolution=node node_modules/.bin/changelog lint --message $1\n"
   },
   {
     "path": ".husky/pre-commit",
