@@ -51,7 +51,7 @@ module.exports = [
   ],
   [
     "build:ts",
-    "rimraf lib && tsc --extendedDiagnostics"
+    "rimraf lib && tsc --extendedDiagnostics --project tsconfig.build.json"
   ],
   [
     "build",

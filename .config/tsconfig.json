@@ -20,6 +20,6 @@
     "resolveJsonModule": true,
     "strict": true
   },
-  "exclude": ["node_modules", "**/*.test.ts", "**/*.mock.ts", "bin"],
+  "exclude": ["node_modules", "bin"],
   "include": ["src/**/*"]
 }
