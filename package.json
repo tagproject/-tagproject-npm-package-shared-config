@@ -1,6 +1,6 @@
 {
   "name": "@tagproject/ts-package-shared-config",
-  "version": "2.0.8",
+  "version": "3.0.0",
   "description": "Standard shared config for tagproject packages with Node.js and TypeScript",
   "homepage": "https://github.com/tagproject/ts-package-shared-config#readme",
   "license": "MIT",
@@ -15,9 +15,10 @@
     "ts",
     "node"
   ],
+  "type": "module",
   "main": "index.js",
   "bin": {
-    "ts-package-shared-config": "bin/ts-package-shared-config"
+    "ts-package-shared-config": "bin/ts-package-shared-config.js"
   },
   "repository": {
     "type": "git",
@@ -28,17 +29,17 @@
   },
   "scripts": {
     "prepare": "husky install",
-    "build": "shared-config build",
-    "release": "npm run build && changelog generate --bump"
+    "build": "node --experimental-specifier-resolution=node node_modules/.bin/standard-shared-config build",
+    "release": "npm run build && node --experimental-specifier-resolution=node node_modules/.bin/changelog generate --bump"
   },
   "engines": {
     "node": ">=14.0.0"
   },
   "dependencies": {
-    "standard-shared-config": "^2.2.2"
+    "standard-shared-config": "^3.0.2"
   },
   "devDependencies": {
-    "changelog-guru": "^2.3.1",
+    "changelog-guru": "^3.0.1",
     "husky": "^6.0.0"
   }
 }
