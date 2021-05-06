@@ -7,7 +7,6 @@ mergeRules:
   ".vscode/launch.json": [ "configurations" ]
   ".gitignore": true
   ".npmignore": true
-  "jest.modules.json": [ "es6" ]
   "typedoc.json": [ "entryPoints" ]
 
 ignorePatterns:
@@ -27,7 +26,6 @@ ignorePatterns:
     ".yarn-integrity",
     "/.husky/",
     "/.vscode/",
-    "/jest.modules.json",
     "/typedoc.json",
     "babel.config.cjs",
     "coverage",
@@ -66,7 +64,6 @@ ignorePatterns:
     "docs/",
     "example/",
     "jest.config.cjs",
-    "jest.modules.json",
     "media/",
     "node_modules/",
     "src/",
@@ -115,7 +112,7 @@ dependencies:
   - "@typescript-eslint/eslint-plugin": "4.x"
   - "@typescript-eslint/parser": "4.x"
   - "babel-jest": "26.x"
-  - "changelog-guru"
+  - "changelog-guru": "3.x"
   - "cspell"
   - "eslint": "7.x"
   - "eslint-config-prettier": "8.x"
@@ -124,7 +121,7 @@ dependencies:
   - "eslint-plugin-node": "11.x"
   - "eslint-plugin-optimize-regex": "1.x"
   - "eslint-plugin-promise": "5.x"
-  - "ghinfo"
+  - "ghinfo": "2.x"
   - "husky": "6.x"
   - "jest": "26.x"
   - "npm-run-all"
