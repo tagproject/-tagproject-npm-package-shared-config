@@ -185,19 +185,19 @@ export default [
   },
   {
     "path": ".gitignore",
-    "hash": "1251a72e81d23d988a5daafb76767f8d2219ce460a132068b15e2527179ff96f",
+    "hash": "c1641a7d501d53cded7c14a69ef7d247ac4140e9b74ede5428ca7f02e24b31e9",
     "merge": true,
     "executable": false,
     "type": "glob",
-    "content": "*.log\n*.pid\n*.pid.lock\n*.seed\n*.tgz\n.editorconfig\n.env\n.eslintcache\n.eslintignore\n.eslintrc\n.prettierignore\n.prettierrc\n.yarn-integrity\n/.husky/\n/.vscode/\n/jest.modules.json\n/typedoc.json\nbabel.config.cjs\ncoverage\njest.config.cjs\nlib\nlogs\nnode_modules/\npids\ntsconfig.build.json\ntsconfig.json\ntsconfig.tsbuildinfo\nyarn-debug.log*\nyarn-error.log*"
+    "content": "*.log\n*.pid\n*.pid.lock\n*.seed\n*.tgz\n.editorconfig\n.env\n.eslintcache\n.eslintignore\n.eslintrc\n.prettierignore\n.prettierrc\n.yarn-integrity\n/.husky/\n/.vscode/\n/typedoc.json\nbabel.config.cjs\ncoverage\njest.config.cjs\nlib\nlogs\nnode_modules/\npids\ntsconfig.build.json\ntsconfig.json\ntsconfig.tsbuildinfo\nyarn-debug.log*\nyarn-error.log*"
   },
   {
     "path": ".npmignore",
-    "hash": "0876595d6ab6ca959400fe99fb15da215dc1bc8d81f52ca33e50342466093ec0",
+    "hash": "4ee9780e91970aab6cd7e0aff8a97acb7c3694e510345402214754468d2a0560",
     "merge": true,
     "executable": false,
     "type": "glob",
-    "content": "**/__mocks__/**\n**/__tests__/**\n.changelogrc.yml\n.config\n.editorconfig\n.env\n.eslintignore\n.eslintrc\n.ghinfo\n.gitattributes\n.github\n.husky\n.prettierignore\n.prettierrc\n.vscode\nCODE_OF_CONDUCT.md\nbabel.config.cjs\ncodecov.yml\ncodegen.yml\ncoverage/\ndocs/\nexample/\njest.config.cjs\njest.modules.json\nmedia/\nnode_modules/\nsrc/\ntsconfig.build.json\ntsconfig.json\ntypedoc.json"
+    "content": "**/__mocks__/**\n**/__tests__/**\n.changelogrc.yml\n.config\n.editorconfig\n.env\n.eslintignore\n.eslintrc\n.ghinfo\n.gitattributes\n.github\n.husky\n.prettierignore\n.prettierrc\n.vscode\nCODE_OF_CONDUCT.md\nbabel.config.cjs\ncodecov.yml\ncodegen.yml\ncoverage/\ndocs/\nexample/\njest.config.cjs\nmedia/\nnode_modules/\nsrc/\ntsconfig.build.json\ntsconfig.json\ntypedoc.json"
   },
   {
     "path": ".eslintignore",

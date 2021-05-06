@@ -18,3 +18,5 @@ npm install @tagproject/ts-package-shared-config --save-dev
 
 - Add `"prepare:config": "ts-package-shared-config"` to `scripts` property in your `package.json`
 - Run `npm run prepare:config`
+
+> use `node --experimental-specifier-resolution=node node_modules/.bin/ts-package-shared-config` while [ESM](https://nodejs.org/api/esm.html) is in `Experimental`

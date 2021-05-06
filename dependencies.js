@@ -30,7 +30,8 @@ export default [
     "26.x"
   ],
   [
-    "changelog-guru"
+    "changelog-guru",
+    "3.x"
   ],
   [
     "cspell"
@@ -64,7 +65,8 @@ export default [
     "5.x"
   ],
   [
-    "ghinfo"
+    "ghinfo",
+    "2.x"
   ],
   [
     "husky",
