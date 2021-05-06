@@ -1,6 +1,6 @@
 /* eslint-disable */
 /* prettier-ignore */
-module.exports = [
+export default [
   [
     "@babel/plugin-transform-runtime",
     "7.x"

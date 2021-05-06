@@ -1,6 +1,6 @@
 /* eslint-disable */
 /* prettier-ignore */
-module.exports = [
+export default [
   {
     "path": ".github/codeql/codeql-configuration.yml",
     "hash": "b73a6925843a63ac2cc54202ccec74ce7ca7ad44d5313a35162873dbc96e5fa1",

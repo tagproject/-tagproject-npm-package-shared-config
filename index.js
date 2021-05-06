@@ -4,10 +4,9 @@
 /* --------------------------------------------------------------- */
 
 /* eslint-disable */
-const SharedConfig = require('standard-shared-config').default;
-const dependencies = require('./dependencies');
-const scripts = require('./scripts');
-const snapshots = require('./snapshots');
-const config = new SharedConfig();
+import SharedConfig from 'standard-shared-config'
+import dependencies from './dependencies'
+import scripts from './scripts'
+import snapshots from './snapshots'
 
-config.share(".config", { dependencies, scripts, snapshots });
+await new SharedConfig().share(".config", { dependencies, scripts, snapshots });

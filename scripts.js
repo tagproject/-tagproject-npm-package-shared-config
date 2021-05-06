@@ -1,6 +1,6 @@
 /* eslint-disable */
 /* prettier-ignore */
-module.exports = [
+export default [
   [
     "prepare:config",
     "node --experimental-specifier-resolution=node node_modules/.bin/ts-package-shared-config"
