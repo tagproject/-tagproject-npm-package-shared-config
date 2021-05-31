@@ -2,7 +2,9 @@ name: CodeQL scanning
 
 on:
   push:
+    branches: [master]
   pull_request:
+    branches: [master]
   schedule:
     - cron: '0 22 * * 5'
 
@@ -19,7 +21,7 @@ jobs:
     - name: Initialize CodeQL
       uses: github/codeql-action/init@v1
       with:
-        languages: javascript
+        config-file: ./.github/codeql.yml
 
     - name: Autobuild
       uses: github/codeql-action/autobuild@v1
