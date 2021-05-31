@@ -1,6 +1,6 @@
 {
   "name": "@tagproject/ts-package-shared-config",
-  "version": "3.0.2",
+  "version": "3.0.3",
   "description": "Standard shared config for tagproject packages with Node.js and TypeScript",
   "homepage": "https://github.com/tagproject/ts-package-shared-config#readme",
   "license": "MIT",

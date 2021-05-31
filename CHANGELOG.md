@@ -5,6 +5,7 @@
 # :memo: Internal changes
 
 - Fix scan events triggers [`4d008b5`](https://github.com/tagproject/ts-package-shared-config/commit/4d008b56b95c9bfaa3091b11219c4d0238579888)
+- Fix scan paths [`4fd9999`](https://github.com/tagproject/ts-package-shared-config/commit/4fd9999088471e4984fad06acaa5241aff6044ce)
 
 ---
 
