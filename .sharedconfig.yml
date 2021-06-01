@@ -7,7 +7,6 @@ mergeRules:
   ".vscode/launch.json": [ "configurations" ]
   ".gitignore": true
   ".npmignore": true
-  "typedoc.json": [ "entryPoints" ]
 
 ignorePatterns:
   ".gitignore": [
@@ -26,7 +25,6 @@ ignorePatterns:
     ".yarn-integrity",
     "/.husky/",
     "/.vscode/",
-    "/typedoc.json",
     "babel.config.cjs",
     "coverage",
     "jest.config.cjs",
@@ -68,8 +66,7 @@ ignorePatterns:
     "node_modules/",
     "src/",
     "tsconfig.build.json",
-    "tsconfig.json",
-    "typedoc.json"
+    "tsconfig.json"
   ]
   ".eslintignore": [
     "*.gql",
@@ -97,7 +94,6 @@ scripts:
   "test:jest": "node --harmony node_modules/.bin/jest"
   "test": "npm-run-all test:*"
   "generate:changelog": "node --experimental-specifier-resolution=node node_modules/.bin/changelog generate --bump"
-  "generate:docs": "rimraf docs/api && typedoc"
   "generate:ghinfo": "node --experimental-specifier-resolution=node node_modules/.bin/ghinfo generate -d media -t utils"
   "generate": "npm-run-all generate:*"
   "build:ts": "rimraf lib && tsc --extendedDiagnostics --project tsconfig.build.json"
@@ -128,6 +124,4 @@ dependencies:
   - "prettier"
   - "rimraf"
   - "ts-jest": "26.x"
-  - "typedoc": "0.20.x"
-  - "typedoc-plugin-markdown": "3.x"
   - "typescript": "4.x"

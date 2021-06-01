@@ -32,9 +32,6 @@ shared-config:test:
   - .config/jest.config.js
   - .config/jest.modules.json
 
-shared-config:docs:
-  - .config/typedoc.json
-
 shared-config:ts:
   - .config/tsconfig.json
 

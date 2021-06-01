@@ -90,14 +90,6 @@ export default [
     "26.x"
   ],
   [
-    "typedoc",
-    "0.20.x"
-  ],
-  [
-    "typedoc-plugin-markdown",
-    "3.x"
-  ],
-  [
     "typescript",
     "4.x"
   ]

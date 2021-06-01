@@ -174,30 +174,20 @@ export default [
     "content": "{\n  \"compilerOptions\": {\n    \"target\": \"esnext\",\n    \"module\": \"esnext\",\n    \"moduleResolution\": \"node\",\n    \"outDir\": \"lib\",\n    \"newLine\": \"lf\",\n    \"allowSyntheticDefaultImports\": true,\n    \"allowUnreachableCode\": false,\n    \"allowJs\": true,\n    \"declaration\": true,\n    \"esModuleInterop\": true,\n    \"incremental\": false,\n    \"noFallthroughCasesInSwitch\": true,\n    \"noImplicitReturns\": true,\n    \"noUncheckedIndexedAccess\": true,\n    \"noUnusedLocals\": true,\n    \"noUnusedParameters\": true,\n    \"preserveConstEnums\": true,\n    \"removeComments\": true,\n    \"resolveJsonModule\": true,\n    \"strict\": true\n  },\n  \"exclude\": [\"node_modules\", \"bin\"],\n  \"include\": [\"src/**/*\"]\n}\n"
   },
   {
-    "path": "typedoc.json",
-    "hash": "41b25c290106a1b6d0ed30a0df806a6dbd359773e37327de172a407f648afc69",
-    "merge": [
-      "entryPoints"
-    ],
-    "executable": false,
-    "type": "json",
-    "content": "{\n  \"entryPoints\": [],\n  \"out\": \"docs/api\",\n  \"hideGenerator\": true,\n  \"hideBreadcrumbs\": true,\n  \"excludePrivate\": true,\n  \"excludeProtected\": true,\n  \"excludeInternal\": true,\n  \"disableSources\": true,\n  \"readme\": \"none\",\n  \"entryDocument\": \"index.md\",\n  \"exclude\": [\"**/__tests__/**/*\", \"**/__mocks__/**/*\"]\n}\n"
-  },
-  {
     "path": ".gitignore",
-    "hash": "c1641a7d501d53cded7c14a69ef7d247ac4140e9b74ede5428ca7f02e24b31e9",
+    "hash": "122c57de642fc02c306e752df734e7bad71414c430a48810190e742c3117400e",
     "merge": true,
     "executable": false,
     "type": "glob",
-    "content": "*.log\n*.pid\n*.pid.lock\n*.seed\n*.tgz\n.editorconfig\n.env\n.eslintcache\n.eslintignore\n.eslintrc\n.prettierignore\n.prettierrc\n.yarn-integrity\n/.husky/\n/.vscode/\n/typedoc.json\nbabel.config.cjs\ncoverage\njest.config.cjs\nlib\nlogs\nnode_modules/\npids\ntsconfig.build.json\ntsconfig.json\ntsconfig.tsbuildinfo\nyarn-debug.log*\nyarn-error.log*"
+    "content": "*.log\n*.pid\n*.pid.lock\n*.seed\n*.tgz\n.editorconfig\n.env\n.eslintcache\n.eslintignore\n.eslintrc\n.prettierignore\n.prettierrc\n.yarn-integrity\n/.husky/\n/.vscode/\nbabel.config.cjs\ncoverage\njest.config.cjs\nlib\nlogs\nnode_modules/\npids\ntsconfig.build.json\ntsconfig.json\ntsconfig.tsbuildinfo\nyarn-debug.log*\nyarn-error.log*"
   },
   {
     "path": ".npmignore",
-    "hash": "4ee9780e91970aab6cd7e0aff8a97acb7c3694e510345402214754468d2a0560",
+    "hash": "952a7a17ad7d850c2c2929dcdacf36754c6c3f1a02a054d11e802bd9c576f8f2",
     "merge": true,
     "executable": false,
     "type": "glob",
-    "content": "**/__mocks__/**\n**/__tests__/**\n.changelogrc.yml\n.config\n.editorconfig\n.env\n.eslintignore\n.eslintrc\n.ghinfo\n.gitattributes\n.github\n.husky\n.prettierignore\n.prettierrc\n.vscode\nCODE_OF_CONDUCT.md\nbabel.config.cjs\ncodecov.yml\ncodegen.yml\ncoverage/\ndocs/\nexample/\njest.config.cjs\nmedia/\nnode_modules/\nsrc/\ntsconfig.build.json\ntsconfig.json\ntypedoc.json"
+    "content": "**/__mocks__/**\n**/__tests__/**\n.changelogrc.yml\n.config\n.editorconfig\n.env\n.eslintignore\n.eslintrc\n.ghinfo\n.gitattributes\n.github\n.husky\n.prettierignore\n.prettierrc\n.vscode\nCODE_OF_CONDUCT.md\nbabel.config.cjs\ncodecov.yml\ncodegen.yml\ncoverage/\ndocs/\nexample/\njest.config.cjs\nmedia/\nnode_modules/\nsrc/\ntsconfig.build.json\ntsconfig.json"
   },
   {
     "path": ".eslintignore",
