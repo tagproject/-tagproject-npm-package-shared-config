@@ -38,10 +38,6 @@ export default [
     "node --experimental-specifier-resolution=node node_modules/.bin/changelog generate --bump"
   ],
   [
-    "generate:docs",
-    "rimraf docs/api && typedoc"
-  ],
-  [
     "generate:ghinfo",
     "node --experimental-specifier-resolution=node node_modules/.bin/ghinfo generate -d media -t utils"
   ],
