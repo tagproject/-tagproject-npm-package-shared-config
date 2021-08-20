@@ -25,14 +25,12 @@ ignorePatterns:
     ".yarn-integrity",
     "/.husky/",
     "/.vscode/",
-    "babel.config.cjs",
     "coverage",
-    "jest.config.cjs",
+    "jest.config.js",
     "lib",
     "logs",
     "node_modules/",
     "pids",
-    "tsconfig.build.json",
     "tsconfig.json",
     "tsconfig.tsbuildinfo",
     "yarn-debug.log*",
@@ -55,23 +53,20 @@ ignorePatterns:
     ".prettierrc",
     ".vscode",
     "CODE_OF_CONDUCT.md",
-    "babel.config.cjs",
     "codecov.yml",
     "codegen.yml",
     "coverage/",
     "docs/",
     "example/",
-    "jest.config.cjs",
+    "jest.config.js",
     "media/",
     "node_modules/",
     "src/",
-    "tsconfig.build.json",
     "tsconfig.json"
   ]
   ".eslintignore": [
     "*.gql",
     "*.js",
-    "/*.cjs",
     "__generated__",
     "lib"
   ]
@@ -91,23 +86,20 @@ scripts:
   "lint:eslint": "rimraf coverage && eslint \"src/**\" --ext .ts"
   "lint:spell": "cspell -c .vscode/cspell.json --no-summary \"README.md\" \"src/**/*.ts\""
   "lint": "npm-run-all lint:*"
-  "test:jest": "node --harmony node_modules/.bin/jest"
+  "test:jest": "node --experimental-vm-modules node_modules/.bin/jest"
   "test": "npm-run-all test:*"
   "generate:changelog": "node --experimental-specifier-resolution=node node_modules/.bin/changelog generate --bump"
   "generate:ghinfo": "node --experimental-specifier-resolution=node node_modules/.bin/ghinfo generate -d media -t utils"
   "generate": "npm-run-all generate:*"
-  "build:ts": "rimraf lib && tsc --extendedDiagnostics --project tsconfig.build.json"
+  "build:ts": "rimraf lib && tsc --extendedDiagnostics"
   "build": "npm-run-all build:*"
   "release": "npm-run-all prepare lint test build generate"
 
 dependencies:
-  - "@babel/plugin-transform-runtime": "7.x"
-  - "@babel/preset-env": "7.x"
-  - "@types/jest": "26.x"
+  - "@types/jest": "27.x"
   - "@types/node": "14.x"
   - "@typescript-eslint/eslint-plugin": "4.x"
   - "@typescript-eslint/parser": "4.x"
-  - "babel-jest": "26.x"
   - "changelog-guru": "3.x"
   - "cspell"
   - "eslint": "7.x"
@@ -118,10 +110,10 @@ dependencies:
   - "eslint-plugin-optimize-regex": "1.x"
   - "eslint-plugin-promise": "5.x"
   - "ghinfo": "2.x"
-  - "husky": "6.x"
-  - "jest": "26.x"
+  - "husky": "7.x"
+  - "jest": "27.x"
   - "npm-run-all"
   - "prettier"
   - "rimraf"
-  - "ts-jest": "26.x"
+  - "ts-jest": "27.x"
   - "typescript": "4.x"
