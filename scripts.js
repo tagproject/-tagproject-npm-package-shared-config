@@ -27,7 +27,7 @@ export default [
   ],
   [
     "test:jest",
-    "node --harmony node_modules/.bin/jest"
+    "node --experimental-vm-modules node_modules/.bin/jest"
   ],
   [
     "test",
@@ -47,7 +47,7 @@ export default [
   ],
   [
     "build:ts",
-    "rimraf lib && tsc --extendedDiagnostics --project tsconfig.build.json"
+    "rimraf lib && tsc --extendedDiagnostics"
   ],
   [
     "build",

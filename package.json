@@ -1,6 +1,6 @@
 {
   "name": "@tagproject/ts-package-shared-config",
-  "version": "4.0.0",
+  "version": "4.0.1",
   "description": "Standard shared config for tagproject packages with Node.js and TypeScript",
   "homepage": "https://github.com/tagproject/ts-package-shared-config#readme",
   "license": "MIT",
@@ -40,6 +40,6 @@
   },
   "devDependencies": {
     "changelog-guru": "^3.0.2",
-    "husky": "^6.0.0"
+    "husky": "^7.0.2"
   }
 }

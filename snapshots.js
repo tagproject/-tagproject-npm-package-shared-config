@@ -93,13 +93,13 @@ export default [
   },
   {
     "path": ".vscode/launch.json",
-    "hash": "8b48944e06bffeffe996f5f0692c8c07c9cb51ba4cf5f3788fb4338efc9eaa27",
+    "hash": "09d54031e5127f700d18983c4f3856a80f5f113b25475c4e0f4c4779ecac16e8",
     "merge": [
       "configurations"
     ],
     "executable": false,
     "type": "json",
-    "content": "{\n  \"version\": \"0.2.0\",\n  \"configurations\": [\n    {\n      \"name\": \"Jest\",\n      \"type\": \"node\",\n      \"request\": \"launch\",\n      \"program\": \"${workspaceFolder}/node_modules/.bin/jest\",\n      \"cwd\": \"${workspaceRoot}\",\n      \"args\": [\"--i\", \"--runInBand\", \"--coverage\", \"false\", \"${relativeFile}\"],\n      \"console\": \"integratedTerminal\",\n      \"internalConsoleOptions\": \"neverOpen\",\n      \"disableOptimisticBPs\": true,\n      \"windows\": {\n        \"program\": \"${workspaceFolder}/node_modules/jest/bin/jest\"\n      }\n    }\n  ]\n}\n"
+    "content": "{\n  \"version\": \"0.2.0\",\n  \"configurations\": [\n    {\n      \"name\": \"Jest\",\n      \"type\": \"node\",\n      \"request\": \"launch\",\n      \"program\": \"${workspaceFolder}/node_modules/.bin/jest\",\n      \"cwd\": \"${workspaceRoot}\",\n      \"runtimeArgs\": [\"--experimental-vm-modules\"],\n      \"args\": [\"--i\", \"--runInBand\", \"--coverage\", \"false\", \"${relativeFile}\"],\n      \"console\": \"integratedTerminal\",\n      \"internalConsoleOptions\": \"neverOpen\",\n      \"disableOptimisticBPs\": true\n    }\n  ]\n}\n"
   },
   {
     "path": ".vscode/settings.json",
@@ -134,36 +134,20 @@ export default [
     "content": "{\n  \"printWidth\": 120,\n  \"singleQuote\": true,\n  \"tabWidth\": 2,\n  \"endOfLine\": \"lf\",\n  \"trailingComma\": \"es5\",\n  \"arrowParens\": \"avoid\"\n}\n"
   },
   {
-    "path": "babel.config.cjs",
-    "hash": "c2c6a70f2c282ec464a914126577b12b709ce41de0018860932ab486bca668ca",
-    "merge": false,
-    "executable": false,
-    "type": "text",
-    "content": "module.exports = {\n  presets: [['@babel/preset-env', { targets: { node: 'current' } }]],\n  plugins: ['@babel/plugin-transform-runtime'],\n};\n"
-  },
-  {
     "path": "codecov.yml",
-    "hash": "e1329996258e102f0b45239cb3e3a19b8d8a30906a40831821ee99cf2891d38f",
+    "hash": "0b149175f6c1ee283cec9367a3575b178e03c3c05a999c59d94f54cbc0feffff",
     "merge": false,
     "executable": false,
     "type": "yaml",
-    "content": "codecov:\n  max_report_age: off\ncoverage:\n  precision: 2\n  round: down\n  status:\n    project:\n      default:\n       enabled: no\n       threshold: 0.2\n       if_not_found: success\n    patch:\n      default:\n        enabled: no\n        if_not_found: success\n    changes:\n      default:\n        enabled: no\n        if_not_found: success\n"
+    "content": "codecov:\n  max_report_age: off\ncoverage:\n  precision: 2\n  round: down\n  status:\n    project:\n      default:\n        enabled: no\n        threshold: 0.2\n        if_not_found: success\n    patch:\n      default:\n        enabled: no\n        if_not_found: success\n    changes:\n      default:\n        enabled: no\n        if_not_found: success\n"
   },
   {
-    "path": "jest.config.cjs",
-    "hash": "aabdd6a42e24cbaf245f34ea056a92fdb4fbff369e90402bde1da05c0c31ed9f",
+    "path": "jest.config.js",
+    "hash": "b2b8404c32f0c948287612442f55d85b464e6a4df4fcacfad9a99a74309a9607",
     "merge": false,
     "executable": false,
     "type": "text",
-    "content": "module.exports = {\n  preset: 'ts-jest',\n  testEnvironment: 'node',\n  collectCoverage: true,\n  coverageReporters: ['text-summary', 'lcov'],\n  testRegex: '(/__tests__/.*|(\\\\.|/)(test))\\\\.(tsx?)$',\n  moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json'],\n  testPathIgnorePatterns: ['<rootDir>/lib/', '<rootDir>/node_modules/'],\n  transform: {\n    '^.+\\\\.(ts|tsx)?$': 'ts-jest',\n    '^.+\\\\.(js|jsx)$': 'babel-jest',\n  },\n  transformIgnorePatterns: [],\n};\n"
-  },
-  {
-    "path": "tsconfig.build.json",
-    "hash": "09eda85a473dafcf8dc5260572a73c6b2e52ac161444c2be9843691fe01706fd",
-    "merge": false,
-    "executable": false,
-    "type": "json",
-    "content": "{\n  \"extends\": \"./tsconfig.json\",\n  \"exclude\": [\"node_modules\", \"**/*.test.ts\", \"**/*.mock.ts\", \"bin\"]\n}\n"
+    "content": "export default {\n  preset: 'ts-jest/presets/default-esm',\n  extensionsToTreatAsEsm: ['.ts'],\n  collectCoverage: true,\n  mapCoverage: true,\n  coverageReporters: ['text-summary', 'lcov'],\n  testRegex: '(/__tests__/.*|(\\\\.|/)(test))\\\\.(tsx?)$',\n  testPathIgnorePatterns: ['<rootDir>/lib/', '<rootDir>/node_modules/'],\n  transform: {},\n  moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json'],\n  globals: {\n    'ts-jest': {\n      useESM: true,\n    },\n  },\n};\n"
   },
   {
     "path": "tsconfig.json",
@@ -175,27 +159,27 @@ export default [
   },
   {
     "path": ".gitignore",
-    "hash": "122c57de642fc02c306e752df734e7bad71414c430a48810190e742c3117400e",
+    "hash": "d194cf5c2917622e0cfcdd94e1b16ff21e90c0795b6a4f612af0fc105a727456",
     "merge": true,
     "executable": false,
     "type": "glob",
-    "content": "*.log\n*.pid\n*.pid.lock\n*.seed\n*.tgz\n.editorconfig\n.env\n.eslintcache\n.eslintignore\n.eslintrc\n.prettierignore\n.prettierrc\n.yarn-integrity\n/.husky/\n/.vscode/\nbabel.config.cjs\ncoverage\njest.config.cjs\nlib\nlogs\nnode_modules/\npids\ntsconfig.build.json\ntsconfig.json\ntsconfig.tsbuildinfo\nyarn-debug.log*\nyarn-error.log*"
+    "content": "*.log\n*.pid\n*.pid.lock\n*.seed\n*.tgz\n.editorconfig\n.env\n.eslintcache\n.eslintignore\n.eslintrc\n.prettierignore\n.prettierrc\n.yarn-integrity\n/.husky/\n/.vscode/\ncoverage\njest.config.js\nlib\nlogs\nnode_modules/\npids\ntsconfig.json\ntsconfig.tsbuildinfo\nyarn-debug.log*\nyarn-error.log*"
   },
   {
     "path": ".npmignore",
-    "hash": "952a7a17ad7d850c2c2929dcdacf36754c6c3f1a02a054d11e802bd9c576f8f2",
+    "hash": "4311ca8a8be0c1a9e4fe05ad84ca22e6dcea4e87aeb2917435ad6717802116d4",
     "merge": true,
     "executable": false,
     "type": "glob",
-    "content": "**/__mocks__/**\n**/__tests__/**\n.changelogrc.yml\n.config\n.editorconfig\n.env\n.eslintignore\n.eslintrc\n.ghinfo\n.gitattributes\n.github\n.husky\n.prettierignore\n.prettierrc\n.vscode\nCODE_OF_CONDUCT.md\nbabel.config.cjs\ncodecov.yml\ncodegen.yml\ncoverage/\ndocs/\nexample/\njest.config.cjs\nmedia/\nnode_modules/\nsrc/\ntsconfig.build.json\ntsconfig.json"
+    "content": "**/__mocks__/**\n**/__tests__/**\n.changelogrc.yml\n.config\n.editorconfig\n.env\n.eslintignore\n.eslintrc\n.ghinfo\n.gitattributes\n.github\n.husky\n.prettierignore\n.prettierrc\n.vscode\nCODE_OF_CONDUCT.md\ncodecov.yml\ncodegen.yml\ncoverage/\ndocs/\nexample/\njest.config.js\nmedia/\nnode_modules/\nsrc/\ntsconfig.json"
   },
   {
     "path": ".eslintignore",
-    "hash": "687bd74e57af0bef53ed592d29fdedc6db517619021562d3f41fc0a0a9c07995",
+    "hash": "27d71a23ff5de00bce5f77320d1f0e4dfc32a9d708dcc20ab80b0a592317262e",
     "merge": false,
     "executable": false,
     "type": "glob",
-    "content": "*.gql\n*.js\n/*.cjs\n__generated__\nlib"
+    "content": "*.gql\n*.js\n__generated__\nlib"
   },
   {
     "path": ".prettierignore",
