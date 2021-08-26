@@ -2,16 +2,8 @@
 /* prettier-ignore */
 export default [
   [
-    "@babel/plugin-transform-runtime",
-    "7.x"
-  ],
-  [
-    "@babel/preset-env",
-    "7.x"
-  ],
-  [
     "@types/jest",
-    "26.x"
+    "27.x"
   ],
   [
     "@types/node",
@@ -24,10 +16,6 @@ export default [
   [
     "@typescript-eslint/parser",
     "4.x"
-  ],
-  [
-    "babel-jest",
-    "26.x"
   ],
   [
     "changelog-guru",
@@ -70,11 +58,11 @@ export default [
   ],
   [
     "husky",
-    "6.x"
+    "7.x"
   ],
   [
     "jest",
-    "26.x"
+    "27.x"
   ],
   [
     "npm-run-all"
@@ -87,7 +75,7 @@ export default [
   ],
   [
     "ts-jest",
-    "26.x"
+    "27.x"
   ],
   [
     "typescript",
