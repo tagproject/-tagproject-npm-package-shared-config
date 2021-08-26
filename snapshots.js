@@ -143,11 +143,11 @@ export default [
   },
   {
     "path": "jest.config.js",
-    "hash": "b2b8404c32f0c948287612442f55d85b464e6a4df4fcacfad9a99a74309a9607",
+    "hash": "1ff4f2d1a4055e936ffba8cc2cc335f69fdc7d7a1cfd0194dc26c8ee8edf5d07",
     "merge": false,
     "executable": false,
     "type": "text",
-    "content": "export default {\n  preset: 'ts-jest/presets/default-esm',\n  extensionsToTreatAsEsm: ['.ts'],\n  collectCoverage: true,\n  mapCoverage: true,\n  coverageReporters: ['text-summary', 'lcov'],\n  testRegex: '(/__tests__/.*|(\\\\.|/)(test))\\\\.(tsx?)$',\n  testPathIgnorePatterns: ['<rootDir>/lib/', '<rootDir>/node_modules/'],\n  transform: {},\n  moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json'],\n  globals: {\n    'ts-jest': {\n      useESM: true,\n    },\n  },\n};\n"
+    "content": "export default {\n  preset: 'ts-jest/presets/default-esm',\n  extensionsToTreatAsEsm: ['.ts'],\n  collectCoverage: true,\n  coverageReporters: ['text-summary', 'lcov'],\n  testRegex: '(/__tests__/.*|(\\\\.|/)(test))\\\\.(tsx?)$',\n  testPathIgnorePatterns: ['<rootDir>/lib/', '<rootDir>/node_modules/'],\n  transform: {},\n  moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json'],\n  globals: {\n    'ts-jest': {\n      useESM: true,\n    },\n  },\n};\n"
   },
   {
     "path": "tsconfig.json",
