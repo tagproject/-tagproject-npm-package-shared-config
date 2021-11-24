@@ -1,6 +1,17 @@
+# Important Changes
+
+## Dependencies
+
+<details>
+<summary>Dev Dependencies</summary>
+
+- Bumped **[husky](https://www.npmjs.com/package/husky/v/7.0.4)** from `7.0.2` to `7.0.4`
+
+</details>
+
 # :bug: Bug Fixes
 
-- Fix jest config, remove deprecated `mapCoverage` [`2f5b3ba`](https://github.com/tagproject/ts-package-shared-config/commit/2f5b3ba774331e1238b189c8ecbd5a46c79005a3)
+- Add `adjacent-overload-signatures` rule to eslint config [`f03c234`](https://github.com/tagproject/ts-package-shared-config/commit/f03c234de78cd03e1547daa0168ec741c92e0838)
 
 ---
 
