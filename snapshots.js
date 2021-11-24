@@ -134,6 +134,14 @@ export default [
     "content": "{\n  \"printWidth\": 120,\n  \"singleQuote\": true,\n  \"tabWidth\": 2,\n  \"endOfLine\": \"lf\",\n  \"trailingComma\": \"es5\",\n  \"arrowParens\": \"avoid\"\n}\n"
   },
   {
+    "path": "CODE_OF_CONDUCT.md",
+    "hash": "358945758749b4985ac8e32398d5dd2a9cf832f06dc3f6b506225c92cb8182da",
+    "merge": false,
+    "executable": false,
+    "type": "text",
+    "content": "# Code of Conduct\n\n## Our Pledge\n\nIn the interest of fostering an open and welcoming environment, we as\ncontributors and maintainers pledge to make participation in our project and\nour community a harassment-free experience for everyone, regardless of age, body\nsize, disability, ethnicity, sex characteristics, gender identity and expression,\nlevel of experience, education, socioeconomic status, nationality, personal\nappearance, race, religion, or sexual identity and orientation.\n\n## Our Standards\n\nExamples of behavior that contributes to creating a positive environment\ninclude:\n\n- Using welcoming and inclusive language\n- Being respectful of differing viewpoints and experiences\n- Gracefully accepting constructive criticism\n- Focusing on what is best for the community\n- Showing empathy towards other community members\n\nExamples of unacceptable behavior by participants include:\n\n- The use of sexualized language or imagery and unwelcome sexual attention or\n  advances\n- Trolling, insulting/derogatory comments, and personal or political attacks\n- Public or private harassment\n- Publishing others' private information, such as a physical or electronic\n  address, without explicit permission\n- Other conduct which could reasonably be considered inappropriate in a\n  professional setting\n\n## Our Responsibilities\n\nProject maintainers are responsible for clarifying the standards of acceptable\nbehavior and are expected to take appropriate and fair corrective action in\nresponse to any instances of unacceptable behavior.\n\nProject maintainers have the right and responsibility to remove, edit, or\nreject comments, commits, code, wiki edits, issues, and other contributions\nthat are not aligned to this Code of Conduct, or to ban temporarily or\npermanently any contributor for other behaviors that they deem inappropriate,\nthreatening, offensive, or harmful.\n\n## Scope\n\nThis Code of Conduct applies within all project spaces, and it also applies when\nan individual is representing the project or its community in public spaces.\nExamples of representing a project or community include using an official\nproject e-mail address, posting via an official social media account, or acting\nas an appointed representative at an online or offline event. Representation of\na project may be further defined and clarified by project maintainers.\n\nThis Code of Conduct also applies outside the project spaces when there is a\nreasonable belief that an individual's behavior may have a negative impact on\nthe project or its community.\n\n## Enforcement\n\nInstances of abusive, harassing, or otherwise unacceptable behavior may be\nreported by contacting the project team at <opensource-conduct@tagproject.ru>. All\ncomplaints will be reviewed and investigated and will result in a response that\nis deemed necessary and appropriate to the circumstances. The project team is\nobligated to maintain confidentiality with regard to the reporter of an incident.\nFurther details of specific enforcement policies may be posted separately.\n\nProject maintainers who do not follow or enforce the Code of Conduct in good\nfaith may face temporary or permanent repercussions as determined by other\nmembers of the project's leadership.\n\n## Attribution\n\nThis Code of Conduct is adapted from the [Contributor Covenant](https://www.contributor-covenant.org).\n\nFor answers to common questions about this code of conduct, see [FAQ](https://www.contributor-covenant.org/faq).\n"
+  },
+  {
     "path": "codecov.yml",
     "hash": "0b149175f6c1ee283cec9367a3575b178e03c3c05a999c59d94f54cbc0feffff",
     "merge": false,
@@ -148,6 +156,14 @@ export default [
     "executable": false,
     "type": "text",
     "content": "export default {\n  preset: 'ts-jest/presets/default-esm',\n  extensionsToTreatAsEsm: ['.ts'],\n  collectCoverage: true,\n  coverageReporters: ['text-summary', 'lcov'],\n  testRegex: '(/__tests__/.*|(\\\\.|/)(test))\\\\.(tsx?)$',\n  testPathIgnorePatterns: ['<rootDir>/lib/', '<rootDir>/node_modules/'],\n  transform: {},\n  moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json'],\n  globals: {\n    'ts-jest': {\n      useESM: true,\n    },\n  },\n};\n"
+  },
+  {
+    "path": "SECURITY.md",
+    "hash": "9d8514d986ed5c7bd98c2546ddb5fe38d3c166b079afdb4638d60fdbfd57c7a6",
+    "merge": false,
+    "executable": false,
+    "type": "text",
+    "content": "# Reporting Security Issues\n\nPlease report (suspected) security vulnerabilities to <security@tagproject.ru>. You will receive a response from us within 48 hours. If the issue is confirmed, we will release a patch as soon as possible depending on complexity but historically within a few days.\n"
   },
   {
     "path": "tsconfig.json",
