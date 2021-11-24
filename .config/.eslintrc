@@ -20,14 +20,19 @@
   "plugins": ["@typescript-eslint", "optimize-regex", "jest"],
   "ignorePatterns": ["*.cjs", "*.js", "bin/*"],
   "rules": {
-    "@typescript-eslint/adjacent-overload-signatures": ["error", { "OPTION_IGNORE_ACCESSORS": true }],
     "@typescript-eslint/brace-style": ["error", "1tbs"],
     "@typescript-eslint/explicit-function-return-type": ["error", { "allowExpressions": true }],
     "@typescript-eslint/func-call-spacing": ["error", "never"],
     "@typescript-eslint/indent": ["error", 2, { "SwitchCase": 1 }],
     "@typescript-eslint/interface-name-prefix": "off",
     "@typescript-eslint/member-delimiter-style": ["error", { "multiline": { "delimiter": "semi" } }],
-    "@typescript-eslint/member-ordering": "error",
+    "@typescript-eslint/member-ordering": [
+      "error",
+      {
+        "classes": { "memberTypes": ["signature", "field", "constructor", "method"], "order": "alphabetically" },
+        "default": { "order": "alphabetically" }
+      }
+    ],
     "@typescript-eslint/naming-convention": [
       "error",
       { "selector": "interface", "format": ["PascalCase"], "custom": { "regex": "^I[A-Z]", "match": true } }

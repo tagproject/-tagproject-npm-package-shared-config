@@ -1,7 +1,6 @@
-# :memo: Internal changes
+# :bug: Bug Fixes
 
-- Add SECURITY.md [`3f1e5ad`](https://github.com/tagproject/ts-package-shared-config/commit/3f1e5add78d24cc35bb8f41833d27a1042749aa8)
-- Add SECURITY & CODE_OF_CONDUCT files [`b071475`](https://github.com/tagproject/ts-package-shared-config/commit/b0714750dca7255cb6aebc76c051fcc580b05807)
+- Fix classes accessors order [`3f757a4`](https://github.com/tagproject/ts-package-shared-config/commit/3f757a4ee8b3aab7b4be100bee129f38b4924b66)
 
 ---
 
