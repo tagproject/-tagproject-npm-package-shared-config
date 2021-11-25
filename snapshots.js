@@ -151,11 +151,11 @@ export default [
   },
   {
     "path": "jest.config.js",
-    "hash": "1ff4f2d1a4055e936ffba8cc2cc335f69fdc7d7a1cfd0194dc26c8ee8edf5d07",
+    "hash": "298808761c240eed7d8bef6d368c2c1166eb14d4df8d915badddc06856ac9255",
     "merge": false,
     "executable": false,
     "type": "text",
-    "content": "export default {\n  preset: 'ts-jest/presets/default-esm',\n  extensionsToTreatAsEsm: ['.ts'],\n  collectCoverage: true,\n  coverageReporters: ['text-summary', 'lcov'],\n  testRegex: '(/__tests__/.*|(\\\\.|/)(test))\\\\.(tsx?)$',\n  testPathIgnorePatterns: ['<rootDir>/lib/', '<rootDir>/node_modules/'],\n  transform: {},\n  moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json'],\n  globals: {\n    'ts-jest': {\n      useESM: true,\n    },\n  },\n};\n"
+    "content": "export default {\n  preset: 'ts-jest/presets/default-esm',\n  extensionsToTreatAsEsm: ['.ts'],\n  collectCoverage: true,\n  coverageReporters: ['text-summary', 'lcov'],\n  testRegex: '(/__tests__/.*|(\\\\.|/)(test))\\\\.(tsx?)$',\n  testPathIgnorePatterns: ['<rootDir>/lib/', '<rootDir>/node_modules/'],\n  transform: {},\n  moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json'],\n  modulePathIgnorePatterns: ['<rootDir>/lib'],\n  globals: {\n    'ts-jest': {\n      useESM: true,\n    },\n  },\n};\n"
   },
   {
     "path": "SECURITY.md",
@@ -167,11 +167,11 @@ export default [
   },
   {
     "path": "tsconfig.json",
-    "hash": "83c1e2c950ea03148c5c6bcce2b35eed1b96572b314b0de8efcb6fe163ff9212",
+    "hash": "e8607b9ca9b0ba73359c226e3e8e2b94eda24155e8d908cbc6571244187aecb5",
     "merge": false,
     "executable": false,
     "type": "json",
-    "content": "{\n  \"compilerOptions\": {\n    \"target\": \"esnext\",\n    \"module\": \"esnext\",\n    \"moduleResolution\": \"node\",\n    \"outDir\": \"lib\",\n    \"newLine\": \"lf\",\n    \"allowSyntheticDefaultImports\": true,\n    \"allowUnreachableCode\": false,\n    \"allowJs\": true,\n    \"declaration\": true,\n    \"esModuleInterop\": true,\n    \"incremental\": false,\n    \"noFallthroughCasesInSwitch\": true,\n    \"noImplicitReturns\": true,\n    \"noUncheckedIndexedAccess\": true,\n    \"noUnusedLocals\": true,\n    \"noUnusedParameters\": true,\n    \"preserveConstEnums\": true,\n    \"removeComments\": true,\n    \"resolveJsonModule\": true,\n    \"strict\": true\n  },\n  \"exclude\": [\"node_modules\", \"bin\"],\n  \"include\": [\"src/**/*\"]\n}\n"
+    "content": "{\n  \"compilerOptions\": {\n    \"target\": \"esnext\",\n    \"module\": \"esnext\",\n    \"moduleResolution\": \"node\",\n    \"outDir\": \"lib\",\n    \"newLine\": \"lf\",\n    \"allowSyntheticDefaultImports\": true,\n    \"allowUnreachableCode\": false,\n    \"allowJs\": true,\n    \"declaration\": true,\n    \"esModuleInterop\": true,\n    \"incremental\": false,\n    \"noFallthroughCasesInSwitch\": true,\n    \"noImplicitReturns\": true,\n    \"noUncheckedIndexedAccess\": true,\n    \"noUnusedLocals\": true,\n    \"noUnusedParameters\": true,\n    \"preserveConstEnums\": true,\n    \"removeComments\": true,\n    \"resolveJsonModule\": true,\n    \"strict\": true\n  },\n  \"exclude\": [\"node_modules\", \"bin\", \"**/__mocks__\", \"**/__tests__\"],\n  \"include\": [\"src/**/*\"]\n}\n"
   },
   {
     "path": ".gitignore",
