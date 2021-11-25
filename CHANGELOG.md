@@ -1,6 +1,6 @@
 # :bug: Bug Fixes
 
-- Fix classes accessors order [`3f757a4`](https://github.com/tagproject/ts-package-shared-config/commit/3f757a4ee8b3aab7b4be100bee129f38b4924b66)
+- Fix `@typescript-eslint/member-ordering` for defaul `memberTypes` [`d9c783d`](https://github.com/tagproject/ts-package-shared-config/commit/d9c783d918060225e5609ca47cc6d99edafac028)
 
 ---
 
