@@ -21,6 +21,6 @@
     "resolveJsonModule": true,
     "strict": true
   },
-  "exclude": ["node_modules", "bin", "**/__mocks__", "**/__tests__"],
+  "exclude": ["node_modules", "bin"],
   "include": ["src/**/*"]
 }
