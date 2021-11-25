@@ -1,6 +1,7 @@
 # :bug: Bug Fixes
 
-- Fix `@typescript-eslint/member-ordering` for defaul `memberTypes` [`d9c783d`](https://github.com/tagproject/ts-package-shared-config/commit/d9c783d918060225e5609ca47cc6d99edafac028)
+- Add ignore patter for jest [`cbfa3e3`](https://github.com/tagproject/ts-package-shared-config/commit/cbfa3e33eb62d00ef036fd0c3d70fd9e606fe66a)
+- Add __mocks__ & __tests__ folders to ts exclude [`370120f`](https://github.com/tagproject/ts-package-shared-config/commit/370120f62b6614890229f118ce9457104dd6631e)
 
 ---
 
