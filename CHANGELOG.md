@@ -1,8 +1,6 @@
-# :bug: Bug Fixes
+# :fire: Improvements
 
-- Add ignore patter for jest [`cbfa3e3`](https://github.com/tagproject/ts-package-shared-config/commit/cbfa3e33eb62d00ef036fd0c3d70fd9e606fe66a)
-- Add __mocks__ & __tests__ folders to ts exclude [`370120f`](https://github.com/tagproject/ts-package-shared-config/commit/370120f62b6614890229f118ce9457104dd6631e)
-- Remove exclude paths for mocks and tests [`46aac09`](https://github.com/tagproject/ts-package-shared-config/commit/46aac09205bcdd776f751baaf62a89b510330005)
+- Replace master to main [`a1c98e7`](https://github.com/tagproject/ts-package-shared-config/commit/a1c98e757c097a37d8ff207a194895c0ff260037)
 
 ---
 
