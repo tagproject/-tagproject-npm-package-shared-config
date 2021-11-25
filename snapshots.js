@@ -151,11 +151,11 @@ export default [
   },
   {
     "path": "jest.config.js",
-    "hash": "1ff4f2d1a4055e936ffba8cc2cc335f69fdc7d7a1cfd0194dc26c8ee8edf5d07",
+    "hash": "298808761c240eed7d8bef6d368c2c1166eb14d4df8d915badddc06856ac9255",
     "merge": false,
     "executable": false,
     "type": "text",
-    "content": "export default {\n  preset: 'ts-jest/presets/default-esm',\n  extensionsToTreatAsEsm: ['.ts'],\n  collectCoverage: true,\n  coverageReporters: ['text-summary', 'lcov'],\n  testRegex: '(/__tests__/.*|(\\\\.|/)(test))\\\\.(tsx?)$',\n  testPathIgnorePatterns: ['<rootDir>/lib/', '<rootDir>/node_modules/'],\n  transform: {},\n  moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json'],\n  globals: {\n    'ts-jest': {\n      useESM: true,\n    },\n  },\n};\n"
+    "content": "export default {\n  preset: 'ts-jest/presets/default-esm',\n  extensionsToTreatAsEsm: ['.ts'],\n  collectCoverage: true,\n  coverageReporters: ['text-summary', 'lcov'],\n  testRegex: '(/__tests__/.*|(\\\\.|/)(test))\\\\.(tsx?)$',\n  testPathIgnorePatterns: ['<rootDir>/lib/', '<rootDir>/node_modules/'],\n  transform: {},\n  moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json'],\n  modulePathIgnorePatterns: ['<rootDir>/lib'],\n  globals: {\n    'ts-jest': {\n      useESM: true,\n    },\n  },\n};\n"
   },
   {
     "path": "SECURITY.md",

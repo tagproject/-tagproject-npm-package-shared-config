@@ -7,6 +7,7 @@ export default {
   testPathIgnorePatterns: ['<rootDir>/lib/', '<rootDir>/node_modules/'],
   transform: {},
   moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json'],
+  modulePathIgnorePatterns: ['<rootDir>/lib'],
   globals: {
     'ts-jest': {
       useESM: true,
