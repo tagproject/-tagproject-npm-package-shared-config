@@ -16,7 +16,7 @@
     "node"
   ],
   "type": "module",
-  "main": "index.js",
+  "exports": "./index.js",
   "bin": {
     "ts-package-shared-config": "bin/ts-package-shared-config.js"
   },
@@ -33,7 +33,7 @@
     "release": "npm run build && node --experimental-specifier-resolution=node node_modules/.bin/changelog generate --bump"
   },
   "engines": {
-    "node": ">=14.0.0"
+    "node": "^14.13.1 || >=16.0.0"
   },
   "dependencies": {
     "standard-shared-config": "^3.0.3"
