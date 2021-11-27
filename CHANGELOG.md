@@ -1,6 +1,12 @@
-# :fire: Improvements
+# BREAKING CHANGES
 
-- Replace master to main [`a1c98e7`](https://github.com/tagproject/ts-package-shared-config/commit/a1c98e757c097a37d8ff207a194895c0ff260037)
+- Fix configs for TS to ESM [`e4af47b`](https://github.com/tagproject/ts-package-shared-config/commit/e4af47b73510ca8182cabe800b7305141d9785a5)
+
+# Important Changes
+
+## Engines
+
+- Bumped **node** from `14.0.0` to `14.13.1`
 
 ---
 
