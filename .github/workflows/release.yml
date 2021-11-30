@@ -4,6 +4,9 @@ on:
     branches:
       - main
 
+env:
+  NODE_VERSION: "16.x"
+
 jobs:
   sync:
     name: Sync labels
@@ -22,7 +25,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: [15.x]
+        node-version: [${{ NODE_CURRENT }}]
     steps:
     - name: Checkout repository
       uses: actions/checkout@v1
@@ -49,7 +52,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: [15.x]
+        node-version: [${{ NODE_CURRENT }}]
     steps:
     - name: Checkout code
       uses: actions/checkout@v2
