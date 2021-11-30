@@ -1,12 +1,6 @@
-# BREAKING CHANGES
+# :bug: Bug Fixes
 
-- Fix configs for TS to ESM [`e4af47b`](https://github.com/tagproject/ts-package-shared-config/commit/e4af47b73510ca8182cabe800b7305141d9785a5)
-
-# Important Changes
-
-## Engines
-
-- Bumped **node** from `14.0.0` to `14.13.1`
+- Fix eslint indent rule for multiline ts improts [`73a234b`](https://github.com/tagproject/ts-package-shared-config/commit/73a234b2277ba17fc764e79a8be6d2a7ef3fab17)
 
 ---
 
