@@ -23,7 +23,7 @@
     "@typescript-eslint/brace-style": ["error", "1tbs"],
     "@typescript-eslint/explicit-function-return-type": ["error", { "allowExpressions": true }],
     "@typescript-eslint/func-call-spacing": ["error", "never"],
-    "@typescript-eslint/indent": ["error", 2, { "SwitchCase": 1 }],
+    "@typescript-eslint/indent": ["error", 2, { "SwitchCase": 1, "ImportDeclaration": 2 }],
     "@typescript-eslint/interface-name-prefix": "off",
     "@typescript-eslint/member-delimiter-style": ["error", { "multiline": { "delimiter": "semi" } }],
     "@typescript-eslint/member-ordering": [
@@ -46,10 +46,19 @@
             "public-abstract-field",
             "protected-abstract-field",
             "private-abstract-field",
+            "public-field",
+            "protected-field",
+            "private-field",
+            "static-field",
+            "instance-field",
+            "abstract-field",
+            "decorated-field",
+            "field",
             // Constructors
             "public-constructor",
             "protected-constructor",
             "private-constructor",
+            "constructor",
             // Methods
             "public-static-method",
             "protected-static-method",
@@ -62,7 +71,15 @@
             "private-instance-method",
             "public-abstract-method",
             "protected-abstract-method",
-            "private-abstract-method"
+            "private-abstract-method",
+            "public-method",
+            "protected-method",
+            "private-method",
+            "static-method",
+            "instance-method",
+            "abstract-method",
+            "decorated-method",
+            "method"
           ],
           "order": "alphabetically"
         },
