@@ -18,9 +18,9 @@ jobs:
       - name: Create config
         id: set-config
         run: |
-          node -v
-          npm -v
-          npm i semver --no-package-lock
+          echo Node: $(node -v)
+          echo NPM: $(npm -v)
+          npm i semver --no-package-lock --loglevel=error
           CONFIG=$(node .github/config.js)
           echo "::set-output name=config::$CONFIG"
 
@@ -28,7 +28,7 @@ jobs:
     name: Build
     needs: [ config ]
     strategy:
-      matrix: ${{ fromJson(needs.config.outputs.config.node.matrix) }}
+      matrix: ${{ fromJson(needs.config.outputs.config).node.matrix }}
     runs-on: ubuntu-latest
     steps:
     - name: Checkout repository
