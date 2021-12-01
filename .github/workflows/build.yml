@@ -23,6 +23,7 @@ jobs:
           npm i semver --no-package-lock --loglevel=error
           CONFIG=$(node .github/config.js)
           echo "::set-output name=config::$CONFIG"
+          echo $CONFIG
 
   build:
     name: Build
