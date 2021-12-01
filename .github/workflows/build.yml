@@ -26,7 +26,7 @@ jobs:
 
   build:
     name: Build
-    needs: [ matrix ]
+    needs: [ config ]
     strategy:
       matrix: ${{ fromJson(needs.config.outputs.config.node.matrix) }}
     runs-on: ubuntu-latest
