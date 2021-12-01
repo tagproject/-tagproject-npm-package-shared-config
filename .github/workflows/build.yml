@@ -4,7 +4,7 @@ on: [push, pull_request]
 
 jobs:
   config:
-    name: Configure matrix
+    name: Configure
     runs-on: ubuntu-latest
     outputs:
       config: ${{ steps.set-config.outputs.config }}
@@ -51,7 +51,9 @@ jobs:
       run: npm ci
 
     - name: Build
-      run: npm run build
+      run: |
+        npm run build
+        exit 1
 
   status:
     name: Success build

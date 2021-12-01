@@ -9,13 +9,11 @@ const minVersion = semver.minSatisfying(comparators, engines).version;
 const maxVersion = semver.maxSatisfying(comparators, engines).version;
 const mainVersion = `${semver.major(maxVersion)}.x`;
 
-console.log(
-  JSON.stringify({
-    node: {
-      matrix: {
-        node: [minVersion, mainVersion],
-      },
-      main: mainVersion,
+console.log({
+  node: {
+    matrix: {
+      node: [minVersion, mainVersion],
     },
-  })
-);
+    main: mainVersion,
+  },
+});
