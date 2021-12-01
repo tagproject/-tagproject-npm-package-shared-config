@@ -53,7 +53,10 @@ jobs:
         run: |
           status=$(curl -X GET -s -u "admin:${{ secrets.GITHUB_TOKEN }}" https://api.github.com/repos/${{ github.repository }}/actions/runs/${{ github.run_id }}/jobs | jq ".jobs[] | {job_status: .conclusion, matrix: .name}")
           echo $status
-          echo ${{ contains($status, 'success') }}
+      - if: ${{ contains(env.status, 'success') }}'
+        name: test 2
+        run: |
+          echo ${{ env.status }}
       - name: Check build matrix status
         if: ${{ needs.build.result != 'success' }}
         run: |
