@@ -1,4 +1,4 @@
-var semver = require('semver');
+import semver from 'semver';
 
 const engines = '^14.13.1 || >=16.0.0';
 const comparators = semver

@@ -20,7 +20,7 @@ jobs:
         run: |
           echo node -v
           echo npm -v
-          npm i semver
+          npm i semver --no-package-lock
           CONFIG=$(node .github/config.js)
           echo "::set-output name=matrix::$CONFIG"
 
