@@ -12,9 +12,11 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
 
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
+
       - name: Create matrix config
         id: set-matrix
-        uses: actions/setup-node@v2
         run: |
           echo node -v
           echo npm -v
