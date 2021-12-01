@@ -48,7 +48,7 @@ jobs:
     runs-on: ubuntu-latest
     needs: [ build ]
     steps:
-      - if: ${{ needs.build.result === 'success' }}'
+      - if: ${{ needs.build.result == 'success' }}'
         name: test
         run: |
           status=$(curl -X GET -s -u "admin:${{ secrets.GITHUB_TOKEN }}" https://api.github.com/repos/${{ github.repository }}/actions/runs/${{ github.run_id }}/jobs | jq ".jobs[] | {job_status: .conclusion, matrix: .name}")
