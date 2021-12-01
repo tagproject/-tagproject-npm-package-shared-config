@@ -9,9 +9,11 @@ jobs:
     outputs:
       matrix: ${{ steps.set-matrix.outputs.matrix }}
     steps:
-      - uses: actions/checkout@v2
-      - id: set-matrix
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
       - name: Create matrix config
+        id: set-matrix
         uses: actions/setup-node@v2
         run: |
           echo node -v
