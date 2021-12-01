@@ -11,7 +11,9 @@ const mainVersion = `${semver.major(maxVersion)}.x`;
 
 console.log({
   node: {
-    matrix: [minVersion, mainVersion],
+    matrix: {
+      node: [minVersion, mainVersion],
+    },
     main: mainVersion,
   },
 });
