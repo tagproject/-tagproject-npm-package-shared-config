@@ -51,20 +51,13 @@ jobs:
       - id: status
         name: Load jobs
         run: |
-          status=$(curl -X GET -s -u "admin:${{ secrets.GITHUB_TOKEN }}" https://api.github.com/repos/${{ github.repository }}/actions/runs/${{ github.run_id }}/jobs | jq "[.jobs[] | select(.status==\"completed\" and .conclusion==\"failure\") | { status: .conclusion, matrix: .name}]")
-          echo "::set-output name=status::$status"
-          echo $status
-          echo ${{ length(status) }}
+          fails_count=$(curl -X GET -s -u "admin:${{ secrets.GITHUB_TOKEN }}" https://api.github.com/repos/${{ github.repository }}/actions/runs/${{ github.run_id }}/jobs | jq "[.jobs[] | select(.status==\"completed\" and .conclusion==\"failure\") | { status: .conclusion, matrix: .name}] | length")
+          echo "::set-output name=status::$fails_count"
           
-      - if: ${{ contains(steps.status.outputs.status, 'failure') }}'
-        name: Fail job
+      - if: ${{ steps.status.outputs.fails_count > 0 }}'
+        name: Fail
         run: |
           exit 1
-
-      - if: ${{ contains(steps.status.outputs.status, 'success') }}'
-        name: Success job
-        run: |
-          exit 0
       
 
 
