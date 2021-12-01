@@ -4,6 +4,7 @@ on: [push, pull_request]
 
 jobs:
   matrix:
+    name: Configure matrix
     runs-on: ubuntu-latest
     outputs:
       matrix: ${{ steps.set-matrix.outputs.matrix }}
@@ -17,23 +18,24 @@ jobs:
     name: Build
     needs: [ matrix ]
     strategy:
-      matrix: ${{ fromJson(needs.matrix.outputs.matrix) }}
+      matrix: 
+        config: ${{ fromJson(needs.matrix.outputs.matrix) }}
     runs-on: ubuntu-latest
     steps:
     - name: Checkout repository
       uses: actions/checkout@v2
 
-    - name: Use Node.js ${{ matrix.node-version }}
+    - name: Use Node.js ${{ matrix.config.node }}
       uses: actions/setup-node@v2
       with:
-        node-version: ${{ matrix.node-version }}
+        node-version: ${{ matrix.config.node }}
 
     - name: Cache node modules
       id: cache-npm
       uses: actions/cache@v2
       with:
         path: ~/.npm
-        key: npm-${{ runner.os }}-${{ matrix.node-version }}-${{ hashFiles('**/package-lock.json') }}
+        key: npm-${{ runner.os }}-${{ matrix.config.node }}-${{ hashFiles('**/package-lock.json') }}
 
     - name: Install Dependencies
       run: npm ci
