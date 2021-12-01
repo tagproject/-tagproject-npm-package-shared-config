@@ -48,14 +48,23 @@ jobs:
     runs-on: ubuntu-latest
     needs: [ build ]
     steps:
-      - name: Load jobs
+      - id: status
+        name: Load jobs
         run: |
-          echo "BUILD_STATUS=$(curl -X GET -s -u "admin:${{ secrets.GITHUB_TOKEN }}" https://api.github.com/repos/${{ github.repository }}/actions/runs/${{ github.run_id }}/jobs | jq ".jobs[] | {job_status: .conclusion, matrix: .name}")" >> $GITHUB_ENV
-          echo $BUILD_STATUS
-      #- if: ${{ contains(env.BUILD_STATUS, 'failure') }}'
-      - name: Fail job
+          status=$(curl -X GET -s -u "admin:${{ secrets.GITHUB_TOKEN }}" https://api.github.com/repos/${{ github.repository }}/actions/runs/${{ github.run_id }}/jobs | jq ".jobs[] | {job_status: .conclusion, matrix: .name}")
+          echo "::set-output name=status::$status"
+          echo $status
+          echo "BUILD_STATUS=$status" >> $GITHUB_ENV
+          
+      - if: ${{ contains(steps.status.outputs.status, 'failure') }}'
+        name: Fail job
         run: |
-          echo ${{ env.BUILD_STATUS }}
+          exit 1
+
+      - if: ${{ contains(steps.status.outputs.status, 'success') }}'
+        name: Success job
+        run: |
+          exit 0
       
 
 
