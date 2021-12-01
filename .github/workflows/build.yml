@@ -2,18 +2,23 @@ name: Build
 
 on: [push, pull_request]
 
-env:
-  NODE_VERSION: 16.x
-
 jobs:
+  matrix:
+    runs-on: ubuntu-latest
+    outputs:
+      matrix: ${{ steps.set-matrix.outputs.matrix }}
+    steps:
+      - uses: actions/checkout@v2
+      - id: set-matrix
+        run: |
+          TASKS=$(echo $(cat .github/workflows/matrix.json) | sed 's/ //g' )
+          echo "::set-output name=matrix::$TASKS"
   build:
     name: Build
-    runs-on: ubuntu-latest
-    env:
-      NODE_VERSION: ${{ env.NODE_VERSION }}
+    needs: [ matrix ]
     strategy:
-      matrix:
-        node-version: ${{ env.NODE_VERSION }}
+      matrix: ${{ fromJson(needs.matrix.outputs.matrix) }}
+    runs-on: ubuntu-latest
     steps:
     - name: Checkout repository
       uses: actions/checkout@v2
