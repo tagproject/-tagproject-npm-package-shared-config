@@ -54,7 +54,7 @@ jobs:
           status=$(curl -X GET -s -u "admin:${{ secrets.GITHUB_TOKEN }}" https://api.github.com/repos/${{ github.repository }}/actions/runs/${{ github.run_id }}/jobs | jq "[.jobs[] | select(.status==\"completed\" and .conclusion==\"failure\") | { status: .conclusion, matrix: .name}]")
           echo "::set-output name=status::$status"
           echo $status
-          echo "BUILD_STATUS=$status" >> $GITHUB_ENV
+          echo ${{ length(status) }}
           
       - if: ${{ contains(steps.status.outputs.status, 'failure') }}'
         name: Fail job
