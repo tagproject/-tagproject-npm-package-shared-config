@@ -7,7 +7,7 @@ jobs:
     name: Configure matrix
     runs-on: ubuntu-latest
     outputs:
-      config: ${{ steps.set-config.outputs.matrix }}
+      config: ${{ steps.set-config.outputs.config }}
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
