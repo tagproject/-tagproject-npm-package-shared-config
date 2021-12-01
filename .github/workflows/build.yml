@@ -51,9 +51,7 @@ jobs:
       run: npm ci
 
     - name: Build
-      run: |
-        npm run build
-        exit 1
+      run: npm run build
 
   status:
     name: Success build
