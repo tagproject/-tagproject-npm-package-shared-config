@@ -3,11 +3,11 @@ name: Build
 on: [push, pull_request]
 
 jobs:
-  matrix:
+  config:
     name: Configure matrix
     runs-on: ubuntu-latest
     outputs:
-      matrix: ${{ steps.set-matrix.outputs.matrix }}
+      config: ${{ steps.set-config.outputs.matrix }}
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
@@ -15,27 +15,20 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v2
 
-      - name: Create matrix config
-        id: set-matrix
+      - name: Create config
+        id: set-config
         run: |
-          echo node -v
-          echo npm -v
+          node -v
+          npm -v
           npm i semver --no-package-lock
           CONFIG=$(node .github/config.js)
-          echo "::set-output name=matrix::$CONFIG"
-
-      #- uses: actions/checkout@v2
-      #- id: set-matrix
-      #  run: |
-      #    ENGINES=$(jq '.engines | .node' ./package.json)
-      #    CONFIG=$(echo $(cat .github/matrix.json) | sed 's/ //g' )
-      #    echo "::set-output name=matrix::$CONFIG"
+          echo "::set-output name=config::$CONFIG"
 
   build:
     name: Build
     needs: [ matrix ]
     strategy:
-      matrix: ${{ fromJson(needs.matrix.outputs.matrix) }}
+      matrix: ${{ fromJson(needs.config.outputs.config.node.matrix) }}
     runs-on: ubuntu-latest
     steps:
     - name: Checkout repository

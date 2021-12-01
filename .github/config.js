@@ -7,9 +7,11 @@ const comparators = semver
   .map(v => semver.coerce(v));
 const minVersion = semver.minSatisfying(comparators, engines).version;
 const maxVersion = semver.maxSatisfying(comparators, engines).version;
+const mainVersion = `${semver.major(maxVersion)}.x`;
 
 console.log({
-  node: ['16.x'],
+  node: {
+    matrix: [minVersion, mainVersion],
+    main: mainVersion,
+  },
 });
-
-// console.log([minVersion, `${semver.major(maxVersion)}.x`]);
