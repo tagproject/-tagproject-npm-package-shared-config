@@ -55,7 +55,7 @@ jobs:
           USER: admin:${{ secrets.GITHUB_TOKEN }}
           FILTER: "[.jobs[] | select(.status==\"completed\" and .conclusion==\"failure\") | { status: .conclusion, matrix: .name}] | length"
         run: |
-          failure_count=$(curl -X GET -s -u $USER $URL | jq $FILTER)
+          failure_count=$(curl -X GET -s -u $USER $URL | jq "$FILTER")
           echo "::set-output name=failure_count::$failure_count"
           echo Failure jobs count: $failure_count
           
