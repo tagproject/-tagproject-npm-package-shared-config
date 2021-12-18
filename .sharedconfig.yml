@@ -1,5 +1,5 @@
-rootDir: ".config"
-outDir: "."
+sharedDir: ".config"
+outputDir: "lib"
 
 mergeRules:
   ".husky/commit-msg": true
@@ -117,3 +117,9 @@ dependencies:
   - "rimraf"
   - "ts-jest": "27.x"
   - "typescript": "4.x"
+
+package:
+  exports: "./lib/index.js"
+  manager: "npm"
+  type: "module"
+  types: "./lib/index.d.ts"

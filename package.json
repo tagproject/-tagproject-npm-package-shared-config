@@ -2,21 +2,21 @@
   "name": "@tagproject/ts-package-shared-config",
   "version": "6.0.1",
   "description": "Standard shared config for tagproject packages with Node.js and TypeScript",
-  "homepage": "https://github.com/tagproject/ts-package-shared-config#readme",
   "license": "MIT",
+  "homepage": "https://github.com/tagproject/ts-package-shared-config#readme",
   "author": {
     "name": "Daniil Ryazanov",
     "email": "kein@tagproject.ru"
   },
   "keywords": [
-    "standard",
-    "shared",
     "config",
-    "ts",
-    "node"
+    "node",
+    "shared",
+    "standard",
+    "ts"
   ],
   "type": "module",
-  "exports": "./index.js",
+  "exports": "./lib/index.js",
   "bin": {
     "ts-package-shared-config": "bin/ts-package-shared-config.js"
   },
@@ -24,23 +24,19 @@
     "type": "git",
     "url": "git+https://github.com/tagproject/ts-package-shared-config.git"
   },
-  "bugs": {
-    "url": "https://github.com/tagproject/ts-package-shared-config/issues"
-  },
-  "scripts": {
-    "prepare": "husky install",
-    "build": "node --experimental-specifier-resolution=node node_modules/.bin/standard-shared-config build",
-    "release": "npm run build && node --experimental-specifier-resolution=node node_modules/.bin/changelog generate --bump"
-  },
   "engines": {
     "node": "^14.13.1 || >=16.0.0"
   },
+  "scripts": {
+    "build": "node --experimental-specifier-resolution=node node_modules/.bin/standard-shared-config build",
+    "prepare": "husky install",
+    "release": "npm run build && node --experimental-specifier-resolution=node node_modules/.bin/changelog generate --bump"
+  },
   "dependencies": {
-    "standard-shared-config": "^3.0.3"
+    "standard-shared-config": "^4.0.3"
   },
   "devDependencies": {
     "changelog-guru": "^3.0.2",
     "husky": "^7.0.4"
-  },
-  "main": "index.js"
+  }
 }
