@@ -1,0 +1,48 @@
+# Gray
+- name: docs
+  description: Pull requests that change documentation
+  color: BCBEC0
+# Violet
+- name: project
+  description: Pull requests that change main project files
+  color: 4400B2
+# Blue
+- name: release
+  description: Release candidate
+  color: 0260E8
+- name: config
+  description: Pull requests that change main config files
+  color: 0260E8
+# Mint
+- name: dependencies
+  description: Pull requests that change a dependency file
+  color: 00DFC8
+- name: workflow
+  description: Pull requests that change workflow files
+  color: 00DFC8
+# Orange
+- name: shared-config:workflow
+  description: Pull requests that change workflow files in shared-config
+  color: FE634E
+- name: shared-config:code-style
+  description: Pull requests that change code linters/formatters configurations in shared-config
+  color: FE634E
+- name: shared-config:test
+  description: Pull requests that change code test tool configurations in shared-config
+  color: FE634E
+- name: shared-config:docs
+  description: Pull requests that change documentation generation tool configurations in shared-config
+  color: FE634E
+- name: shared-config:ts
+  description: Pull requests that change TypeScript configuration in shared-config
+  color: FE634E
+# Red
+- name: security
+  description: Pull requests that address a security vulnerability
+  color: E20338
+- name: shared-config:scripts
+  description: Pull requests that change package scripts in shared-config
+  color: E20338
+- name: shared-config:dependencies
+  description: Pull requests that change package dependencies in shared-config
+  color: E20338

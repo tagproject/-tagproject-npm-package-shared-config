@@ -1,0 +1,42 @@
+workflow:
+  - .github/**/*
+  - ./.gitignore
+  - ./.npmignore
+
+config:
+  - .sharedconfig.yml
+  - .husky/**/*
+
+project:
+  - package-lock.json
+  - package.json
+  - LICENSE
+
+docs:
+  - any: ['docs/**/*', '*.md', '.ghinfo']
+
+shared-config:workflow: 
+  - .config/.github/**/*
+  - .config/.gitignore
+  - .config/.npmignore
+
+shared-config:code-style:
+  - .config/.editorconfig
+  - .config/.eslintignore
+  - .config/.eslintrc
+  - .config/.prettierignore
+  - .config/.prettierrc
+
+shared-config:test:
+  - .config/babel.config.js
+  - .config/jest.config.js
+  - .config/jest.modules.json
+
+shared-config:ts:
+  - .config/tsconfig.json
+
+shared-config:scripts:
+  - scripts.js
+
+shared-config:dependencies:
+  - dependencies.js
