@@ -21,6 +21,7 @@ ignorePatterns:
     "/.eslintcache",
     "/.eslintignore",
     "/.eslintrc",
+    "/.figma.yml",
     "/.husky/",
     "/.prettierignore",
     "/.prettierrc",
@@ -45,6 +46,7 @@ ignorePatterns:
     ".env",
     ".eslintignore",
     ".eslintrc",
+    ".figma.yml",
     ".ghinfo",
     ".gitattributes",
     ".github",
@@ -90,6 +92,7 @@ scripts:
   "test": "npm-run-all test:*"
   "generate:changelog": "node --experimental-specifier-resolution=node node_modules/.bin/changelog generate --bump"
   "generate:ghinfo": "node --experimental-specifier-resolution=node node_modules/.bin/ghinfo generate -d media -t utils"
+  "generate:media": "node --experimental-specifier-resolution=node node_modules/.bin/figma-portal extract -d media -p GitHub"
   "generate": "npm-run-all generate:*"
   "build:ts": "rimraf lib && tsc --extendedDiagnostics"
   "build": "npm-run-all build:*"
@@ -109,6 +112,7 @@ dependencies:
   - "eslint-plugin-node": "11.x"
   - "eslint-plugin-optimize-regex": "1.x"
   - "eslint-plugin-promise": "6.x"
+  - "figma-portal"
   - "ghinfo": "2.x"
   - "husky": "7.x"
   - "jest": "27.x"

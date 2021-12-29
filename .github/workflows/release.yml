@@ -41,7 +41,7 @@ jobs:
 
   publish:
     name: Publish
-    needs: [ config ]
+    needs: [ sync, config ]
     env:
       NODE_VERSION: ${{ fromJson(needs.config.outputs.config).node.main }}
     runs-on: ubuntu-latest

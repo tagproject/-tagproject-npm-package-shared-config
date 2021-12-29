@@ -1,0 +1,9 @@
+- name: Logo
+  fileName: logo
+  format: svg
+  scale: 1
+
+- name: Banner
+  fileName: banner
+  format: svg
+  scale: 1
