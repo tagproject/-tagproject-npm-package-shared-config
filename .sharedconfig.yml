@@ -64,7 +64,8 @@ ignorePatterns:
     "media/",
     "node_modules/",
     "src/",
-    "tsconfig.json"
+    "tsconfig.json",
+    "typings/"
   ]
   ".eslintignore": [
     "*.gql",
