@@ -1,6 +1,7 @@
 .config
 .editorconfig
 .env
+.figma.yml
 .gitattributes
 .github
 .husky
