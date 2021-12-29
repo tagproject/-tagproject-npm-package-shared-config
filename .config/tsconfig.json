@@ -19,7 +19,8 @@
     "preserveConstEnums": true,
     "removeComments": true,
     "resolveJsonModule": true,
-    "strict": true
+    "strict": true,
+    "typeRoots": ["typings/", "node_modules/@types/"]
   },
   "exclude": ["node_modules", "bin"],
   "include": ["src/**/*"]
