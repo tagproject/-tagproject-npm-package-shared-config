@@ -1,6 +1,6 @@
 # :bug: Bug Fixes
 
-- Add `typeRoots` in TS config [`68959ab`](https://github.com/tagproject/ts-package-shared-config/commit/68959ab29c1e59ac135bc03fb3775c5c218792d1)
+- Remove `--no-package-lock` parameter in config job [`031ad98`](https://github.com/tagproject/ts-package-shared-config/commit/031ad981bdec831e31171d24463db1c5f35b8e14)
 
 ---
 
