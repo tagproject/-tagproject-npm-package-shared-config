@@ -1,6 +1,14 @@
-# :bug: Bug Fixes
+# Important Changes
 
-- Remove `--no-package-lock` parameter in config job [`031ad98`](https://github.com/tagproject/ts-package-shared-config/commit/031ad981bdec831e31171d24463db1c5f35b8e14)
+## Dependencies
+
+<details>
+<summary>Dev Dependencies</summary>
+
+- Bumped **[@tagproject/base-shared-config](https://www.npmjs.com/package/@tagproject/base-shared-config/v/1.4.2)** from `1.4.1` to `1.4.2`
+- Bumped **[figma-portal](https://www.npmjs.com/package/figma-portal/v/0.10.0)** from `0.9.3` to `0.10.0`
+
+</details>
 
 ---
 
