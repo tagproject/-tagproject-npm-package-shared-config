@@ -114,7 +114,7 @@ dependencies:
   - "eslint-plugin-optimize-regex": "1.x"
   - "eslint-plugin-promise": "6.x"
   - "figma-portal"
-  - "ghinfo": "2.x"
+  - "ghinfo": "3.x"
   - "husky": "7.x"
   - "jest": "27.x"
   - "npm-run-all"

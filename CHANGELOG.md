@@ -1,14 +1,6 @@
-# Important Changes
+# :fire: Improvements
 
-## Dependencies
-
-<details>
-<summary>Dev Dependencies</summary>
-
-- Bumped **[@tagproject/base-shared-config](https://www.npmjs.com/package/@tagproject/base-shared-config/v/1.4.2)** from `1.4.1` to `1.4.2`
-- Bumped **[figma-portal](https://www.npmjs.com/package/figma-portal/v/0.10.0)** from `0.9.3` to `0.10.0`
-
-</details>
+- Bump ghinfo to `v3.x` [`f0381f2`](https://github.com/tagproject/ts-package-shared-config/commit/f0381f23d1c61bdc8c9dd9d00848bfd245fc34e7)
 
 ---
 
