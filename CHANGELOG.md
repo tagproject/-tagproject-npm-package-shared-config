@@ -1,6 +1,26 @@
-# :fire: Improvements
+# Important Changes
 
-- Bump ghinfo to `v3.x` [`f0381f2`](https://github.com/tagproject/ts-package-shared-config/commit/f0381f23d1c61bdc8c9dd9d00848bfd245fc34e7)
+## Dependencies
+
+<details>
+<summary>Dependencies</summary>
+
+- Changed **[standard-shared-config](https://www.npmjs.com/package/standard-shared-config)** from `^4.0.7` to `^4.0.8`
+
+</details>
+
+<details>
+<summary>Dev Dependencies</summary>
+
+- Changed **[@tagproject/base-shared-config](https://www.npmjs.com/package/@tagproject/base-shared-config)** from `^1.4.2` to `^1.4.3`
+- Changed **[figma-portal](https://www.npmjs.com/package/figma-portal)** from `^0.10.0` to `^0.10.1`
+- Bumped **[changelog-guru](https://www.npmjs.com/package/changelog-guru)** from `^3.0.2` to `^4.0.1`
+
+</details>
+
+# :bug: Bug Fixes
+
+- Bump `changelog-guru` version [`a1821da`](https://github.com/tagproject/ts-package-shared-config/commit/a1821da620503632d7566370a291d9c122a6dff6)
 
 ---
 
