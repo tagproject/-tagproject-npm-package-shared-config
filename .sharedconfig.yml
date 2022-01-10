@@ -1,130 +1,122 @@
-sharedDir: ".config"
-outputDir: "lib"
+sharedDir: '.config'
+outputDir: 'lib'
 
 mergeRules:
-  ".husky/commit-msg": true
-  ".vscode/cspell.json": [ "words" ]
-  ".vscode/launch.json": [ "configurations" ]
-  ".gitignore": true
-  ".npmignore": true
+  '.husky/commit-msg': true
+  '.vscode/cspell.json': ['words']
+  '.vscode/launch.json': ['configurations']
+  '.gitignore': true
+  '.npmignore': true
 
 ignorePatterns:
-  ".gitignore": [
-    "*.log",
-    "*.pid",
-    "*.pid.lock",
-    "*.seed",
-    "*.tgz",
-    ".env",
-    ".yarn-integrity",
-    "/.editorconfig",
-    "/.eslintcache",
-    "/.eslintignore",
-    "/.eslintrc",
-    "/.figma.yml",
-    "/.husky/",
-    "/.prettierignore",
-    "/.prettierrc",
-    "/.vscode/",
-    "/jest.config.js",
-    "/tsconfig.json",
-    "coverage",
-    "lib",
-    "logs",
-    "node_modules/",
-    "pids",
-    "tsconfig.tsbuildinfo",
-    "yarn-debug.log*",
-    "yarn-error.log*"
-  ]
-  ".npmignore": [
-    "**/__mocks__/**",
-    "**/__tests__/**",
-    ".changelogrc.yml",
-    ".config",
-    ".editorconfig",
-    ".env",
-    ".eslintignore",
-    ".eslintrc",
-    ".figma.yml",
-    ".ghinfo",
-    ".gitattributes",
-    ".github",
-    ".husky",
-    ".prettierignore",
-    ".prettierrc",
-    ".vscode",
-    "CODE_OF_CONDUCT.md",
-    "codecov.yml",
-    "codegen.yml",
-    "coverage/",
-    "docs/",
-    "example/",
-    "jest.config.js",
-    "media/",
-    "node_modules/",
-    "src/",
-    "tsconfig.json",
-    "typings/"
-  ]
-  ".eslintignore": [
-    "*.gql",
-    "*.js",
-    "__generated__",
-    "lib"
-  ]
-  ".prettierignore": [
-    "lib/"
-  ]
+  '.gitignore':
+    [
+      '*.log',
+      '*.pid',
+      '*.pid.lock',
+      '*.seed',
+      '*.tgz',
+      '.env',
+      '.yarn-integrity',
+      '/.editorconfig',
+      '/.eslintcache',
+      '/.eslintignore',
+      '/.eslintrc',
+      '/.figma.yml',
+      '/.husky/',
+      '/.prettierignore',
+      '/.prettierrc',
+      '/.vscode/',
+      '/jest.config.js',
+      '/tsconfig.json',
+      'coverage',
+      'lib',
+      'logs',
+      'node_modules/',
+      'pids',
+      'tsconfig.tsbuildinfo',
+      'yarn-debug.log*',
+      'yarn-error.log*',
+    ]
+  '.npmignore':
+    [
+      '**/__mocks__/**',
+      '**/__tests__/**',
+      '.changelogrc.yml',
+      '.config',
+      '.editorconfig',
+      '.env',
+      '.eslintignore',
+      '.eslintrc',
+      '.figma.yml',
+      '.ghinfo',
+      '.gitattributes',
+      '.github',
+      '.husky',
+      '.prettierignore',
+      '.prettierrc',
+      '.vscode',
+      'CODE_OF_CONDUCT.md',
+      'codecov.yml',
+      'codegen.yml',
+      'coverage/',
+      'docs/',
+      'example/',
+      'jest.config.js',
+      'media/',
+      'node_modules/',
+      'src/',
+      'tsconfig.json',
+      'typings/',
+    ]
+  '.eslintignore': ['*.gql', '*.js', '__generated__', 'lib']
+  '.prettierignore': ['lib/']
 
-executableFiles: [
-  ".husky/commit-msg",
-  ".husky/pre-commit",
-]
+executableFiles: ['.husky/commit-msg', '.husky/pre-commit']
 
 scripts:
-  "prepare:config": "node --experimental-specifier-resolution=node node_modules/.bin/ts-package-shared-config"
-  "prepare:husky": "husky install"
-  "prepare": "npm-run-all prepare:*"
-  "lint:eslint": "rimraf coverage && eslint \"src/**\" --ext .ts"
-  "lint:spell": "cspell -c .vscode/cspell.json --no-summary \"README.md\" \"src/**/*.ts\""
-  "lint": "npm-run-all lint:*"
-  "test:jest": "node --experimental-vm-modules node_modules/.bin/jest"
-  "test": "npm-run-all test:*"
-  "generate:changelog": "node --experimental-specifier-resolution=node node_modules/.bin/changelog generate --bump"
-  "generate:ghinfo": "node --experimental-specifier-resolution=node node_modules/.bin/ghinfo generate -d media -t utils"
-  "generate:media": "node --experimental-specifier-resolution=node node_modules/.bin/figma-portal extract -d media -p GitHub"
-  "generate": "npm-run-all generate:*"
-  "build:ts": "rimraf lib && tsc --extendedDiagnostics"
-  "build": "npm-run-all build:*"
-  "release": "npm-run-all prepare lint test build generate"
+  'prepare:config': 'node --experimental-specifier-resolution=node node_modules/.bin/ts-package-shared-config'
+  'prepare:husky': 'husky install'
+  'prepare': 'npm-run-all prepare:*'
+  'lint:eslint': 'rimraf coverage && eslint "src/**" --ext .ts'
+  'lint:spell': 'cspell -c .vscode/cspell.json --no-summary "README.md" "src/**/*.ts"'
+  'lint': 'npm-run-all lint:*'
+  'test:jest': 'node --experimental-vm-modules node_modules/.bin/jest'
+  'test': 'npm-run-all test:*'
+  'generate:changelog': 'node --experimental-specifier-resolution=node node_modules/.bin/changelog generate --bump'
+  'generate:ghinfo': 'node --experimental-specifier-resolution=node node_modules/.bin/ghinfo generate -d media -t utils'
+  'generate:media': 'node --experimental-specifier-resolution=node node_modules/.bin/figma-portal extract -d media -p GitHub'
+  'generate': 'npm-run-all generate:*'
+  'build:ts': 'rimraf lib && tsc --extendedDiagnostics'
+  'build': 'npm-run-all build:*'
+  'release': 'npm-run-all prepare lint test build generate'
 
 dependencies:
-  - "@types/jest": "27.x"
-  - "@types/node": "17.x"
-  - "@typescript-eslint/eslint-plugin": "5.x"
-  - "@typescript-eslint/parser": "5.x"
-  - "changelog-guru": "3.x"
-  - "cspell"
-  - "eslint": "8.x"
-  - "eslint-config-prettier": "8.x"
-  - "eslint-plugin-import": "2.x"
-  - "eslint-plugin-jest": "25.x"
-  - "eslint-plugin-node": "11.x"
-  - "eslint-plugin-optimize-regex": "1.x"
-  - "eslint-plugin-promise": "6.x"
-  - "figma-portal"
-  - "ghinfo": "3.x"
-  - "husky": "7.x"
-  - "jest": "27.x"
-  - "npm-run-all"
-  - "prettier"
-  - "rimraf"
-  - "ts-jest": "27.x"
-  - "typescript": "4.x"
+  - '@types/jest': '27.x'
+  - '@types/node': '17.x'
+  - '@typescript-eslint/eslint-plugin': '5.x'
+  - '@typescript-eslint/parser': '5.x'
+  - 'changelog-guru'
+  - 'cspell'
+  - 'eslint': '8.x'
+  - 'eslint-config-prettier': '8.x'
+  - 'eslint-plugin-import': '2.x'
+  - 'eslint-plugin-jest': '25.x'
+  - 'eslint-plugin-node': '11.x'
+  - 'eslint-plugin-optimize-regex': '1.x'
+  - 'eslint-plugin-promise': '6.x'
+  - 'figma-portal'
+  - 'ghinfo': '3.x'
+  - 'husky': '7.x'
+  - 'jest': '27.x'
+  - 'npm-run-all'
+  - 'prettier'
+  - 'rimraf'
+  - 'ts-jest': '27.x'
+  - 'typescript': '4.x'
 
 package:
-  exports: "./lib/index.js"
-  manager: "npm"
-  type: "module"
-  types: "./lib/index.d.ts"
+  exports: './lib/index.js'
+  manager: 'npm'
+  type: 'module'
+  types: './lib/index.d.ts'
