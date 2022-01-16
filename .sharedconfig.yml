@@ -18,15 +18,11 @@ ignorePatterns:
       '*.tgz',
       '.env',
       '.yarn-integrity',
-      '/.editorconfig',
       '/.eslintcache',
       '/.eslintignore',
       '/.eslintrc',
       '/.figma.yml',
       '/.husky/',
-      '/.prettierignore',
-      '/.prettierrc',
-      '/.vscode/',
       '/jest.config.js',
       '/tsconfig.json',
       'coverage',
@@ -44,7 +40,6 @@ ignorePatterns:
       '**/__tests__/**',
       '.changelogrc.yml',
       '.config',
-      '.editorconfig',
       '.env',
       '.eslintignore',
       '.eslintrc',
@@ -53,9 +48,6 @@ ignorePatterns:
       '.gitattributes',
       '.github',
       '.husky',
-      '.prettierignore',
-      '.prettierrc',
-      '.vscode',
       'CODE_OF_CONDUCT.md',
       'codecov.yml',
       'codegen.yml',
@@ -75,21 +67,20 @@ ignorePatterns:
 executableFiles: ['.husky/commit-msg', '.husky/pre-commit']
 
 scripts:
-  'prepare:config': 'node --experimental-specifier-resolution=node node_modules/.bin/ts-package-shared-config'
-  'prepare:husky': 'husky install'
-  'prepare': 'npm-run-all prepare:*'
-  'lint:eslint': 'rimraf coverage && eslint "src/**" --ext .ts'
-  'lint:spell': 'cspell -c .vscode/cspell.json --no-summary "README.md" "src/**/*.ts"'
-  'lint': 'npm-run-all lint:*'
-  'test:jest': 'node --experimental-vm-modules node_modules/.bin/jest'
-  'test': 'npm-run-all test:*'
+  'build': 'npm-run-all build:*'
+  'build:ts': 'rimraf lib && tsc --extendedDiagnostics'
+  'generate': 'npm-run-all generate:*'
   'generate:changelog': 'node --experimental-specifier-resolution=node node_modules/.bin/changelog generate --bump'
   'generate:ghinfo': 'node --experimental-specifier-resolution=node node_modules/.bin/ghinfo generate -d media -t utils'
   'generate:media': 'node --experimental-specifier-resolution=node node_modules/.bin/figma-portal extract -d media -p GitHub'
-  'generate': 'npm-run-all generate:*'
-  'build:ts': 'rimraf lib && tsc --extendedDiagnostics'
-  'build': 'npm-run-all build:*'
+  'lint': 'npm-run-all lint:*'
+  'lint:eslint': 'rimraf coverage && eslint "src/**" --ext .ts'
+  'prepare': 'npm-run-all prepare:*'
+  'prepare:config': 'node --experimental-specifier-resolution=node node_modules/.bin/ts-package-shared-config'
+  'prepare:husky': 'husky install'
   'release': 'npm-run-all prepare lint test build generate'
+  'test': 'npm-run-all test:*'
+  'test:jest': 'node --experimental-vm-modules node_modules/.bin/jest'
 
 dependencies:
   - '@types/jest': '27.x'
@@ -97,7 +88,6 @@ dependencies:
   - '@typescript-eslint/eslint-plugin': '5.x'
   - '@typescript-eslint/parser': '5.x'
   - 'changelog-guru'
-  - 'cspell'
   - 'eslint': '8.x'
   - 'eslint-config-prettier': '8.x'
   - 'eslint-plugin-import': '2.x'
@@ -110,7 +100,6 @@ dependencies:
   - 'husky': '7.x'
   - 'jest': '27.x'
   - 'npm-run-all'
-  - 'prettier'
   - 'rimraf'
   - 'ts-jest': '27.x'
   - 'typescript': '4.x'
