@@ -1,14 +1,4 @@
 {
   "language": "en",
-  "words": [
-    "codecov",
-    "dependabot",
-    "ghinfo",
-    "keindev",
-    "mediainfo",
-    "npmignore",
-    "opensource",
-    "tagproject",
-    "tasktree"
-  ]
+  "words": ["ghinfo", "mediainfo", "tasktree"]
 }

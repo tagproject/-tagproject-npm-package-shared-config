@@ -37,13 +37,15 @@
     "prepare": "npm-run-all prepare:*",
     "prepare:config": "node --experimental-specifier-resolution=node node_modules/.bin/base-shared-config",
     "prepare:husky": "husky install",
+    "prepare:vscode": "node --experimental-specifier-resolution=node node_modules/.bin/vscode-shared-config",
     "release": "npm-run-all prepare build generate"
   },
   "dependencies": {
     "standard-shared-config": "^4.0.9"
   },
   "devDependencies": {
-    "@tagproject/base-shared-config": "^1.4.4",
+    "@tagproject/base-shared-config": "^2.0.0",
+    "@tagproject/vscode-shared-config": "^1.1.0",
     "changelog-guru": "^4.0.2",
     "figma-portal": "^0.10.2",
     "husky": "^7.0.4",
