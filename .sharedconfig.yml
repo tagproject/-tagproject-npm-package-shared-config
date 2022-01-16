@@ -3,7 +3,6 @@ outputDir: 'lib'
 
 mergeRules:
   '.husky/commit-msg': true
-  '.vscode/cspell.json': ['words']
   '.vscode/launch.json': ['configurations']
   '.gitignore': true
   '.npmignore': true
