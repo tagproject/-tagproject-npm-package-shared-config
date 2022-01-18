@@ -215,7 +215,7 @@
     "curly": ["error", "multi-line"],
     "eol-last": "error",
     "eqeqeq": "error",
-    "generator-star-spacing": ["error", "before"],
+    "generator-star-spacing": ["error", "after"],
     "import/extensions": "off",
     "import/prefer-default-export": "off",
     "indent": "off",
