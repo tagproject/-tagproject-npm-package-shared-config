@@ -1,6 +1,6 @@
 {
   "name": "@tagproject/ts-package-shared-config",
-  "version": "7.0.1",
+  "version": "7.1.0",
   "description": "Standard shared config for tagproject packages with Node.js and TypeScript",
   "license": "MIT",
   "homepage": "https://github.com/tagproject/ts-package-shared-config#readme",
@@ -35,19 +35,21 @@
     "generate:changelog": "node --experimental-specifier-resolution=node node_modules/.bin/changelog generate --bump",
     "generate:media": "node --experimental-specifier-resolution=node node_modules/.bin/figma-portal extract -d media -p GitHub",
     "lint": "npm-run-all lint:*",
-    "lint:spell": "cspell -c .vscode/cspell.json --no-summary \"README.md\" \"src/**/*.ts\"",
+    "lint:spell": "cspell -c .vscode/cspell.json --no-summary \"**/*.{js,ts,tsx,md,yml,json}\"",
     "prepare": "npm-run-all prepare:*",
     "prepare:config": "node --experimental-specifier-resolution=node node_modules/.bin/base-shared-config",
+    "prepare:docs": "node --experimental-specifier-resolution=node node_modules/.bin/docs-shared-config",
     "prepare:husky": "husky install",
     "prepare:vscode": "node --experimental-specifier-resolution=node node_modules/.bin/vscode-shared-config",
     "release": "npm-run-all prepare lint build generate"
   },
   "dependencies": {
-    "standard-shared-config": "^4.0.9"
+    "standard-shared-config": "^4.0.11"
   },
   "devDependencies": {
-    "@tagproject/base-shared-config": "^2.0.1",
-    "@tagproject/vscode-shared-config": "^1.1.2",
+    "@tagproject/base-shared-config": "^2.1.0",
+    "@tagproject/docs-shared-config": "^1.0.1",
+    "@tagproject/vscode-shared-config": "^1.2.1",
     "changelog-guru": "^4.0.2",
     "cspell": "^5.15.2",
     "figma-portal": "^0.10.2",

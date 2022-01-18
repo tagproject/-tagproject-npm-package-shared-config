@@ -10,6 +10,7 @@
 .sharedconfig.yml
 .vscode
 CODE_OF_CONDUCT.md
+SECURITY.md
 codecov.yml
 docs/
 example/
