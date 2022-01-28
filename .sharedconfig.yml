@@ -90,7 +90,7 @@ dependencies:
   - 'eslint': '8.x'
   - 'eslint-config-prettier': '8.x'
   - 'eslint-plugin-import': '2.x'
-  - 'eslint-plugin-jest': '25.x'
+  - 'eslint-plugin-jest': '26.x'
   - 'eslint-plugin-node': '11.x'
   - 'eslint-plugin-optimize-regex': '1.x'
   - 'eslint-plugin-promise': '6.x'
