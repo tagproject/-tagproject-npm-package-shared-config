@@ -1,6 +1,6 @@
 {
   "name": "@tagproject/ts-package-shared-config",
-  "version": "7.2.0",
+  "version": "7.2.1",
   "description": "Standard shared config for tagproject packages with Node.js and TypeScript",
   "license": "MIT",
   "homepage": "https://github.com/tagproject/ts-package-shared-config#readme",
@@ -15,7 +15,7 @@
     "standard",
     "ts"
   ],
-  "bugs": "https://github.com/keindev/ts-package-shared-config/issues",
+  "bugs": "https://github.com/tagproject/ts-package-shared-config/issues",
   "types": "./lib/index.d.ts",
   "type": "module",
   "exports": "./lib/index.js",
@@ -51,8 +51,8 @@
     "@tagproject/docs-shared-config": "^1.0.1",
     "@tagproject/vscode-shared-config": "^1.2.1",
     "changelog-guru": "^4.0.2",
-    "cspell": "^5.17.0",
-    "figma-portal": "^0.10.2",
+    "cspell": "^5.18.0",
+    "figma-portal": "^0.11.0",
     "husky": "^7.0.4",
     "npm-run-all": "^4.1.5",
     "prettier": "^2.5.1"
