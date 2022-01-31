@@ -5,13 +5,14 @@
 <details>
 <summary>Dev Dependencies</summary>
 
-- Changed **[cspell](https://www.npmjs.com/package/cspell)** from `^5.15.2` to `^5.17.0`
+- Changed **[cspell](https://www.npmjs.com/package/cspell)** from `^5.17.0` to `^5.18.0`
+- Bumped **[figma-portal](https://www.npmjs.com/package/figma-portal)** from `^0.10.2` to `^0.11.0`
 
 </details>
 
-# :fire: Improvements
+# :bug: Bug Fixes
 
-- Bump eslint plugin jest to `v26.x` [`febb663`](https://github.com/tagproject/ts-package-shared-config/commit/febb6638788758ed4546f0ff5020f3880cf9a753)
+- Add shared configs to deps [`2f6baf1`](https://github.com/tagproject/ts-package-shared-config/commit/2f6baf1bf578be4f4aa8ccebd3b3d22907608221)
 
 ---
 
