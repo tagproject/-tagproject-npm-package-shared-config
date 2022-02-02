@@ -1,3 +1,14 @@
+# Important Changes
+
+## Dependencies
+
+<details>
+<summary>Dev Dependencies</summary>
+
+- Changed **[@tagproject/vscode-shared-config](https://www.npmjs.com/package/@tagproject/vscode-shared-config)** from `^1.2.1` to `^1.2.2`
+
+</details>
+
 # :bug: Bug Fixes
 
 - Fix release workflow action job [`8bada25`](https://github.com/tagproject/ts-package-shared-config/commit/8bada254ec411dfc2f31bbb0dcc01d450822e7d8)
