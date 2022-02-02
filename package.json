@@ -1,6 +1,6 @@
 {
   "name": "@tagproject/ts-package-shared-config",
-  "version": "7.2.1",
+  "version": "7.2.3",
   "description": "Standard shared config for tagproject packages with Node.js and TypeScript",
   "license": "MIT",
   "homepage": "https://github.com/tagproject/ts-package-shared-config#readme",
@@ -49,7 +49,7 @@
   "devDependencies": {
     "@tagproject/base-shared-config": "^2.1.0",
     "@tagproject/docs-shared-config": "^1.0.1",
-    "@tagproject/vscode-shared-config": "^1.2.1",
+    "@tagproject/vscode-shared-config": "^1.2.2",
     "changelog-guru": "^4.0.2",
     "cspell": "^5.18.0",
     "figma-portal": "^0.11.0",

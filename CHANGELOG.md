@@ -5,14 +5,13 @@
 <details>
 <summary>Dev Dependencies</summary>
 
-- Changed **[cspell](https://www.npmjs.com/package/cspell)** from `^5.17.0` to `^5.18.0`
-- Bumped **[figma-portal](https://www.npmjs.com/package/figma-portal)** from `^0.10.2` to `^0.11.0`
+- Changed **[@tagproject/vscode-shared-config](https://www.npmjs.com/package/@tagproject/vscode-shared-config)** from `^1.2.1` to `^1.2.2`
 
 </details>
 
 # :bug: Bug Fixes
 
-- Add shared configs to deps [`2f6baf1`](https://github.com/tagproject/ts-package-shared-config/commit/2f6baf1bf578be4f4aa8ccebd3b3d22907608221)
+- Fix release workflow action job [`8bada25`](https://github.com/tagproject/ts-package-shared-config/commit/8bada254ec411dfc2f31bbb0dcc01d450822e7d8)
 
 ---
 
