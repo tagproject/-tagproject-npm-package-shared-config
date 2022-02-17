@@ -5,13 +5,13 @@
 <details>
 <summary>Dev Dependencies</summary>
 
-- Changed **[@tagproject/vscode-shared-config](https://www.npmjs.com/package/@tagproject/vscode-shared-config)** from `^1.2.1` to `^1.2.2`
+- Changed **[cspell](https://www.npmjs.com/package/cspell)** from `^5.18.0` to `^5.18.5`
 
 </details>
 
 # :bug: Bug Fixes
 
-- Fix release workflow action job [`8bada25`](https://github.com/tagproject/ts-package-shared-config/commit/8bada254ec411dfc2f31bbb0dcc01d450822e7d8)
+- Fix release workflow [`5f947ed`](https://github.com/tagproject/ts-package-shared-config/commit/5f947ed06344c1cd5581f7e9a05110ed15480a84)
 
 ---
 
