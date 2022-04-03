@@ -35,6 +35,7 @@ ignorePatterns:
     ]
   '.npmignore':
     [
+      '**/__benchmark__/**',
       '**/__mocks__/**',
       '**/__tests__/**',
       '.changelogrc.yml',
