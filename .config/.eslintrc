@@ -310,6 +310,13 @@
         "max-lines-per-function": ["error", { "max": 200 }],
         "no-underscore-dangle": "off"
       }
+    },
+    {
+      "files": ["*Model.{ts,tsx}"],
+      "rules": {
+        "arrow-parens": ["off"],
+        "@typescript-eslint/no-empty-interface": "off"
+      }
     }
   ],
   "settings": {
