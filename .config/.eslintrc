@@ -314,8 +314,9 @@
     {
       "files": ["*Model.{ts,tsx}"],
       "rules": {
+        "@typescript-eslint/no-empty-interface": "off",
         "arrow-parens": ["off"],
-        "@typescript-eslint/no-empty-interface": "off"
+        "no-underscore-dangle": "off"
       }
     }
   ],

@@ -1,6 +1,6 @@
 # :bug: Bug Fixes
 
-- Replace nodenext back to node to `tsconfig.moduleResolution` [`180f709`](https://github.com/tagproject/ts-package-shared-config/commit/180f709ef28f380b71a6d66fed09dc40a8a1ebc6)
+- Add `no-underscore-dangle` for *Models files [`6d1d1ca`](https://github.com/tagproject/ts-package-shared-config/commit/6d1d1ca7273d0acfc25dea97b30c73e401c5d2c8)
 
 ---
 
