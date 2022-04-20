@@ -1,6 +1,6 @@
 # :bug: Bug Fixes
 
-- Add merge rules to tsconfig [`5a15acc`](https://github.com/tagproject/ts-package-shared-config/commit/5a15acc5fb6de15d4af5a71e73e21f50e2c5ece0)
+- Fix gitignore for extended tsconfig [`bcb0eb9`](https://github.com/tagproject/ts-package-shared-config/commit/bcb0eb976809cdb7e6d10d746ed70082e26ffe54)
 
 ---
 
