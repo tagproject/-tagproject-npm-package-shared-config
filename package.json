@@ -49,7 +49,7 @@
   "devDependencies": {
     "@tagproject/base-shared-config": "^2.2.3",
     "@tagproject/docs-shared-config": "^1.0.4",
-    "@tagproject/vscode-shared-config": "^1.2.6",
+    "@tagproject/vscode-shared-config": "^2.0.0",
     "changelog-guru": "^4.0.5",
     "cspell": "^5.19.7",
     "figma-portal": "^1.0.1",
