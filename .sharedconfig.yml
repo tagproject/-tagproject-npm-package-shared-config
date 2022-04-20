@@ -84,7 +84,7 @@ scripts:
 
 dependencies:
   - '@tagproject/docs-shared-config': '1.x'
-  - '@tagproject/vscode-shared-config': '1.X'
+  - '@tagproject/vscode-shared-config': '2.X'
   - '@types/jest': '27.x'
   - '@types/node': '17.x'
   - '@typescript-eslint/eslint-plugin': '5.x'
@@ -98,7 +98,7 @@ dependencies:
   - 'eslint-plugin-optimize-regex': '1.x'
   - 'eslint-plugin-promise': '6.x'
   - 'figma-portal'
-  - 'ghinfo': '3.x'
+  - 'ghinfo'
   - 'husky': '7.x'
   - 'jest': '27.x'
   - 'npm-run-all'
