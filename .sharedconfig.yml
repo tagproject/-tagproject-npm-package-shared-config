@@ -4,6 +4,7 @@ outputDir: 'lib'
 mergeRules:
   '.husky/commit-msg': true
   '.vscode/launch.json': ['configurations']
+  'tsconfig.json': ['include']
   '.gitignore': true
   '.npmignore': true
 
