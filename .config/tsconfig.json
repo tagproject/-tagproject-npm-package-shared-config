@@ -23,5 +23,5 @@
     "typeRoots": ["typings/", "node_modules/@types/"]
   },
   "exclude": ["node_modules", "bin"],
-  "include": ["src/index.ts"]
+  "files": ["src/index.ts"]
 }
