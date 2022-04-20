@@ -1,6 +1,6 @@
 # :bug: Bug Fixes
 
-- Fix gitignore for extended tsconfig [`bcb0eb9`](https://github.com/tagproject/ts-package-shared-config/commit/bcb0eb976809cdb7e6d10d746ed70082e26ffe54)
+- Add jest `testMatch` for *.test.ts files [`96f3866`](https://github.com/tagproject/ts-package-shared-config/commit/96f38660b234348b487d24d21d1ed5a3320fc2ce)
 
 ---
 

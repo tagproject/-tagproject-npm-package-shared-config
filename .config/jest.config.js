@@ -3,7 +3,7 @@ export default {
   extensionsToTreatAsEsm: ['.ts'],
   collectCoverage: true,
   coverageReporters: ['text-summary', 'lcov'],
-  testRegex: '(/__tests__/.*|(\\.|/)(test))\\.(tsx?)$',
+  testMatch: ['**/__tests__/**/*.test.(ts|tsx)'],
   testPathIgnorePatterns: ['<rootDir>/lib/', '<rootDir>/node_modules/'],
   transform: {},
   moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json'],
