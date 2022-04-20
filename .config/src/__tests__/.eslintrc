@@ -1,0 +1,12 @@
+{
+  "parserOptions": {
+    "project": "./src/__tests__/tsconfig.json"
+  },
+  "extends": ["../../.eslintrc"],
+  "rules": {
+    "@typescript-eslint/no-explicit-any": "off",
+    "@typescript-eslint/no-magic-numbers": "off",
+    "max-lines-per-function": ["error", { "max": 200 }],
+    "no-underscore-dangle": "off"
+  }
+}
