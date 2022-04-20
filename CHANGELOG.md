@@ -1,6 +1,6 @@
 # :bug: Bug Fixes
 
-- Fix vscode shared config version [`0419c8e`](https://github.com/tagproject/ts-package-shared-config/commit/0419c8e43d64e4889f2c3b5e150a7fdcf3f1ff0e)
+- Add eslint and ts configs for __tests__ [`2e20707`](https://github.com/tagproject/ts-package-shared-config/commit/2e2070754d3e4f82f91b6fa7e6af71f2a96ba6d3)
 
 ---
 
