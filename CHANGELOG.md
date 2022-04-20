@@ -1,6 +1,6 @@
 # :bug: Bug Fixes
 
-- Add all eslint and tsconfigs to .gitignore [`4a7309d`](https://github.com/tagproject/ts-package-shared-config/commit/4a7309d7c7568b2338e3a3fdadbb0b51f05d5b26)
+- Add src/bin to tsconfig includes [`d83c2b4`](https://github.com/tagproject/ts-package-shared-config/commit/d83c2b4cb0efc1100270fefb6e80d49f4f95c9f4)
 
 ---
 
