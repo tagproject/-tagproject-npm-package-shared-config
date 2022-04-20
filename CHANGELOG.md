@@ -1,6 +1,6 @@
 # :bug: Bug Fixes
 
-- Add src/bin to tsconfig includes [`d83c2b4`](https://github.com/tagproject/ts-package-shared-config/commit/d83c2b4cb0efc1100270fefb6e80d49f4f95c9f4)
+- Add merge rules to tsconfig [`5a15acc`](https://github.com/tagproject/ts-package-shared-config/commit/5a15acc5fb6de15d4af5a71e73e21f50e2c5ece0)
 
 ---
 
