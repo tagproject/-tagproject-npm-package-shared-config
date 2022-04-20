@@ -1,6 +1,25 @@
+# BREAKING CHANGES
+
+- Change ts includes to files [`5c24594`](https://github.com/tagproject/ts-package-shared-config/commit/5c24594e5ea0db8603974d059e442707324ecda6)
+
+# Important Changes
+
+## Dependencies
+
+<details>
+<summary>Dev Dependencies</summary>
+
+- Bumped **[@tagproject/vscode-shared-config](https://www.npmjs.com/package/@tagproject/vscode-shared-config)** from `^1.2.6` to `^2.0.0`
+
+</details>
+
+# :fire: Improvements
+
+- Add jest ESM module name mapper [`b932723`](https://github.com/tagproject/ts-package-shared-config/commit/b932723fdf76918185be2cb88fc826e83f9054d7)
+
 # :bug: Bug Fixes
 
-- Add `no-underscore-dangle` for *Models files [`6d1d1ca`](https://github.com/tagproject/ts-package-shared-config/commit/6d1d1ca7273d0acfc25dea97b30c73e401c5d2c8)
+- Remove eslint rules for *Models.ts [`bc7331b`](https://github.com/tagproject/ts-package-shared-config/commit/bc7331bbef957268bce29d1e0c023b8e591bc587)
 
 ---
 
