@@ -1,6 +1,6 @@
 # :bug: Bug Fixes
 
-- Add eslint and ts configs for __tests__ [`2e20707`](https://github.com/tagproject/ts-package-shared-config/commit/2e2070754d3e4f82f91b6fa7e6af71f2a96ba6d3)
+- Add all eslint and tsconfigs to .gitignore [`4a7309d`](https://github.com/tagproject/ts-package-shared-config/commit/4a7309d7c7568b2338e3a3fdadbb0b51f05d5b26)
 
 ---
 
