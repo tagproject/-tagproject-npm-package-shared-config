@@ -1,6 +1,5 @@
 .env
 /.editorconfig
-/.figma.yml
 /.husky/
 /.prettierignore
 /.prettierrc
