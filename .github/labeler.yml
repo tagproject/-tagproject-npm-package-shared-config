@@ -15,7 +15,7 @@ project:
 docs:
   - any: ['docs/**/*', '*.md', '.ghinfo']
 
-shared-config:workflow: 
+shared-config:workflow:
   - .config/.github/**/*
   - .config/.gitignore
   - .config/.npmignore
@@ -28,9 +28,7 @@ shared-config:code-style:
   - .config/.prettierrc
 
 shared-config:test:
-  - .config/babel.config.js
   - .config/jest.config.js
-  - .config/jest.modules.json
 
 shared-config:ts:
   - .config/tsconfig.json

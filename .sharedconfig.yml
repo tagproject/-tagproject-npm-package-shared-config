@@ -21,7 +21,6 @@ ignorePatterns:
       '.yarn-integrity',
       '/.eslintcache',
       '/.eslintignore',
-      '/.figma.yml',
       '/.husky/',
       '/jest.config.js',
       'coverage',
@@ -45,7 +44,6 @@ ignorePatterns:
       '.env',
       '.eslintignore',
       '.eslintrc',
-      '.figma.yml',
       '.ghinfo',
       '.gitattributes',
       '.github',
@@ -74,7 +72,6 @@ scripts:
   'generate': 'npm-run-all generate:*'
   'generate:changelog': 'node --experimental-specifier-resolution=node node_modules/.bin/changelog generate --bump'
   'generate:ghinfo': 'node --experimental-specifier-resolution=node node_modules/.bin/ghinfo generate -d media -t utils'
-  'generate:media': 'node --experimental-specifier-resolution=node node_modules/.bin/figma-portal extract -d media -p GitHub'
   'lint': 'npm-run-all lint:*'
   'lint:eslint': 'rimraf coverage && eslint src --ext .ts'
   'prepare': 'npm-run-all prepare:*'
@@ -87,25 +84,23 @@ scripts:
 dependencies:
   - '@tagproject/docs-shared-config': '1.x'
   - '@tagproject/vscode-shared-config': '2.X'
-  - '@types/jest': '27.x'
-  - '@types/node': '17.x'
+  - '@types/jest'
+  - '@types/node'
   - '@typescript-eslint/eslint-plugin': '5.x'
   - '@typescript-eslint/parser': '5.x'
   - 'changelog-guru'
   - 'eslint': '8.x'
   - 'eslint-config-prettier': '8.x'
   - 'eslint-plugin-import': '2.x'
-  - 'eslint-plugin-jest': '26.x'
+  - 'eslint-plugin-jest': '27.x'
   - 'eslint-plugin-node': '11.x'
   - 'eslint-plugin-optimize-regex': '1.x'
   - 'eslint-plugin-promise': '6.x'
-  - 'figma-portal'
   - 'ghinfo'
-  - 'husky': '7.x'
-  - 'jest': '27.x'
-  - 'npm-run-all'
+  - 'husky': '8.x'
+  - 'jest': '29.x'
   - 'rimraf'
-  - 'ts-jest': '27.x'
+  - 'ts-jest': '29.x'
   - 'typescript': '4.x'
 
 package:
