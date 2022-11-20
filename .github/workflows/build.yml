@@ -19,6 +19,8 @@ jobs:
 
     - name: Use Node.js ${{ matrix.node }}
       uses: actions/setup-node@v3
+      with:
+        node-version: latest
 
     - name: Install Dependencies
       run: npm ci
@@ -40,10 +42,10 @@ jobs:
           FILTER: "[.jobs[] | select(.status==\"completed\" and .conclusion==\"failure\") | { status: .conclusion, matrix: .name}] | length"
         run: |
           FAILURE_COUNT=$(curl -X GET -s -u $USER $URL | jq "$FILTER")
-          echo "failure_count=$FAILURE_COUNT" >> $GITHUB_OUTPUT
+          echo "fails=$FAILURE_COUNT" >> $GITHUB_OUTPUT
           echo Failure jobs count: $FAILURE_COUNT
 
-      - if: ${{ steps.status.outputs.failure_count > 0 }}
+      - if: ${{ steps.status.outputs.fails > 0 }}
         name: Fail
         run: exit 1
 

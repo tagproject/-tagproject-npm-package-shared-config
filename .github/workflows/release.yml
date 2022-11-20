@@ -27,6 +27,8 @@ jobs:
 
     - name: Setup Node.js
       uses: actions/setup-node@v3
+      with:
+        node-version: latest
 
     - name: Build
       run: |
@@ -49,6 +51,8 @@ jobs:
 
     - name: Use Node.js
       uses: actions/setup-node@v3
+      with:
+        node-version: latest
 
     - name: Get package version
       run: node -p -e '`PACKAGE_VERSION=${require("./package.json").version}`' >> $GITHUB_ENV
