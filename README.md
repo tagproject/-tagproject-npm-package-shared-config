@@ -21,8 +21,6 @@ npm install @tagproject/ts-package-shared-config --save-dev
 - Add `"prepare": "npm-run-all prepare:*"`
 - Run `npm run prepare`
 
-> use `node --experimental-specifier-resolution=node node_modules/.bin/ts-package-shared-config` while [ESM](https://nodejs.org/api/esm.html) is in `Experimental`
-
 ## Configs
 
 ## include shared configs:
@@ -94,7 +92,6 @@ npm install @tagproject/ts-package-shared-config --save-dev
 ```json
 {
   "exports": "./lib/index.js",
-  "manager": "npm",
   "type": "module",
   "types": "./lib/index.d.ts"
 }

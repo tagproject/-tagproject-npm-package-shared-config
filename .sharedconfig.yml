@@ -83,7 +83,7 @@ scripts:
 
 dependencies:
   - '@tagproject/docs-shared-config': '1.x'
-  - '@tagproject/vscode-shared-config': '2.X'
+  - '@tagproject/vscode-shared-config': '2.x'
   - '@types/jest'
   - '@types/node'
   - '@typescript-eslint/eslint-plugin': '5.x'

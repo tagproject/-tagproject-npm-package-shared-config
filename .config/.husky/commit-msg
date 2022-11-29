@@ -1,4 +1,4 @@
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
 
-node --experimental-specifier-resolution=node node_modules/.bin/changelog lint --message $1
+node node_modules/.bin/changelog lint --message $1
