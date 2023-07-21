@@ -1,6 +1,6 @@
 # :bug: Bug Fixes
 
-- Previously deprecated rules are deleted [`ce7e97c`](https://github.com/tagproject/ts-package-shared-config/commit/ce7e97cfb58eb64cecf96982ef7b7443add3b4e3)
+- Add `NodeNext` module/`moduleResolution` [`7cc7c4c`](https://github.com/tagproject/ts-package-shared-config/commit/7cc7c4ccca659532b3ff7eef93c0d58200fbf2e9)
 
 ---
 
