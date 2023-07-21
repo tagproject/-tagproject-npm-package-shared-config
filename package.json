@@ -43,16 +43,16 @@
     "release": "npm-run-all prepare lint build generate"
   },
   "dependencies": {
-    "standard-shared-config": "^4.0.18"
+    "standard-shared-config": "^4.1.0"
   },
   "devDependencies": {
-    "@tagproject/base-shared-config": "^3.3.5",
-    "@tagproject/docs-shared-config": "^1.1.2",
-    "@tagproject/vscode-shared-config": "^2.0.5",
+    "@tagproject/base-shared-config": "^3.3.6",
+    "@tagproject/docs-shared-config": "^1.1.3",
+    "@tagproject/vscode-shared-config": "^2.0.10",
     "changelog-guru": "^4.0.9",
-    "cspell": "^6.15.0",
-    "husky": "^8.0.2",
+    "cspell": "^6.31.2",
+    "husky": "^8.0.3",
     "npm-run-all": "^4.1.5",
-    "prettier": "^2.8.0"
+    "prettier": "^3.0.0"
   }
 }
