@@ -222,7 +222,7 @@
     "new-parens": "error",
     "no-alert": "warn",
     "no-bitwise": "off",
-    "no-confusing-arrow": ["error", { "allowParens": true }],
+    "no-confusing-arrow": ["error", { "allowParens": true, "onlyOneSimpleParam": true }],
     "no-console": "warn",
     "no-dupe-class-members": "off",
     "no-else-return": ["error", { "allowElseIf": false }],
