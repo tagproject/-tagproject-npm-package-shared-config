@@ -70,8 +70,8 @@ npm install @tagproject/ts-package-shared-config --save-dev
 - [@tagproject/vscode-shared-config](https://www.npmjs.com/package/@tagproject/vscode-shared-config): `2.x`
 - [@types/jest](https://www.npmjs.com/package/@types/jest): `latest`
 - [@types/node](https://www.npmjs.com/package/@types/node): `latest`
-- [@typescript-eslint/eslint-plugin](https://www.npmjs.com/package/@typescript-eslint/eslint-plugin): `5.x`
-- [@typescript-eslint/parser](https://www.npmjs.com/package/@typescript-eslint/parser): `5.x`
+- [@typescript-eslint/eslint-plugin](https://www.npmjs.com/package/@typescript-eslint/eslint-plugin): `6.x`
+- [@typescript-eslint/parser](https://www.npmjs.com/package/@typescript-eslint/parser): `6.x`
 - [changelog-guru](https://www.npmjs.com/package/changelog-guru): `latest`
 - [eslint](https://www.npmjs.com/package/eslint): `8.x`
 - [eslint-config-prettier](https://www.npmjs.com/package/eslint-config-prettier): `8.x`
@@ -85,7 +85,7 @@ npm install @tagproject/ts-package-shared-config --save-dev
 - [jest](https://www.npmjs.com/package/jest): `29.x`
 - [rimraf](https://www.npmjs.com/package/rimraf): `latest`
 - [ts-jest](https://www.npmjs.com/package/ts-jest): `29.x`
-- [typescript](https://www.npmjs.com/package/typescript): `4.x`
+- [typescript](https://www.npmjs.com/package/typescript): `5.x`
 
 #### configure:
 
