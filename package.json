@@ -4,10 +4,7 @@
   "description": "Standard shared config for tagproject packages with Node.js and TypeScript",
   "license": "MIT",
   "homepage": "https://github.com/tagproject/ts-package-shared-config#readme",
-  "author": {
-    "name": "Daniil Ryazanov",
-    "email": "kein@tagproject.ru"
-  },
+  "author": "Daniil Ryazanov <kein@tagproject.ru>",
   "keywords": [
     "config",
     "node",
@@ -27,32 +24,50 @@
     "url": "git+https://github.com/tagproject/ts-package-shared-config.git"
   },
   "engines": {
-    "node": "^14.13.1 || >=16.0.0"
+    "node": ">=15.14.0",
+    "npm": ">=7.7.6"
   },
   "scripts": {
     "build": "standard-shared-config build",
-    "generate": "npm-run-all generate:*",
+    "generate": "run-s generate:*",
     "generate:changelog": "changelog generate --bump",
-    "lint": "npm-run-all lint:*",
+    "lint": "run-s lint:*",
     "lint:spell": "cspell -c .vscode/cspell.json --no-summary \"**/*.{js,ts,tsx,md,yml,json}\"",
-    "prepare": "npm-run-all prepare:*",
+    "prepare": "run-s prepare:*",
     "prepare:config": "base-shared-config",
     "prepare:docs": "docs-shared-config",
     "prepare:husky": "husky install",
     "prepare:vscode": "vscode-shared-config",
-    "release": "npm-run-all prepare lint build generate"
+    "release": "run-s prepare lint build generate"
   },
   "dependencies": {
-    "standard-shared-config": "^4.1.0"
+    "standard-shared-config": "5.0.0-beta.0"
   },
   "devDependencies": {
-    "@tagproject/base-shared-config": "^3.3.6",
-    "@tagproject/docs-shared-config": "^1.1.3",
-    "@tagproject/vscode-shared-config": "^2.0.10",
-    "changelog-guru": "^4.0.9",
-    "cspell": "^6.31.2",
-    "husky": "^8.0.3",
-    "npm-run-all": "^4.1.5",
-    "prettier": "^3.0.0"
+    "@tagproject/base-shared-config": "^4.0.1",
+    "@tagproject/docs-shared-config": "^3.0.0",
+    "@tagproject/vscode-shared-config": "^3.0.0"
+  },
+  "peerDependencies": {
+    "@tagproject/docs-shared-config": "3.x",
+    "@tagproject/vscode-shared-config": "3.x",
+    "@types/jest": "*",
+    "@types/node": "*",
+    "@typescript-eslint/eslint-plugin": "6.x",
+    "@typescript-eslint/parser": "6.x",
+    "changelog-guru": "4.x",
+    "eslint": "8.x",
+    "eslint-config-prettier": "8.x",
+    "eslint-plugin-import": "2.x",
+    "eslint-plugin-jest": "27.x",
+    "eslint-plugin-node": "11.x",
+    "eslint-plugin-optimize-regex": "1.x",
+    "eslint-plugin-promise": "6.x",
+    "ghinfo": "*",
+    "husky": "8.x",
+    "jest": "29.x",
+    "rimraf": "*",
+    "ts-jest": "29.x",
+    "typescript": "5.x"
   }
 }
