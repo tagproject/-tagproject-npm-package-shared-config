@@ -1,17 +1,45 @@
+# !ignorefile-merge block-open @tagproject/base-shared-config
+# ---------------------------------------------------------------
+# This block generated automatically
+# @see https://www.npmjs.com/package/ignorefile-merge
+# ---------------------------------------------------------------
+
 .config
-.editorconfig
 .env
 .gitattributes
 .github
 .husky
-.prettierignore
-.prettierrc
 .sharedconfig.yml
-.vscode
+codecov.yml
+node_modules/
+
+# !ignorefile-merge block-close @tagproject/base-shared-config
+
+# !ignorefile-merge block-open @tagproject/docs-shared-config
+# ---------------------------------------------------------------
+# This block generated automatically
+# @see https://www.npmjs.com/package/ignorefile-merge
+# ---------------------------------------------------------------
+
+# .env
 CODE_OF_CONDUCT.md
 SECURITY.md
-codecov.yml
 docs/
 example/
 media/
-node_modules/
+# node_modules/
+
+# !ignorefile-merge block-close @tagproject/docs-shared-config
+
+# !ignorefile-merge block-open @tagproject/vscode-shared-config
+# ---------------------------------------------------------------
+# This block generated automatically
+# @see https://www.npmjs.com/package/ignorefile-merge
+# ---------------------------------------------------------------
+
+.editorconfig
+.prettierignore
+.prettierrc
+.vscode
+
+# !ignorefile-merge block-close @tagproject/vscode-shared-config

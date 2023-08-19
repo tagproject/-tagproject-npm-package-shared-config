@@ -41,23 +41,23 @@
     "release": "run-s prepare lint build generate"
   },
   "dependencies": {
-    "standard-shared-config": "5.0.0-beta.0"
+    "standard-shared-config": "5.1.0"
   },
   "devDependencies": {
-    "@tagproject/base-shared-config": "^4.0.1",
-    "@tagproject/docs-shared-config": "^3.0.0",
-    "@tagproject/vscode-shared-config": "^3.0.0"
+    "@tagproject/base-shared-config": "^4.0.2",
+    "@tagproject/docs-shared-config": "^3.0.2",
+    "@tagproject/vscode-shared-config": "^4.0.1"
   },
   "peerDependencies": {
     "@tagproject/docs-shared-config": "3.x",
-    "@tagproject/vscode-shared-config": "3.x",
+    "@tagproject/vscode-shared-config": "4.x",
     "@types/jest": "*",
     "@types/node": "*",
     "@typescript-eslint/eslint-plugin": "6.x",
     "@typescript-eslint/parser": "6.x",
     "changelog-guru": "4.x",
     "eslint": "8.x",
-    "eslint-config-prettier": "8.x",
+    "eslint-config-prettier": "9.x",
     "eslint-plugin-import": "2.x",
     "eslint-plugin-jest": "27.x",
     "eslint-plugin-node": "11.x",

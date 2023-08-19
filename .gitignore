@@ -1,9 +1,37 @@
+# !ignorefile-merge block-open @tagproject/base-shared-config
+# ---------------------------------------------------------------
+# This block generated automatically
+# @see https://www.npmjs.com/package/ignorefile-merge
+# ---------------------------------------------------------------
+
 .env
-/.editorconfig
 /.husky/
-/.prettierignore
-/.prettierrc
-/.vscode/
 bin
 lib
 node_modules/
+
+# !ignorefile-merge block-close @tagproject/base-shared-config
+
+# !ignorefile-merge block-open @tagproject/docs-shared-config
+# ---------------------------------------------------------------
+# This block generated automatically
+# @see https://www.npmjs.com/package/ignorefile-merge
+# ---------------------------------------------------------------
+
+# .env
+# node_modules/
+
+# !ignorefile-merge block-close @tagproject/docs-shared-config
+
+# !ignorefile-merge block-open @tagproject/vscode-shared-config
+# ---------------------------------------------------------------
+# This block generated automatically
+# @see https://www.npmjs.com/package/ignorefile-merge
+# ---------------------------------------------------------------
+
+/.editorconfig
+/.prettierignore
+/.prettierrc
+/.vscode/
+
+# !ignorefile-merge block-close @tagproject/vscode-shared-config
