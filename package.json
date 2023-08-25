@@ -41,7 +41,7 @@
     "release": "run-s prepare lint build generate"
   },
   "dependencies": {
-    "standard-shared-config": "5.1.0"
+    "standard-shared-config": "5.1.1"
   },
   "devDependencies": {
     "@tagproject/base-shared-config": "^4.0.2",
