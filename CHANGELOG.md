@@ -12,10 +12,6 @@
 
 </details>
 
-# :memo: Internal changes
-
-- Fix readme versions [`d0c3542`](https://github.com/tagproject/ts-package-shared-config/commit/d0c3542350f707270a4e53fd109149934cf852d1)
-
 ---
 
 # Contributors
