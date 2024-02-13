@@ -1,40 +1,43 @@
+release:
+- base-branch: 'main'
+
 workflow:
-  - .github/**/*
-  - ./.gitignore
-  - ./.npmignore
+- changed-files:
+  - any-glob-to-any-file: ['.github/**/*', './.gitignore', './.npmignore']
 
 config:
-  - .sharedconfig.yml
-  - .husky/**/*
+- changed-files:
+  - any-glob-to-any-file: ['.sharedconfig.yml', '.husky/**/*']
 
 project:
-  - package-lock.json
-  - package.json
-  - LICENSE
+- changed-files:
+  - any-glob-to-any-file:  ['package-lock.json', 'package.json', 'LICENSE']
 
 docs:
-  - any: ['docs/**/*', '*.md', '.ghinfo']
+- changed-files:
+  - any-glob-to-any-file: ['docs/**/*', '*.md', '.ghinfo']
 
 shared-config:workflow:
-  - .config/.github/**/*
-  - .config/.gitignore
-  - .config/.npmignore
+- changed-files:
+  - any-glob-to-any-file: ['.config/.github/**/*', '.config/.gitignore', '.config/.npmignore']
 
 shared-config:code-style:
-  - .config/.editorconfig
-  - .config/.eslintignore
-  - .config/.eslintrc
-  - .config/.prettierignore
-  - .config/.prettierrc
+- changed-files:
+  - any-glob-to-any-file: ['.config/.editorconfig', '.config/.eslintignore', '.config/.eslintrc', '.config/.prettierignore', '.config/.prettierrc']
 
 shared-config:test:
-  - .config/jest.config.js
+- changed-files:
+  - any-glob-to-any-file: ['.config/jest.config.js']
 
 shared-config:ts:
-  - .config/tsconfig.json
+- changed-files:
+  - any-glob-to-any-file: ['.config/tsconfig.json']
 
 shared-config:scripts:
-  - scripts.js
+- changed-files:
+  - any-glob-to-any-file: ['scripts.js']
 
 shared-config:dependencies:
-  - dependencies.js
+- changed-files:
+  - any-glob-to-any-file: ['dependencies.js']
+
